@@ -1,7 +1,6 @@
-<h1> BapMarineNationale </h1>
+<h1> BapMarine2017 </h1>
 
-Notes techniques sur la BapMarineNationale; réalisée au second semestre de l'année 2015/2016.
-Projet réalisé par Quentin Delamare, Simon Antonelli, Theo Hinfray, Mathieu Rella et Nicolas Gauvin dans le cadre de l'agence MDR.
+Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
 
 <h2>Installation complète (Windows):</h2>
 
