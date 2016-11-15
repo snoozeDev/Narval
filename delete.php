@@ -1,7 +1,6 @@
+<h1>DELETE</h1>
 
- <h1>DELETE</h1>
-
- <?php
+<?php
 
  include 'db.php';
 
