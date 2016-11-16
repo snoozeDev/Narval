@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
 html,
 body {
 	width: 100%;
@@ -218,6 +220,8 @@ body {
 #timer {
 	font-size: 180%;
 	position: relative;
+	font-family: 'Roboto-Bold', sans-serif;
+	color: #446e58;
 	top: -210px;
 	right: 130px;
 }
