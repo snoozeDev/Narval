@@ -69,10 +69,10 @@
 
                 if (!sidebarIsVisible) {
 
-                    image.src = "image/cancel.png";
+                    image.src = "image/cancel.svg";
                     sidebarIsVisible = true;
                 } else {
-                    image.src = "image/menu.png";
+                    image.src = "image/menu.svg";
                     sidebarIsVisible = false;
                 }
             }
