@@ -1401,13 +1401,12 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 a {
-	color: #7e97ab;
+	color: #446E58;
 	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: #ffffff;
+	color: white;
 }
 
 a:visited {
@@ -1433,10 +1432,10 @@ p.blast {}
 
 .btn_retourhome {
 	font-family: Arial;
-	background: #808898;
+	background: #17201C;
 	text-decoration: none;
 	border-radius: 0px;
-	color: #ffffff;
+	color: #446E58;
 	font-size: 20px;
 	padding: 10px 20px 10px 20px;
 	border: solid #1f628d 2px 2px 0px 2px;
