@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-
 html,
 body {
 	width: 100%;
@@ -224,6 +223,11 @@ body {
 	color: #446e58;
 	top: -210px;
 	right: 130px;
+	background-color: #17201C;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #446e58;
 }
 
 .timer {
@@ -386,7 +390,7 @@ body {
 #boussole {
 	z-index: 1000;
 	position: absolute;
-	bottom : 30%;
+	bottom: 30%;
 	left: .5%;
 	text-align: center;
 }
