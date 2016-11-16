@@ -5,7 +5,8 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+	font-family: 'Roboto';
+	color: #446E58;
 	overflow: hidden;
 	position: relative;
 }
@@ -274,7 +275,7 @@ body {
 
 .profondeur {
 	pointer-events: none;
-	color:#446e58;
+	color: #446e58;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -867,11 +868,11 @@ a:visited {
 }
 
 .btn {
-	font-family: Arial;
-	background: #004080;
+	font-family: 'Roboto';
+	background: #446E58;
 	text-decoration: none;
 	border-radius: 0px;
-	color: #ffffff;
+	color: #17201C;
 	font-size: 20px;
 	padding: 10px 20px 10px 20px;
 	border: solid #1f628d 2px 2px 0px 2px;
@@ -993,7 +994,7 @@ input[type="range"]::-webkit-slider-thumb {
 	z-index: 2000;
 	border-radius: 10px;
 	background-color: black;
-	border: solid #ffffff 1px;
+	border: solid #446E58 1px;
 	max-height: auto;
 	-moz-box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.1);
@@ -1057,22 +1058,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 .ligne {
 	margin-top: -6px;
-}
-
-.btn_text {
-	background: #BDC0BF;
-}
-
-.btn_circle {
-	background: #BDC0BF;
-}
-
-.btn_polygone {
-	background: #BDC0BF;
-}
-
-.btn_polyline {
-	background: #BDC0BF;
 }
 
 .active {
