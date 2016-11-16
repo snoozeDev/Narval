@@ -73,10 +73,12 @@
 
                     image.src = "image/cancel.svg";
 					image.style = "width:50%";
-					timer.style = "right:390px";
+					timer.style = "right:340px";
                     sidebarIsVisible = true;
                 } else {
                     image.src = "image/menu.svg";
+					timer.style = "right:90px";
+					image.style = "width:100%";
                     sidebarIsVisible = false;
                 }
             }
