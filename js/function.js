@@ -67,10 +67,13 @@
 
                 var image = document.getElementById('menu-stripes1');
 
+				var timer = document.getElementById('timer');
+
                 if (!sidebarIsVisible) {
 
                     image.src = "image/cancel.svg";
 					image.style = "width:50%";
+					timer.style = "right:390px";
                     sidebarIsVisible = true;
                 } else {
                     image.src = "image/menu.svg";

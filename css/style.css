@@ -228,6 +228,7 @@ body {
 	border-width: 2px;
 	border-radius: 5px;
 	border-color: #446e58;
+	transition: 0.9s linear;
 }
 
 .timer {
