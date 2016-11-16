@@ -270,7 +270,7 @@
 
 
 	<button id="sidebar-btn" class="sidebar-btn">
-		<img id="menu-stripes1" src="image/menu.png">
+		<img id="menu-stripes1" src="image/menu.svg">
 	</button>
 	<section id="sidebar" class="sidebar">
 
