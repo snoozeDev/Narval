@@ -264,9 +264,9 @@ body {
 }
 
 #toolbar {
-	position: absolute;
-	bottom: 10%;
-	left: 10%;
+	position: fixed;
+	bottom: 25px;
+	left: 350px;
 	width: 5%;
 	display: -webkit-inline-box;
 }
