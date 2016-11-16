@@ -187,7 +187,7 @@
 				<div id="timer">
 
 
-					<span id="days">0 j</span>
+					<span id="days">J-00 / </span>
 					<span id="hours">00 :</span>
 					<span id="mins">00</span>
 

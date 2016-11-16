@@ -36,13 +36,18 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
 
 
-
+var osmLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+	subdomains: 'abcd',
+	maxZoom: 19
+});
+	/*
     var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         , maxZoom: 19,
 
 
-    });
+    });*/
        // map.addLayer(TopoLayer);
     //L.control.fullscreen().addTo(map);
     map.addLayer(osmLayer);
@@ -1623,13 +1628,13 @@ $('.speed').change(function () {             //lorsque le coef de vitesse change
                     hours = resthours;
                     days++;
                     if (days < 10) {
-                        $("#days").text('0' + days + 'J:')
-                    } else $("#days").text(days + 'J:');
+                        $("#days").text('J-0' + days + ' / ');
+                    } else $("#days").text('J-' + days + ' / ');
                 }
 
                 if (hours < 10) {
-                    $("#hours").text('0' + hours + 'H');
-                } else $("#hours").text(hours + 'H');
+                    $("#hours").text('0' + hours + ' :');
+                } else $("#hours").text(hours + ' :');
             }
             if (mins < 10) {
                 $("#mins").text('0' + mins);
