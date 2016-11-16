@@ -70,6 +70,7 @@
                 if (!sidebarIsVisible) {
 
                     image.src = "image/cancel.svg";
+					image.style = "width:50%";
                     sidebarIsVisible = true;
                 } else {
                     image.src = "image/menu.svg";
