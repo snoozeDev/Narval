@@ -274,6 +274,8 @@ body {
 
 .profondeur {
 	pointer-events: none;
+	color:#446e58;
+	font-family: 'Roboto', sans-serif;
 }
 
 .port {
