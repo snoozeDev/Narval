@@ -6,7 +6,7 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 
 1. Téléchargez et installez <a href="https://git-scm.com/downloads">Git for Mac</a>
 2. Téléchargez et installez <a href="https://www.iterm2.com/downloads.html">iTerm 2</a>. Ceci est votre <strong>Terminal</strong> dans laquelle vous ferez vos commandes Git.
-3. Passez à la <a href="#mise-en-place-des-fichiers-">mise en place des fichiers.</a>
+3. Passez à la <a href="#anchor1">mise en place des fichiers.</a>
 
 <h3>Installation de Git for Windows :</h3>
 
@@ -15,7 +15,7 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 3. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre <strong>Terminal</strong> dans laquelle vous ferez vos commandes Git.
 4. Passez à la <a href="#mise-en-place-des-fichiers-">mise en place des fichiers.</a>
 
-<h3>Mise en place des fichiers :</h3>
+<h3 id="anchor1">Mise en place des fichiers :</h3>
 
 1. Dans le dossier "C:/MAMP/htdocs", créez un dossier qui sera votre dossier du projet.
 2. Ouvrez votre Console Git/iTerm et tapez <code>cd C:/MAMP/htdocs/votre_dossier</code> et appuyez sur Entrée.
