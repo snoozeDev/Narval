@@ -2,13 +2,13 @@
 
 Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
 
-<h2>Installation de Git for Windows :</h2>
+<h2>Installation de Git (Mac) :</h2>
 
 1. Téléchargez et installez <a href="https://git-scm.com/downloads">Git for Mac</a>
 2. Téléchargez et installez <a href="https://www.iterm2.com/downloads.html">iTerm 2</a>. Ceci est votre <strong>Terminal</strong> dans laquelle vous ferez vos commandes Git.
 3. Passez à la <a href="#anchor1">mise en place des fichiers.</a>
 
-<h2>Installation de Git for Windows :</h2>
+<h2>Installation de Git for Windows (Windows):</h2>
 
 1. Téléchargez <a href="https://github.com/git-for-windows/git/releases/v2.10.2.windows.1">Git for Windows</a> (en bas de la page).
 2. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault.
