@@ -2,18 +2,21 @@
 
 Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
 
-<h2>Installation complète (Windows):</h2>
+<h3>Installation de Git for Windows :</h3>
+
+1. Téléchargez et installez <a href="https://git-scm.com/downloads">Git for Mac</a>
+2. Téléchargez et installez <a href="https://www.iterm2.com/downloads.html">iTerm 2</a>. Ceci est votre <strong>Terminal</strong> dans laquelle vous ferez vos commandes Git.
 
 <h3>Installation de Git for Windows :</h3> 
 
 1. Téléchargez <a href="https://github.com/git-for-windows/git/releases/v2.10.2.windows.1">Git for Windows</a> (en bas de la page).
 2. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault.
-3. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre <strong>Console Git</strong> dans laquelle vous ferez vos commandes Git.
+3. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre <strong>Terminal</strong> dans laquelle vous ferez vos commandes Git.
 
 <h3>Mise en place des fichiers :</h3>
 
 1. Dans le dossier "C:/MAMP/htdocs", créez un dossier qui sera votre dossier du projet.
-2. Ouvrez votre Console Git et tapez <code>cd C:/MAMP/htdocs/votre_dossier</code> et appuyez sur Entrée.
+2. Ouvrez votre Console Git/iTerm et tapez <code>cd C:/MAMP/htdocs/votre_dossier</code> et appuyez sur Entrée.
 3. Puis tapez <code>git clone https://github.com/jblafon/BapMarine2017.git</code> et appuyez sur Entrée.
 
 <h2>Commandes Git</h2>
