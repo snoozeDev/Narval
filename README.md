@@ -23,8 +23,8 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 
 1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
 2. Ouvrez votre le Terminal et tapez</br>
-• <code>cd C:/MAMP/htdocs/votre_dossier</code> (Windows)</br>
-• <code> cd /Applications/MAMP/htdocs/votre_dossier</code> (Mac)</br>
+	• <code>cd C:/MAMP/htdocs/votre_dossier</code> (Windows)</br>
+	• <code> cd /Applications/MAMP/htdocs/votre_dossier</code> (Mac)</br>
 et appuyez sur Entrée.
 3. Puis tapez <code>git clone https://github.com/jblafon/BapMarine2017.git</code> et appuyez sur Entrée.
 
