@@ -17,8 +17,15 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 
 <h2 id="anchor1">Mise en place des fichiers :</h2>
 
-1. Dans le dossier "C:/MAMP/htdocs", créez un dossier qui sera votre dossier du projet.
-2. Ouvrez votre le Terminal et tapez <code>cd C:/MAMP/htdocs/votre_dossier</code> et appuyez sur Entrée.
+<strong>ATTENTION le chemin vers htdocs est :</strong>
+• "C:/MAMP/htdocs" pour Windows
+• "Applications/MAMP/htdocs" pour Mac
+
+1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
+2. Ouvrez votre le Terminal et tapez
+• <code>cd C:/MAMP/htdocs/votre_dossier</code> (Windows)
+• <code> cd /Applications/MAMP/htdocs/votre_dossier</code>
+et appuyez sur Entrée.
 3. Puis tapez <code>git clone https://github.com/jblafon/BapMarine2017.git</code> et appuyez sur Entrée.
 
 <h2>Commandes Git</h2>
@@ -27,7 +34,9 @@ Git va nous permettre de travailler sur le même projet en même temps mais <str
 
 <h3>Envoyer un fichier vers le git :</h3>
 1. ouvrir le Terminal
-2. tapez <code>cd C:/MAMP/htdocs/Votre_dossier/BapMarine2017</code>
+2. tapez
+• <code>cd C:/MAMP/htdocs/votre_dossier/BapMarine2017</code> (Windows)
+• <code> cd /Applications/MAMP/htdocs/votre_dossier/BapMarine2017</code>
 3. tapez <code>git add le_fichier_modifié.html</code> pour ajouter le fichier à la liste de push (répetez si vous avez modifié plusieurs fichiers)
 4. tapez <code>git commit -m "descriptif de vos modifs"</code> <strong>N'oubliez pas de décrire vos modifs svp</strong>
 5. tapez <code>git origin master</code>
