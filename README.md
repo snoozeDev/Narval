@@ -19,7 +19,7 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 
 <strong>ATTENTION le chemin vers htdocs est :</strong> </br>
 • "C:/MAMP/htdocs" pour Windows</br>
-• "Applications/MAMP/htdocs" pour Mac
+• "/Applications/MAMP/htdocs" pour Mac
 
 1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
 2. Ouvrez votre le Terminal et tapez</br>
