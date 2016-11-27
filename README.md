@@ -30,7 +30,7 @@ et appuyez sur Entrée.
 
 <h2>Commandes Git</h2>
 
-Git va nous permettre de travailler sur le même projet en même temps mais <strong style="color:red;">NE JAMAIS MODIFIER SUR LES MÊMES LIGNE D'UN MÊME FICHIER EN MÊME TEMPS !!!</strong>
+Git va nous permettre de travailler sur le même projet en même temps mais <strong>NE JAMAIS MODIFIER SUR LES MÊMES LIGNE D'UN MÊME FICHIER EN MÊME TEMPS !!!</strong>
 
 <h3>Envoyer un fichier vers le git :</h3>
 1. ouvrir le Terminal
