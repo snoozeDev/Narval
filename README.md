@@ -17,8 +17,8 @@ Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNation
 
 <h2 id="anchor1">Mise en place des fichiers :</h2>
 
-<strong>ATTENTION le chemin vers htdocs est :</strong>
-• "C:/MAMP/htdocs" pour Windows
+<strong>ATTENTION le chemin vers htdocs est :</strong> </br>
+• "C:/MAMP/htdocs" pour Windows</br>
 • "Applications/MAMP/htdocs" pour Mac
 
 1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
