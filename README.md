@@ -1,5 +1,3 @@
-Bonjour Aurelie.
-
 <h1> BapMarine2017 </h1>
 
 Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
