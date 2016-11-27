@@ -45,7 +45,7 @@ Git va nous permettre de travailler sur le même projet en même temps mais <str
 1. ouvrir le Terminal
 2. tapez</br>
 	• <code> cd C:/MAMP/htdocs/Votre_dossier/BapMarine2017 </code> (Windows) </br>
-	• <code> cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017</code>
+	• <code> cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017</code> (Mac)
 3. tapez <code> git pull </code>
 
 <h2>Mise en place de la base de donnée :</h2>
