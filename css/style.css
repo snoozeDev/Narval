@@ -275,15 +275,33 @@ body {
 	display: -webkit-inline-box;
 }
 
-.profondeur-blue {
+.profondeur-rouge {
 	pointer-events: none;
-	color: #2196F3;
+	color: #C62828;
 	font-family: 'Roboto', sans-serif;
 }
 
 .profondeur-orange {
 	pointer-events: none;
-	color: #FF9800;
+	color: #EF6C00;
+	font-family: 'Roboto', sans-serif;
+}
+
+.profondeur-jaune {
+	pointer-events: none;
+	color: #FBC02D;
+	font-family: 'Roboto', sans-serif;
+}
+
+.profondeur-vert {
+	pointer-events: none;
+	color: #2E7D32;
+	font-family: 'Roboto', sans-serif;
+}
+
+.profondeur-bleu {
+	pointer-events: none;
+	color: #01579B;
 	font-family: 'Roboto', sans-serif;
 }
 
