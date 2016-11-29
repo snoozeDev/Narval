@@ -34,13 +34,12 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
     map.setView([-1.743, 4.8], 5);
 
-
-
 var osmLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 	subdomains: 'abcd',
 	maxZoom: 19
 });
+
 	/*
     var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
