@@ -231,6 +231,7 @@ body {
 	border-radius: 5px;
 	border-color: #446e58;
 	transition: 0.5s linear;
+    padding: 0px 5px 0px 5px;
 }
 
 .timer {
@@ -274,9 +275,15 @@ body {
 	display: -webkit-inline-box;
 }
 
-.profondeur {
+.profondeur-blue {
 	pointer-events: none;
-	color: #17201c;
+	color: #2196F3;
+	font-family: 'Roboto', sans-serif;
+}
+
+.profondeur-orange {
+	pointer-events: none;
+	color: #FF9800;
 	font-family: 'Roboto', sans-serif;
 }
 
