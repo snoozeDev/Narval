@@ -909,7 +909,7 @@ a:visited {
 	font-family: 'Roboto';
 	background: #446E58;
 	text-decoration: none;
-	border-radius: 0px;
+	border-radius: 5px;
 	color: #17201C;
 	font-size: 20px;
 	padding: 10px 20px 10px 20px;
@@ -1099,7 +1099,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .active {
-	background: #004080;
+	background: #ffffff;
 	border: 0px 0px 1px 0px solid;
 }
 
