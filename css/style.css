@@ -275,6 +275,15 @@ body {
 	display: -webkit-inline-box;
 }
 
+.profondeur {
+	pointer-events: none;
+	color: #757575;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*STYLE DES CLASSES DE PROFONDEURS (coords.js)*/
+
+/*
 .profondeur-rouge {
 	pointer-events: none;
 	color: #C62828;
@@ -304,6 +313,9 @@ body {
 	color: #01579B;
 	font-family: 'Roboto', sans-serif;
 }
+*/
+
+/* END */
 
 .port {
 	pointer-events: none;
