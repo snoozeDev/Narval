@@ -58,7 +58,7 @@ var asm_neutre = L.icon({
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 var bpc_neutre = L.icon({
-	iconUrl: 'image/bpc-neutre.png',
+	iconUrl: 'image/bpc-neutre.svg',
 	className: 'rred2',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
@@ -93,7 +93,7 @@ var asm_ennemi = L.icon({
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 var bpc_ennemi = L.icon({
-	iconUrl: 'image/bpc-ennemi.png',
+	iconUrl: 'image/bpc-ennemi.svg',
 	className: 'rred2',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
