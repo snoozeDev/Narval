@@ -54,7 +54,7 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 	};
 
 	var control = L.control.layers(baseMaps).addTo(map);
-	control.setPosition('bottomleft');
+	control.setPosition('bottomright');
 	console.log(control);
 	/*
 var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
