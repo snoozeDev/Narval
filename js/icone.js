@@ -2,7 +2,7 @@
 
 
 var phare = L.icon({
-	iconUrl: 'image/phare.png',
+	iconUrl: 'image/phare.svg',
 
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
