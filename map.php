@@ -460,7 +460,7 @@ $result = $conn->query($sql);
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-	<script src="js/leaflet.js"></script>
+	<script src="js/leaflet-src.js"></script>
 	<script type="text/javascript" src="js/icone.js"></script>
 	<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
 	<script src='js/coord.js'></script>

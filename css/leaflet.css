@@ -273,6 +273,7 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
 	border-color: #446e58;
 }
 
+/*NOTE Zoom Icon Color*/
 .leaflet-bar a,
 .leaflet-bar a:hover {
 	background-color: #17201c;
@@ -283,7 +284,7 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	color: black;
+	color: #446e58;
 }
 
 .leaflet-bar a,
@@ -321,7 +322,7 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
 }
 
 
-/* zoom control */
+/* NOTE zoom control */
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
