@@ -8320,7 +8320,7 @@ L.control.scale = function (options) {
 	return new L.Control.Scale(options);
 };
 
-
+//NOTE Control.Layers
 /*
  * L.Control.Layers is a control to allow users to switch between different layers on the map.
  */
