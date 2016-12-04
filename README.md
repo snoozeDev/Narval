@@ -61,7 +61,7 @@ Git va nous permettre de travailler sur le même projet en même temps mais <str
 <h3>Importation de la base de données:</h3>
 
 1. Allez sur PhpMyAdmin de votre localhost.
-2. Créez une nouvelle base de donnée en collation <code>ut8_general_ci</code>.
+2. Créez une nouvelle base de donnée en collation <code>utf8_general_ci</code>.
 3. Cliquez sur la base de donnée puis sur l'onglet "Import" et importez le fichier "votre_dossier/BapMarine2017/sql/marine_nationale_db.sql".
 
 <h3>Changement des identifiants de connection à la base de donnée:</h3>
