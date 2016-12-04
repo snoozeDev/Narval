@@ -2,6 +2,14 @@
 
 Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
 
+<strong>Editeur de Code :</strong>
+<a href="http://brackets.io/">Brackets</a>
+<strong>Mes Plugins Brackets :</strong>
+<img src="image/Plugins_a.png"/>
+<img src="image/Plugins_b.png"/>
+<img src="image/Plugins_c.png"/>
+<img src="image/Plugins_d.png"/>
+
 <h2>Installation de Git (Mac) :</h2>
 
 1. Téléchargez et installez <a href="https://git-scm.com/downloads">Git for Mac</a>
