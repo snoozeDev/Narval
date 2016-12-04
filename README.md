@@ -2,8 +2,8 @@
 
 Continuation du projet <a href="https://github.com/NicolasGauvin/BapMarineNationale">BapMarineNationale</a>
 
-<strong>Editeur de Code :</strong>
-<a href="http://brackets.io/">Brackets</a>
+<strong>Editeur de Code :</strong></br>
+<a href="http://brackets.io/">Brackets</a></br>
 <strong>Mes Plugins Brackets :</strong>
 <img src="image/Plugins_a.png"/>
 <img src="image/Plugins_b.png"/>
