@@ -278,9 +278,9 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
 .leaflet-bar a:hover {
 	background-color: #17201c;
 	border-bottom: 1px solid #446e58;
-	width: 26px;
-	height: 26px;
-	line-height: 26px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
 	display: block;
 	text-align: center;
 	text-decoration: none;
