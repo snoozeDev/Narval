@@ -326,12 +326,12 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
-	font: bold 18px 'Lucida Console', Monaco, monospace;
+	font: bold 30px 'Lucida Console', Monaco, monospace;
 	text-indent: 1px;
 }
 
 .leaflet-control-zoom-out {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .leaflet-touch .leaflet-control-zoom-in {
