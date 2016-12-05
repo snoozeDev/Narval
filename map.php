@@ -28,7 +28,7 @@
 <body>
 	<div id="ajout_batiment" class="pop_up_inv hide">
 		<div class="pop_up" id="ajout_batiment_inv">
-			<p class="title"> BATIMENTS </p>
+			<p class="title">INFRASTRUCTURES</p>
 			<select class="formula" id="icone_select" name="icone_select">
 				<option value="port">Port</option>
 				<option value="offshore">Offshore</option>
@@ -136,7 +136,7 @@
 	<div id="ajout_bateau" class="pop_up_inv hide">
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
-				<p class="title"> DÉPLACEMENT </p>
+				<p class="title">BATIMENTS</p>
 				<label>Type de vehicule</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>
