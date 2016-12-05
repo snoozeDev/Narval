@@ -240,7 +240,7 @@ $('#close_console').click(function () {
 
 });
 //TODO --- CHANGER LES PNGs EN SVGs
-/*  fonciton changement image icone    */
+/*  fonction changement image icone    */
 $('#icone_select').change(function () {
 	var ico = "image/" + $('#icone_select').val() + ".png";
 	$("#icone_img").attr("src", ico);
