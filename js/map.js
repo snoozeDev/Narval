@@ -2687,10 +2687,14 @@ $('#admin').on('click', function () {
 	notif = 0;
 	simulation = true;
 	calculDistance();
+	console.log('=== SIM STATE ===');
+	console.log(simulation);
 });
 
 $('#simulation').on('click', function () {
 	simulation = false;
+	console.log('=== SIM STATE ===');
+	console.log(simulation);
 });
 
 // fin du game
