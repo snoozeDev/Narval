@@ -24,7 +24,7 @@ body {
 #console {
 	position: absolute;
 	width: 28%;
-	bottom: 0;
+	top: 0;
 	height: 50%;
 	background-color: rgba(44, 62, 80, 0.7);
 	color: white;
