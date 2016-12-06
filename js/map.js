@@ -24,7 +24,7 @@ var editSpeed;
 var changerVitesse; //booléen si c'est juste un changement de vitesse
 var nouveauTrajet; //booléan pour éviter bug
 var deleteUltime = false;
- var map;
+var map;
 
 initialize();
 
@@ -32,25 +32,25 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 	//initialisation de la map
 
 	var night = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-		subdomains: 'abcd',
-		maxZoom: 19
-	}),
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}),
 		day = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-		subdomains: 'abcd',
-		maxZoom: 19
-	});
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		});
 
-	map = L.map('map',{
-		center : [-1.743, 4.8],
-		zoom : 5,
+	map = L.map('map', {
+		center: [-1.743, 4.8],
+		zoom: 5,
 		layers: [night, day]
 	});
 
 	var baseMaps = {
-		"Night" : night,
-		"Day" : day
+		"Night": night,
+		"Day": day
 	};
 
 	var control = L.control.layers(baseMaps).addTo(map);
@@ -1494,25 +1494,25 @@ $('#pause').click(function () {
 $('.speed').change(function () { //lorsque le coef de vitesse change on refait les trajets desbateaux qui bougent
 	var speed = $('.speed option:selected').val();
 
-//SLIDER SPEED
-//	var speed1 = $('.speed').val();
-//	if (speed1 == 1){
-//		speed = 1;
-//	} else if (speed1 == 2) {
-//		speed = 3;
-//	} else if (speed1 == 3) {
-//		speed = 5;
-//	} else if (speed1 == 4) {
-//		speed = 10;
-//	} else if (speed1 == 5) {
-//		speed = 50;
-//	} else if (speed1 == 6) {
-//		speed = 100;
-//	}
-//	console.log('speed : '+speed);
+	//SLIDER SPEED
+	//	var speed1 = $('.speed').val();
+	//	if (speed1 == 1){
+	//		speed = 1;
+	//	} else if (speed1 == 2) {
+	//		speed = 3;
+	//	} else if (speed1 == 3) {
+	//		speed = 5;
+	//	} else if (speed1 == 4) {
+	//		speed = 10;
+	//	} else if (speed1 == 5) {
+	//		speed = 50;
+	//	} else if (speed1 == 6) {
+	//		speed = 100;
+	//	}
+	//	console.log('speed : '+speed);
+
 	// fonction changement vitesse general
 	for (var j = 0; j <= bateaux.length - 1; j++) { //boucle de for de tous les bat
-
 		//faire la modif de vitesse sur tous les bateaux
 		//debut de récupération des données du bateau
 		console.log("j : " + j);
@@ -1520,7 +1520,6 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 		boolean_vitesse = false;
 		//alert( $(this).attr('id') );
 		if (bateaux[j]._latlngs != null && bateaux[j] != "") { //recup beateau avant modif
-
 			editIcon = bateaux[j].editIcon;
 			editVitesse = bateaux[j].editVitesse;
 			editColor = bateaux[j].editColor;
@@ -1542,15 +1541,12 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 
 			if (bateaux[j]._currentLine.length != 0) {
 				editCurrentPoint = bateaux[j]._currentLine[1]; //recup position
-
 			} else {
 				editCurrentPoint = bateaux[j]._latlngs[0];
 			}
 
-
 			currentPolyline2.addLatLng(bateaux[j]._latlng); // ajouter la position actuelle
 			for (var i = 0; i <= editCurrentLine.length - 1; i++) { //recup trajet à partir du point
-
 				if (editCurrentLine[i] == editCurrentPoint) {
 					boolean_vitesse = true;
 				}
@@ -1588,12 +1584,9 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 			// console.log(('#grosbateau').j);
 			var edit_vitesse = $('#editVitesse').val();
 			//edit de bateaux
-			console.log(simulation);
 			if (simulation == true) {
 				$('.red').css("display", "none");
 				$('.green').css("display", "none");
-//				NOTE disparition de l'ajout bateaux en mode sim
-				$('#bateau').css("diplay", "none");
 			}
 
 			classId = editColor + j;
@@ -2680,18 +2673,22 @@ function calculDistance() {
 	}
 
 $("#notif").html(notif);
+	$("#notif").html(notif);
 	setTimeout(calculDistance, 1000); /* rappel après 2 secondes = 2000 millisecondes */
 }
 
+//NOTE Changement SIM <-> ADMIN
 $('#admin').on('click', function () {
 	notif = 0;
 	simulation = true;
 	calculDistance();
+	$('#toolbar').css('display', 'none');
 	console.log('=== SIM STATE ===');
 	console.log(simulation);
 });
 
 $('#simulation').on('click', function () {
+	$('#toolbar').css('display', '-webkit-inline-box');
 	simulation = false;
 	console.log('=== SIM STATE ===');
 	console.log(simulation);
