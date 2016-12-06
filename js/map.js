@@ -1588,10 +1588,11 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 			// console.log(('#grosbateau').j);
 			var edit_vitesse = $('#editVitesse').val();
 			//edit de bateaux
-
+			console.log(simulation);
 			if (simulation == true) {
 				$('.red').css("display", "none");
 				$('.green').css("display", "none");
+//				NOTE disparition de l'ajout bateaux en mode sim
 				$('#bateau').css("diplay", "none");
 			}
 
@@ -2638,31 +2639,16 @@ function calculDistance() {
 								$('.' + classIdBat).hide(); //on cache le bateau en question
 								$('.green').hide(); //on cache les lignes (au cas ou un bateau a été ajouté pendant la simulation)
 								$('.red').hide();
-
 								bateaux[j].editDetection = false; //passer en etat de détection
-
 							}
-
-
 						} else { //bateau dans le radar
 							$('.' + classIdBat).show(); //on montre le bateau en question
 							bateaux[j].editDetection = true;
 							detection[j] = true;
-
-
-
-
 						}
-
-
 					}
-
 				};
-
-
-
 			}
-
 		};
 		for (var i = bateaux.length - 1; i >= 0; i--) { //fonction de message
 			if (bateaux[i] != "" && bateaux[i].editColor != "blue") { //le bateau n'a pas été supprimé
@@ -2687,15 +2673,13 @@ function calculDistance() {
 						}
 						$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " a disparu aux coordonnées " + lat + "," + lng + "</li><br>");
 						notif++;
-
 					}
 				}
 			}
-
 		};
 	}
 
-	$("#notif").html(notif);
+$("#notif").html(notif);
 	setTimeout(calculDistance, 1000); /* rappel après 2 secondes = 2000 millisecondes */
 }
 
@@ -2703,12 +2687,10 @@ $('#admin').on('click', function () {
 	notif = 0;
 	simulation = true;
 	calculDistance();
-
-
 });
+
 $('#simulation').on('click', function () {
 	simulation = false;
-
 });
 
 // fin du game
