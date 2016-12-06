@@ -55,7 +55,6 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
 	var control = L.control.layers(baseMaps).addTo(map);
 	control.setPosition('bottomright');
-	console.log(control);
 	/*
 var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -1593,6 +1592,7 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 			if (simulation == true) {
 				$('.red').css("display", "none");
 				$('.green').css("display", "none");
+				$('#bateau').css("diplay", "none");
 			}
 
 			classId = editColor + j;
