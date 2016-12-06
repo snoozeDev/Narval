@@ -1489,24 +1489,28 @@ $('#pause').click(function () {
 	playOrPause = 0;
 	console.log(playOrPause);
 });
-console.log($('.speed').val());
-var speed = 1;
+//SLIDER SPEED
+//console.log($('.speed').val());
+//var speed = 1;
 $('.speed').change(function () { //lorsque le coef de vitesse change on refait les trajets desbateaux qui bougent
-	var speed1 = $('.speed').val(); //valeur du coef de vitesse
-	if (speed1 == 1){
-		speed = 1;
-	} else if (speed1 == 2) {
-		speed = 3;
-	} else if (speed1 == 3) {
-		speed = 5;
-	} else if (speed1 == 4) {
-		speed = 10;
-	} else if (speed1 == 5) {
-		speed = 50;
-	} else if (speed1 == 6) {
-		speed = 100;
-	}
-	console.log('speed : '+speed);
+	var speed = $('.speed option:selected').val();
+
+//SLIDER SPEED
+//	var speed1 = $('.speed').val();
+//	if (speed1 == 1){
+//		speed = 1;
+//	} else if (speed1 == 2) {
+//		speed = 3;
+//	} else if (speed1 == 3) {
+//		speed = 5;
+//	} else if (speed1 == 4) {
+//		speed = 10;
+//	} else if (speed1 == 5) {
+//		speed = 50;
+//	} else if (speed1 == 6) {
+//		speed = 100;
+//	}
+//	console.log('speed : '+speed);
 	// fonction changement vitesse general
 	for (var j = 0; j <= bateaux.length - 1; j++) { //boucle de for de tous les bat
 
