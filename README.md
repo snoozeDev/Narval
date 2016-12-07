@@ -90,5 +90,5 @@ _scriptIndex.js_|divers scripts d'affichage de la page index.php
 _leaflet.css_|fichier de style de la librairie leaflet  
 _reset.css_|ficher de style pour reste les charactéristiques de chaque naviguateurs  
 _screen.css_|fichier de style du plugin de vidéo tubular  
-_style.css_|fichier de style d ela page map.php  
+_style.css_|fichier de style d ela page map.php
 _styleIndex.css_|fichier de style de la page index.php
