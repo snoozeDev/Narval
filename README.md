@@ -1,6 +1,7 @@
 # BapMarine2017
 
-Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/BapMarineNationale) **Editeur de Code :**  
+Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/BapMarineNationale).
+**Editeur de Code :**  
 [Brackets](http://brackets.io/)  
 **Mes Plugins Brackets :** ![](image/Plugins_a.png) ![](image/Plugins_b.png) ![](image/Plugins_c.png) ![](image/Plugins_d.png)
 
