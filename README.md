@@ -7,11 +7,16 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 ## Installation de Git (Mac) :
 
-1\. Téléchargez et installez [Git for Mac](https://git-scm.com/downloads) 2\. Téléchargez et installez [iTerm 2](https://www.iterm2.com/downloads.html). Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git. 3\. Passez à la [mise en place des fichiers.](#anchor1)
+1\. Téléchargez et installez [Git for Mac](https://git-scm.com/downloads)
+2\. Téléchargez et installez [iTerm 2](https://www.iterm2.com/downloads.html). Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
+3\. Passez à la [mise en place des fichiers.](#anchor1)
 
 ## Installation de Git for Windows (Windows):
 
-1\. Téléchargez [Git for Windows](https://github.com/git-for-windows/git/releases/v2.10.2.windows.1) (en bas de la page). 2\. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault. 3\. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git. 4\. Passez à la [mise en place des fichiers.](#anchor1)
+1\. Téléchargez [Git for Windows](https://github.com/git-for-windows/git/releases/v2.10.2.windows.1) (en bas de la page).
+2\. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault.
+3\. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
+4\. Passez à la [mise en place des fichiers.](#anchor1)
 
 ## Mise en place des fichiers :
 
@@ -28,25 +33,33 @@ Git va nous permettre de travailler sur le même projet en même temps mais **NE
 
 ### Envoyer un fichier vers le git :
 
-1\. ouvrir le Terminal 2\. tapez  
-• `cd C:/MAMP/htdocs/votre_dossier/BapMarine2017` (Windows)  
-• `cd /Applications/MAMP/htdocs/votre_dossier/BapMarine2017` (Mac) 3\. tapez `git add le_fichier_modifié.html` pour ajouter le fichier à la liste de push (répetez si vous avez modifié plusieurs fichiers) 4\. tapez `git commit -m "descriptif de vos modifs"` **N'oubliez pas de décrire vos modifs svp** 5\. tapez `git origin master`
+1\. ouvrir le Terminal
+2\. tapez  
+	• `cd C:/MAMP/htdocs/votre_dossier/BapMarine2017` (Windows)  
+	• `cd /Applications/MAMP/htdocs/votre_dossier/BapMarine2017` (Mac)
+3\. tapez `git add le_fichier_modifié.html` pour ajouter le fichier à la liste de push (répetez si vous avez modifié plusieurs fichiers)
+4\. tapez `git commit -m "descriptif de vos modifs"` **N'oubliez pas de décrire vos modifs svp**
+5\. tapez `git origin master`
 
 ### Récuperer les fichier depuis le Git :
 
 1\. ouvrir le Terminal 2\. tapez  
-• `cd C:/MAMP/htdocs/Votre_dossier/BapMarine2017` (Windows)  
-• `cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017` (Mac) 3\. tapez `git pull`
+	• `cd C:/MAMP/htdocs/Votre_dossier/BapMarine2017` (Windows)  
+	• `cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017` (Mac) 3\. tapez `git pull`
 
 ## Mise en place de la base de donnée :
 
 ### Importation de la base de données:
 
-1\. Allez sur PhpMyAdmin de votre localhost. 2\. Créez une nouvelle base de donnée en collation `utf8_general_ci`. 3\. Cliquez sur la base de donnée puis sur l'onglet "Import" et importez le fichier "votre_dossier/BapMarine2017/sql/marine_nationale_db.sql".
+1\. Allez sur PhpMyAdmin de votre localhost.
+2\. Créez une nouvelle base de donnée nommée `marinedb` en collation `utf8_general_ci`.
+3\. Cliquez sur la base de donnée puis sur l'onglet "Import" et importez le fichier "votre_dossier/BapMarine2017/sql/marine_nationale_db.sql".
 
 ### Changement des identifiants de connection à la base de donnée:
 
-1\. Dans "BapMarine2017", créez un fichier "db.php" 2\. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php" 3\. Remplacer la ligne 6 par `$db = 'votre_base_de_données';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)  
+1\. Dans "BapMarine2017", créez un fichier "db.php"
+2\. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php"
+3\. Remplacer la ligne 6 par `$db = 'marinedb';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)  
 
 ## Architecture du code :
 
