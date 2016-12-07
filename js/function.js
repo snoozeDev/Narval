@@ -190,19 +190,24 @@ function delete_obj(elem, form) {
 	}
 
 }
-
-
+//TODO CONSOLE PART1
+function consoleHide(){
+	$(this).css('display', 'none');
+}
+function consoleShow(){
+	$(this).css('display', 'flex');
+}
 
 
 $("#simulation").hide();
-$('#console').hide();
+$('#console').consoleHide();
 $('#notif').hide();
 $('#close_console').show();
 /*    mode simulation ou non   */
 $("#admin").click(function () { // on lance la simulation donc on montre la console, on cache les bateaux ennemis
 	$("#simulation").show();
 	$('.cercle-radar').show();
-	$('#console').show();
+	$('#console').consoleShow();
 	$("#admin").hide();
 	$('.red').css("display", "none");
 
@@ -214,7 +219,7 @@ $("#simulation").click(function () { // on repasse en mode admin
 	$("#admin").show();
 	$('.red').css("display", "block");
 	$('.rred2').show();
-	$('#console').hide();
+	$('#console').consoleShow();
 });
 var console_message = 0;
 $('#close_console').click(function () {

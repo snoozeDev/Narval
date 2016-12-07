@@ -234,18 +234,17 @@
 
 	</div>
 
-
+<!--NOTE CONSOLE PART1-->
 	<div id="console">
-		<div id="close_console">
-			<p id="notif"></p>
-			<img id="close" src="image/close.png">
-		</div>
+
 		<div class="black">
 			<p class="reperer">Vous ne devez pas vous faire repérer</p>
 			<ul>
-
-
 			</ul>
+		</div>
+				<div id="close_console">
+			<p id="notif"></p>
+			<img id="close" src="image/close.png">
 		</div>
 	</div>
 
