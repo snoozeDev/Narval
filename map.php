@@ -207,8 +207,8 @@
             -->
 				</div>
 
-
 				<div>
+					<!--
 					<select class="speed">
 
 						<option value="1">x1</option>
@@ -219,9 +219,10 @@
 						<option value="100">x100</option>
 
 					</select>
+-->
 
-<!--Slider Speed-->
-<!--					<input class="speed" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>-->
+					<!--Slider Speed-->
+					<input class="speed" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
 				</div>
 			</div>
 		</div>
@@ -234,7 +235,7 @@
 
 	</div>
 
-<!--NOTE CONSOLE PART1-->
+	<!--NOTE CONSOLE PART1-->
 	<div id="console">
 
 		<div class="black">
@@ -242,7 +243,7 @@
 			<ul>
 			</ul>
 		</div>
-				<div id="close_console">
+		<div id="close_console">
 			<p id="notif"></p>
 			<img id="close" src="image/close.png">
 		</div>
