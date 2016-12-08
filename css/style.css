@@ -30,9 +30,11 @@ body {
 	color: white;
 	z-index: 100;
 	display: none;
+/*
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
+*/
 }
 
 
