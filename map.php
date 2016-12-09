@@ -260,11 +260,12 @@
 		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
 		<br>
 
-		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/formev2.png"></div>
-		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/formev2.png"></div>
+<!--Remplacement des icônes de fin d'action-->
+		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/formev2.png"></div>
-		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/bateauv2.png"></div>
-		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/bateauv2.png"></div>
+		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
 
 
 	</div>
