@@ -53,16 +53,17 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 		"Day": day
 	};
 
-	var control3 = L.control.range({
-            orient: 'vertical',
-            value: 100
-        });
-        control.on('change input', function(e) {
-            console.log(e.value);
-            layer.setOpacity(e.value / 100);
-        })
-
-        map.addControl(control);
+//NOTE tentative slider
+//	var control3 = L.control.range({
+//            orient: 'vertical',
+//            value: 100
+//        });
+//        control.on('change input', function(e) {
+//            console.log(e.value);
+//            layer.setOpacity(e.value / 100);
+//        })
+//
+//        map.addControl(control);
 
 	var control = L.control.layers(baseMaps).addTo(map);
 	control.setPosition('bottomright');
