@@ -12372,11 +12372,13 @@ L.Map.include({
  * A basic zoom control with two buttons (zoom in and zoom out). It is put on the map by default unless you set its [`zoomControl` option](#map-zoomcontrol) to `false`. Extends `Control`.
  */
 
+//NOTE ZOOM [finished]
+
 L.Control.Zoom = L.Control.extend({
 	// @section
 	// @aka Control.Zoom options
 	options: {
-		position: 'topleft',
+		position: 'bottomleft',
 
 		// @option zoomInText: String = '+'
 		// The text set on the 'zoom in' button.
@@ -12797,7 +12799,7 @@ L.control.scale = function (options) {
  * ```
  */
 
-
+//NOTE Control.Layers [finished]
 L.Control.Layers = L.Control.extend({
 	// @section
 	// @aka Control.Layers options
