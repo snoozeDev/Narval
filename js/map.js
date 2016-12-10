@@ -1647,7 +1647,7 @@ function startTimer() {
     timex = setTimeout(function () {
 
 
-        for (var i = 0; i < speed; i++) {
+        for (var i = 0; i < 1; i++) {
             mins++;
         }
 
@@ -1687,7 +1687,7 @@ function startTimer() {
         }
 
         startTimer();
-    }, 1000);
+    }, 1000/speed);
 }
 //*****
 
