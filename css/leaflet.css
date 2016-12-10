@@ -453,6 +453,7 @@
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
 	position: relative;
+    margin-top: 15px;
 }
 
 .leaflet-control-layers-expanded {
