@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
 <!--	<link rel="stylesheet" type="text/css" href="css/L.Control.Range.css">-->
+<!--
 	<script src="js/L.Control.Range.js"></script>
+-->
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 
 
