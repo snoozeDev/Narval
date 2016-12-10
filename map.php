@@ -182,8 +182,8 @@
 		<div id="cont">
 			<div class="timer">
 				<div id="timerbtn">
-					<img src="image/play.png" style="position: relative;top: -10px;" id="play" class="btntime">
-					<img src="image/pause.png" style="display:none;position: relative;top: -10px;" id="pause" class="btntime">
+					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
+					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
 				</div>
 
 				<div id="timer">
@@ -195,36 +195,9 @@
 
 				</div>
 
-				<div class="timer_number_titles">
-					<!--
-              <div class="timer_number_days">
-                Jours
-              </div>
-              <div class="timer_number_hours">
-                Heures
-              </div>
-              <div class="timer_number_mins">
-                Minutes
-              </div>
-            -->
-				</div>
-
-				<div>
-					<!--
-					<select class="speed">
-
-						<option value="1">x1</option>
-						<option value="3">x3</option>
-						<option value="5">x5</option>
-						<option value="10">x10</option>
-						<option value="50">x50</option>
-						<option value="100">x100</option>
-
-					</select>
--->
-
+				<div id="timeSlider">
 					<!--Slider Speed-->
-					<input class="speed" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
+						<input class="speed" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
 				</div>
 			</div>
 		</div>
