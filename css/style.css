@@ -278,6 +278,7 @@ body {
 
 #toolbar {
 	position: relative;
+	z-index: 1000;
 	bottom: 13%;
 	left: 20%;
 	width: 6%;
@@ -336,7 +337,6 @@ body {
 
 .stop {
 	position: absolute;
-    z-index: 1000;
 	top: 25%;
 	left: 1%;
 	width: 4%;
