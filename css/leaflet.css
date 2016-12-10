@@ -449,6 +449,7 @@
 	display: none;
 }
 
+/*NOTE layer control list style*/
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
 	position: relative;
