@@ -40,17 +40,22 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
             subdomains: 'abcd',
             maxZoom: 19
+        }),
+        depth = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+	maxZoom: 16
         });
 
     map = L.map('map', {
         center: [-1.743, 4.8],
         zoom: 5,
-        layers: [night, day]
+        layers: [night, day, depth]
     });
 
     var baseMaps = {
         "Night": night,
-        "Day": day
+        "Day": day,
+        "Real": depth
     };
 
     //NOTE tentative slider

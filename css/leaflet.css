@@ -428,20 +428,20 @@
 
 .leaflet-control-layers-toggle {
 	background-image: url(../image/basemapToggle.svg);
-	width: 72.5px;
-	height: 72.5px;
+	width: 80px;
+	height: 80px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
 	background-image: url(../image/basemapToggle.svg);
-	background-size: 72.5px 72.5px;
+	background-size: 80px 80px;
 }
 
 .leaflet-touch .leaflet-control-layers-toggle {
 	border-radius: 100px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-	width: 72.5px;
-	height: 72.5px;
+	width: 80px;
+	height: 80px;
 }
 
 .leaflet-control-layers .leaflet-control-layers-list,
@@ -453,7 +453,7 @@
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
 	position: relative;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .leaflet-control-layers-expanded {
