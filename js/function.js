@@ -208,6 +208,7 @@ $("#admin").click(function () { // on lance la simulation donc on montre la cons
 	$("#simulation").show();
 	$('.cercle-radar').show();
 	$('#console').show();
+	$('#console').css('z-index', "1000");
 	$("#admin").hide();
 	$('.red').css("display", "none");
 
@@ -220,6 +221,8 @@ $("#simulation").click(function () { // on repasse en mode admin
 	$('.red').css("display", "block");
 	$('.rred2').show();
 	$('#console').show();
+    $('#console').css('z-index', "1000");
+
 });
 var console_message = 0;
 $('#close_console').click(function () {
