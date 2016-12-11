@@ -444,7 +444,8 @@ body {
 	z-index: 1000;
 	position: absolute;
 	bottom: 30%;
-	left: .5%;
+	left: 10px;
+	width: 50px !important;
 	text-align: center;
 }
 
