@@ -1021,14 +1021,15 @@ a:visited {
 }
 
 .speed {
+	-webkit-appearance: none;
 	display: block;
 	color: #446E58;
 	margin: 0 0 8px;
 	font-family: sans-serif;
-	background-color: #17201C;
+	background-color: rgba(0,0,0,0);
 	padding: 8px;
 	font-size: 1.2em;
-	margin-top: 15%;
+	margin-top: 28%;
 	margin-bottom: 15%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -1037,6 +1038,33 @@ a:visited {
 	position: relative;
 	left: 145px;
 	top: -260px;
+}
+
+.speed::-webkit-slider-runnable-track {
+	width: 300px;
+	height: 5px;
+	background: #17201C;
+	border: none;
+	border-radius: 3px;
+}
+
+.speed::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #446E58;
+	margin-top: -6px;
+	box-shadow: 1px 1px 5px #000000;
+}
+
+.speed:focus {
+	outline: none;
+}
+
+.speed:focus::-webkit-slider-runnable-track {
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .pop_up {
