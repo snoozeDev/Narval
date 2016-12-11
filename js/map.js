@@ -667,7 +667,7 @@ function addLatLngToMarker(clickEventData) {
 
 }
 
-//dessiner un cercle
+//TODO dessiner un cercle
 var drawCircleButton = document.getElementById('drawCircle');
 var stopDrawCircle = document.getElementById('stopDrawCircle');
 var cercle = []; //tableau de tous les cercles
@@ -706,6 +706,9 @@ rangeGradeCircle.addEventListener("input", rangeValue);
 
 $('.grade_circle').change(function () {
 	latlng = cercle[cer]._latlng;
+
+	console.log(cercle[cer]);
+
 	taille = $('#grade').val() * 500;
 	map.removeLayer(cercle[cer]);
 	cercle[cer] = L.circle(latlng, taille, {
@@ -713,10 +716,9 @@ $('.grade_circle').change(function () {
 		color: color,
 		fillColor: color,
 		fillOpacity: 0.5,
-		clickable: false
-	}).addTo(map);
-
-
+		clickable: false,
+		className: 'cercle'
+	});
 });
 
 function stop() {

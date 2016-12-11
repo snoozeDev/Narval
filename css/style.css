@@ -440,6 +440,10 @@ body {
 	margin-left: 21px;
 }
 
+.cercle {
+	stroke: red;
+}
+
 #boussole {
 	z-index: 1000;
 	position: absolute;
