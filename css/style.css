@@ -1075,7 +1075,7 @@ a:visited {
 }
 
 .speed:focus::-webkit-slider-runnable-track {
-	background: rgba(0, 0, 0, 0.5);
+	background: #17201C;
 }
 
 .pop_up {
