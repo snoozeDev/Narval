@@ -114,14 +114,14 @@ var tigre_ennemi = L.icon({
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 var port = L.icon({
-	iconUrl: 'image/port.png',
+	iconUrl: 'image/port.svg',
 
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 var offshore = L.icon({
-	iconUrl: 'image/offshore.png',
+	iconUrl: 'image/offshore.svg',
 
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
@@ -326,14 +326,14 @@ var paquebot_allie = L.icon({
 });
 
 var ville = L.icon({
-	iconUrl: 'image/ville.png',
+	iconUrl: 'image/ville.svg',
 	iconSize: [100, 100], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 
 var village = L.icon({
-	iconUrl: 'image/village.png',
+	iconUrl: 'image/village.svg',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor

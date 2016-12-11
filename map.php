@@ -33,13 +33,13 @@
 			<p class="title">INFRASTRUCTURES</p>
 			<select class="formula" id="icone_select" name="icone_select">
 				<option value="port">Port</option>
-				<option value="offshore">Offshore</option>
+				<option value="offshore">Plateforme offshore</option>
 				<option value="phare">Phare</option>
 				<option value="ville">Ville</option>
 				<option value="village">Village</option>
 
 			</select>
-			<img src="image/port.png" id="icone_img">
+			<img src="image/ville.svg" id="icone_img">
 
 			<label>Description (facutatif)</label>
 			<br>
@@ -293,7 +293,7 @@
 					<div class="bouton">
 						<input class="checkbox" id="checkbox3" type="checkbox" checked="true">
 						<label id="structures" for="checkbox3"></label>
-						<span class="options">Structures</span>
+						<span class="options">Infrastructures</span>
 					</div>
 
 				</div>
@@ -364,7 +364,7 @@ $result = $conn->query($sql);
 
 					<div class="delete_batiment" style="color: white;">
 						<div class="share-wrap">
-							<div class="main-bar5 main-bar" style="color: #2C3E50;">Batiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+							<div class="main-bar5 main-bar" style="color: #2C3E50;">Bâtiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
 
 							<ul class="batiments">
 
