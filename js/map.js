@@ -717,8 +717,7 @@ $('.grade_circle').change(function () {
 		fillColor: color,
 		fillOpacity: 0.5,
 		clickable: false,
-		className: 'cercle'
-	});
+	}).addTo(map);
 });
 
 function stop() {
