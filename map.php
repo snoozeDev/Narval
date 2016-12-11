@@ -190,7 +190,8 @@
 
 					<span id="days">J-00 / </span>
 					<span id="hours">00 :</span>
-					<span id="mins">00</span>
+					<span id="mins">00 :</span>
+					<span id="secs">00</span>
 
 				</div>
 

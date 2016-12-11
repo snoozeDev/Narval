@@ -1476,6 +1476,7 @@ $('#pause').click(function () {
 	//TIMER
 var hours = 0;
 var mins = 0;
+var secs = 0;
 var days = 0;
 var speed = 1;
 var editRadar;
@@ -1639,46 +1640,68 @@ function startTimer() {
 
 
 		for (var i = 0; i < 1; i++) {
+			secs++;
+		}
+
+		if (secs > 59) {
+			var restsecs = secs - 60
+
+			while (restsecs > 59) {
+				mins++;
+				restsecs = restsecs - 60;
+			}
+
+			secs = restsecs;
 			mins++;
-		}
 
+			if (mins > 59) {
+				var restmins = mins - 60;
 
-		if (mins > 59) {
-			var restmins = mins - 60;
-			while (restmins > 59) {
-				hours++;
-				restmins = restmins - 60;
-			}
-			mins = restmins;
-			hours++;
-			if (hours > 23) {
-				var resthours = hours - 24;
-				while (resthours > 23) {
-					days++;
-					resthours = resthours - 24;
-
+				while (restmins > 59) {
+					hours++;
+					restmins = restmins - 60;
 				}
-				hours = resthours;
-				days++;
-				if (days < 10) {
-					$("#days").text('J-0' + days + ' / ');
-				} else $("#days").text('J-' + days + ' / ');
+
+				mins = restmins;
+				hours++;
+
+				if (hours > 23) {
+					var resthours = hours - 24;
+
+					while (resthours > 23) {
+						days++;
+						resthours = resthours - 24;
+					}
+
+					hours = resthours;
+					days++;
+
+					if (days < 10) {
+						$("#days").text('J-0' + days + ' / ');
+					} else $("#days").text('J-' + days + ' / ');
+				}
+
+				if (hours < 10) {
+					$("#hours").text('0' + hours + ' :');
+				} else $("#hours").text(hours + ' :');
 			}
-
-			if (hours < 10) {
-				$("#hours").text('0' + hours + ' :');
-			} else $("#hours").text(hours + ' :');
 		}
-		if (mins < 10) {
-			$("#mins").text('0' + mins);
+
+				if (mins < 10) {
+			$("#mins").text('0' + mins + ' : ');
 		} else {
-			$("#mins").text(mins
-
-			);
+			$("#mins").text(mins);
 		}
+
+		if (secs < 10) {
+			$("#secs").text('0' + secs);
+		} else {
+			$("#secs").text(secs);
+		}
+
 
 		startTimer();
-	}, 1000 / speed);
+		}, 1000 / speed);
 }
 //*****
 
