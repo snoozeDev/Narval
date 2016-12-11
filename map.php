@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
 <!--	<link rel="stylesheet" type="text/css" href="css/L.Control.Range.css">-->
+<!--
 	<script src="js/L.Control.Range.js"></script>
+-->
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 
 
@@ -197,7 +199,8 @@
 
 				<div id="timeSlider">
 					<!--Slider Speed-->
-						<input class="speed" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
+						<input class="speed" name="speedSlider" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
+						<output for="speedSlider" onforminput="value = speedSlider.valueAsNumber;"></output>
 				</div>
 			</div>
 		</div>
@@ -457,7 +460,7 @@ $result = $conn->query($sql);
 
 
 
-
+    <script src="js/slider.js"></script>
 
 
 	<script src='js/sauveguarde.js'></script>
