@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-
 html,
 body {
 	width: 100%;
@@ -30,26 +29,24 @@ body {
 	color: white;
 	z-index: 100;
 	display: none;
-/*
+	/*
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
 */
 }
 
-
 #close_console {
-/*	padding: 3%;*/
+	/*	padding: 3%;*/
 	height: 10%;
 	background-color: rgba(171, 171, 171, 0.8);
 }
 
-
 #close_console img {
-/*	padding: 2% 5% 0 0;*/
+	/*	padding: 2% 5% 0 0;*/
 	width: 10%;
-/*	float: right;*/
-/*	display: none;*/
+	/*	float: right;*/
+	/*	display: none;*/
 }
 
 #console ul {
@@ -240,7 +237,7 @@ body {
 	border-radius: 5px;
 	border-color: #446e58;
 	transition: 0.5s linear;
-    padding: 0px 5px 0px 5px;
+	padding: 0px 5px 0px 5px;
 }
 
 .timer {
@@ -291,7 +288,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+
 /*STYLE DES CLASSES DE PROFONDEURS (coords.js)*/
+
 
 /*
 .profondeur-rouge {
@@ -325,6 +324,7 @@ body {
 }
 */
 
+
 /* END */
 
 .port {
@@ -337,7 +337,7 @@ body {
 
 .stop {
 	position: absolute;
-    z-index: 1000;
+	z-index: 1000;
 	top: 25%;
 	left: 1%;
 	width: 4%;
@@ -501,7 +501,7 @@ body.sidebar-show {
 	top: 0;
 	width: 100%;
 	height: 100%;
-/*	background-color: rgba(0, 0, 0, .5);*/
+	/*	background-color: rgba(0, 0, 0, .5);*/
 	z-index: 5000;
 	overflow: hidden;
 }
@@ -1020,13 +1020,24 @@ a:visited {
 	margin: 10px;
 }
 
+#timeMulti {
+	position: fixed;
+	left: 57vw;
+	bottom: 4vh;
+	background-color: #17201C;
+	padding: 10px;
+	border-radius: 8px;
+	border-width: 5px;
+	border-color: #446E58;
+}
+
 .speed {
 	-webkit-appearance: none;
 	display: block;
 	color: #446E58;
 	margin: 0 0 8px;
 	font-family: sans-serif;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	padding: 8px;
 	font-size: 1.2em;
 	margin-top: 28%;
@@ -1506,6 +1517,7 @@ p.blast {}
 	position: relative;
 	right: -100px;
 }
+
 
 /*MediaQueries*/
 

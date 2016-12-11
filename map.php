@@ -197,7 +197,7 @@
 				<div id="timeSlider">
 					<!--Slider Speed-->
 					<input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
-					<output for="speedSlider" onforminput="value = speedSlider.valueAsNumber;"></output>
+					<div id="timeMulti">x 1</div>
 				</div>
 			</div>
 		</div>

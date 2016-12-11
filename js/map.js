@@ -1517,6 +1517,8 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 	console.log('=== SPEED ===');
 	console.log(speed);
 
+	$("#timeMulti").html('x ' + speed);
+
 	// fonction changement vitesse general
 	for (var j = 0; j <= bateaux.length - 1; j++) { //boucle de for de tous les bat
 		//faire la modif de vitesse sur tous les bateaux
