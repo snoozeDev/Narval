@@ -53,17 +53,6 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
         layers: [night, day, depth]
     });
 
-    slider = L.control.slider(function(value) {
-    			console.log(value);
-			}, {
-    		max: 6,
-    		value: 5,
-    		step:0.1,
-    		size: '250px',
-    		orientation:'vertical',
-    		id: 'slider'
-		}).addTo(map);
-
     var baseMaps = {
         "Real": depth,
         "Day": day,
