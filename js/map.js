@@ -527,7 +527,7 @@ function addLatLngToBati(clickEventData) {
 
     batiment[bati] = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
         icon: L.icon({
-            iconUrl: 'image/' + iconeBatiment + '.png',
+            iconUrl: 'image/' + iconeBatiment + '.svg',
             className: bati_name,
             iconSize: [30, 30], // size of the icon
             iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
@@ -2059,7 +2059,7 @@ function loadBati(batisPhp) {
         var bati_name = "batiment" + bati;
         batiment[bati] = L.marker([batisPhp[c][0].lat, batisPhp[c][0].lng], {
             icon: L.icon({
-                iconUrl: 'image/' + batisPhp[c][1] + '.png',
+                iconUrl: 'image/' + batisPhp[c][1] + '.svg',
                 className: bati_name,
                 iconSize: [30, 30], // size of the icon
                 iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
