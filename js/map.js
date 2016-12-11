@@ -1495,8 +1495,6 @@ $('#pause').click(function () {
     console.log(playOrPause);
 });
 //NOTE SLIDER SPEED
-console.log('=== SPEED ===');
-console.log($('.speed').val());
 var speed = 1;
 $('.speed').change(function () { //lorsque le coef de vitesse change on refait les trajets desbateaux qui bougent
     //	var speed = $('.speed option:selected').val();
@@ -1516,7 +1514,8 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
     } else if (speed1 == 6) {
         speed = 100;
     }
-    console.log('speed : ' + speed);
+    console.log('=== SPEED ===');
+    console.log( speed);
 
     // fonction changement vitesse general
     for (var j = 0; j <= bateaux.length - 1; j++) { //boucle de for de tous les bat
