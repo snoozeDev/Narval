@@ -12838,7 +12838,10 @@
 
 			// @option prefix: String = 'Leaflet'
 			// The HTML text shown before the attributions. Pass `false` to disable.
-			prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+/*
+            NOTE LEAFLET ATTRIBUTION
+*/
+			/*prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'*/
 		},
 
 		initialize: function (options) {
