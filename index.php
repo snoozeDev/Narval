@@ -154,7 +154,7 @@
 			<h3>1 - Création d'une unité</h3>
 			</br>
 			<div>
-				<p class="tutoriel">Pour créer une unité, cliquez sur l'icône "Unité" sur la gauche de la table. Vous pourrez alors sélectionner le type de d'unité que vous souhaitez créer, si il s'agit d'une unité alliée, ennemie ou neutre, déterminez sa vitesse et y ajoutez une description si vous le souhaitez. Cliquez ensuite où vous le souhaitez sur la carte pour placer l'unité.</p>
+				<p class="tutoriel">Pour créer une unité, cliquez sur l'icône "Unité" sur la gauche de la table. Vous pourrez alors sélectionner le type de d'unité que vous souhaitez créer, s'il s'agit d'une unité alliée, ennemie ou neutre, déterminez sa vitesse et y ajoutez une description si vous le souhaitez. Cliquez ensuite où vous le souhaitez sur la carte pour placer l'unité.</p>
 				<img class="gif" src="image/1.gif" border="0"></div>
 
 
@@ -233,7 +233,7 @@
 			<h3>1 – Mettre la Simulation en pause</h3>
 			</br>
 			<div>
-				<p class="tutoriel">Grace au bouton "PLAY"/"PAUSE" en bas de la carte vous pourrez gérer le temps et ainsi organiser vos simulations comme vous le souhaitez.</p>
+				<p class="tutoriel">Grâce au bouton "PLAY"/"PAUSE" en bas de la carte vous pourrez gérer le temps et ainsi organiser vos simulations comme vous le souhaitez.</p>
 				<img class="gif" src="image/11.gif" border="0"></div>
 
 
