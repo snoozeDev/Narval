@@ -38,7 +38,7 @@
 				<option value="village">Village</option>
 
 			</select>
-			<img src="image/ville.svg" id="icone_img">
+			<img src="image/port.svg" id="icone_img">
 
 			<label>Description (facutatif)</label>
 			<br>
