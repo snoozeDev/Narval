@@ -24,8 +24,8 @@
 		<div style="z-index:1" class="helper">
 			<div id="indexDiv">
 
-				BAP MARINE NATIONALE
-				<span>Prototype d'un outil de briefing militaire destiné à simuler des opérations navales</span>
+				NARVAL
+				<span>Prototype d'un simulateur de gestion de crises navales</span>
 
 			</div>
 
