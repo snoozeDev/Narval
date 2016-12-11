@@ -6,10 +6,8 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
-<!--	<link rel="stylesheet" type="text/css" href="css/L.Control.Range.css">-->
-<!--
-	<script src="js/L.Control.Range.js"></script>
--->
+	<link rel="stylesheet" type="text/css" href="css/leaflet-slider.css">
+
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 
 
@@ -439,6 +437,7 @@ $result = $conn->query($sql);
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 	<script src="js/leaflet-src.js"></script>
+	<scrpit type="text/javascript" src="js/leaflet-slider.js"></scrpit>
 	<script type="text/javascript" src="js/icone.js"></script>
 	<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
 	<script src='js/coord.js'></script>

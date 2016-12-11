@@ -25,6 +25,7 @@ var changerVitesse; //booléen si c'est juste un changement de vitesse
 var nouveauTrajet; //booléan pour éviter bug
 var deleteUltime = false;
 var map;
+var slider;
 
 initialize();
 
@@ -52,23 +53,22 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
         layers: [night, day, depth]
     });
 
+    slider = L.control.slider(function(value) {
+    			console.log(value);
+			}, {
+    		max: 6,
+    		value: 5,
+    		step:0.1,
+    		size: '250px',
+    		orientation:'vertical',
+    		id: 'slider'
+		}).addTo(map);
+
     var baseMaps = {
         "Real": depth,
         "Day": day,
         "Night": night
     };
-
-    //NOTE tentative slider
-    //	var control3 = L.control.range({
-    //            orient: 'vertical',
-    //            value: 100
-    //        });
-    //        control.on('change input', function(e) {
-    //            console.log(e.value);
-    //            layer.setOpacity(e.value / 100);
-    //        })
-    //
-    //        map.addControl(control);
 
     var control = L.control.layers(baseMaps).addTo(map);
     control.setPosition('bottomright');
@@ -83,7 +83,7 @@ attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors
     //L.control.fullscreen().addTo(map);
     //map.addLayer(osmLayer);
 
-    $(".leaflet-control-fullscreen-button").click(function () {
+/*    $(".leaflet-control-fullscreen-button").click(function () {
 
         var currentDisplay = $("#map").css('display');
 
@@ -93,7 +93,7 @@ attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors
 
         }
 
-    });
+    });*/
 
 }
 
