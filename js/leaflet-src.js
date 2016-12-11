@@ -12838,9 +12838,9 @@
 
 			// @option prefix: String = 'Leaflet'
 			// The HTML text shown before the attributions. Pass `false` to disable.
-/*
-            NOTE LEAFLET ATTRIBUTION
-*/
+			/*
+			            NOTE LEAFLET ATTRIBUTION
+			*/
 			/*prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'*/
 		},
 

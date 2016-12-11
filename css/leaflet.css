@@ -340,7 +340,9 @@
 	border-radius: 4px;
 }
 
+
 /*NOTE Zoom Icon Color [finished]*/
+
 .leaflet-bar a,
 .leaflet-bar a:hover {
 	background-color: #17201c;
@@ -449,11 +451,13 @@
 	display: none;
 }
 
+
 /*NOTE layer control list style*/
+
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
 	position: relative;
-    margin-top: 8px;
+	margin-top: 8px;
 }
 
 .leaflet-control-layers-expanded {

@@ -196,8 +196,8 @@
 
 				<div id="timeSlider">
 					<!--Slider Speed-->
-						<input class="speed" name="speedSlider" id="slider" type ="range" min ="1" max="6" step ="1" value="1"/>
-						<output for="speedSlider" onforminput="value = speedSlider.valueAsNumber;"></output>
+					<input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+					<output for="speedSlider" onforminput="value = speedSlider.valueAsNumber;"></output>
 				</div>
 			</div>
 		</div>
@@ -205,7 +205,7 @@
 
 	<img id="boussole" src="image/boussole.png">
 
-<!--NOTE MAP DIV-->
+	<!--NOTE MAP DIV-->
 	<div id="map"></div>
 
 	<!--NOTE CONSOLE PART1-->
@@ -233,7 +233,7 @@
 		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
 		<br>
 
-<!--Remplacement des icônes de fin d'action-->
+		<!--Remplacement des icônes de fin d'action-->
 		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
@@ -272,7 +272,6 @@
                <button id="onglet-btn" class="onglet2-btn onglet-btn inactive">
                 <h2>Suppression</h2>
               </button> -->
-
 			<!-- <div class="onglet1 is-open"> -->
 			<div class="contenu_onglet" id="contenu_onglet_options">
 				<div class="options-cont">
@@ -457,7 +456,7 @@ $result = $conn->query($sql);
 
 
 
-    <script src="js/slider.js"></script>
+	<script src="js/slider.js"></script>
 
 
 	<script src='js/sauveguarde.js'></script>
