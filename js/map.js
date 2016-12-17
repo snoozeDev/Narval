@@ -1690,7 +1690,7 @@ function startTimer() {
 				if (mins < 10) {
 			$("#mins").text('0' + mins + ' : ');
 		} else {
-			$("#mins").text(mins);
+			$("#mins").text(mins + ' : ');
 		}
 
 		if (secs < 10) {
