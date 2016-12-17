@@ -536,7 +536,8 @@ body.sidebar-show {
 	top: 10px;
 	right: 0px;
 	/*	transform: translate(-3px);*/
-	z-index: 5002
+	z-index: 5002;
+	margin-right: 10px;
 }
 
 .sidebar-btn.sidebar-show {
