@@ -247,7 +247,7 @@ body {
 
 #timerbtn {
 	position: relative;
-	top: -140px;
+	top: -164px;
 }
 
 #delete {
@@ -443,7 +443,7 @@ body {
 #boussole {
 	z-index: 1000;
 	position: absolute;
-	bottom: 30%;
+	bottom: 12%;
 	left: 10px;
 	width: 50px !important;
 	text-align: center;
@@ -1024,7 +1024,7 @@ a:visited {
 #timeMulti {
 	position: fixed;
 	left: 57vw;
-	bottom: 4vh;
+	bottom: 6vh;
 	background-color: #17201C;
 	padding: 10px;
 	border-radius: 8px;
@@ -1049,7 +1049,7 @@ a:visited {
 	border-color: #446E58;
 	position: relative;
 	left: 145px;
-	top: -260px;
+	top: -282px;
 }
 
 .speed::-webkit-slider-runnable-track {
