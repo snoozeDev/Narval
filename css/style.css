@@ -1520,6 +1520,23 @@ p.blast {}
 }
 
 
+/*-------------------------------*/
+
+
+/*         LayerControl          */
+
+
+/*-------------------------------*/
+
+.layerControl{
+	transition: 0.5s linear;
+}
+
+
+
+
+
+
 /*MediaQueries*/
 
 
