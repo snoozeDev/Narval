@@ -1542,7 +1542,7 @@ p.blast {}
 
 /*
 @media screen and (min-width: 1200px){
-	.sidebar-btn {top : 87%;};
+	.sidebar-btn {top : 87%;}
 	#boussole{
 		height: 150px;
 		z-index: 1000;
@@ -1555,5 +1555,10 @@ p.blast {}
 }
 */
 
+@media screen and (min-height: 1050px){
+	#timeMulti {
+		left: 59vw;
+	}
+}
 
 /*fin mediaqueries*/
