@@ -68,12 +68,14 @@ var sidebar = (function () {
 		var image = document.getElementById('menu-stripes1');
 
 		var timer = document.getElementById('timer');
+		var layerControl = document.getElementsById('layerControl');
 
 		if (!sidebarIsVisible) {
 
 			image.src = "image/cancel.svg";
 			image.style = "width:50%";
 			timer.style = "right:340px";
+			layerControl.style = "right:340px";
 			sidebarIsVisible = true;
 		} else {
 			image.src = "image/menu.svg";

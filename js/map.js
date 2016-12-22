@@ -59,8 +59,9 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 		"Night": night
 	};
 
-	var control = L.control.layers(baseMaps).addTo(map);
-	control.setPosition('bottomright');
+	var layersControl = L.control.layers(baseMaps).addTo(map);
+	layersControl.setPosition('bottomright');
+	$(layersControl.getContainer()).addClass('layerControl');
 	/*
 var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
