@@ -68,14 +68,14 @@ var sidebar = (function () {
 		var image = document.getElementById('menu-stripes1');
 
 		var timer = document.getElementById('timer');
-		var layerControl = document.getElementsById('layerControl');
+		var layerControl = document.getElementsByClassName('layerControl');
 
 		if (!sidebarIsVisible) {
-
+			console.log(layerControl);
 			image.src = "image/cancel.svg";
 			image.style = "width:50%";
-			timer.style = "right:340px";
-			layerControl.style = "right:340px";
+			timer.style = "right:310px";
+//			layerControl[0].style = "right:340px"; TODO move Layer.Control when sidebar is open
 			sidebarIsVisible = true;
 		} else {
 			image.src = "image/menu.svg";

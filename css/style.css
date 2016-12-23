@@ -236,7 +236,7 @@ body {
 	border-width: 2px;
 	border-radius: 5px;
 	border-color: #446e58;
-	transition: 0.5s linear;
+	transition: 0.5s ease-in-out;
 	padding: 0px 5px 0px 5px;
 }
 
@@ -1530,7 +1530,7 @@ p.blast {}
 /*-------------------------------*/
 
 .layerControl{
-	transition: 0.5s linear;
+	transition: 0.1s linear;
 }
 
 
