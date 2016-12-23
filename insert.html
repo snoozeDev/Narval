@@ -8,7 +8,7 @@
 
 <body>
 	<h1>Bateaux</h1>
-	<form action="add.php" method="post">
+
 		<label for="typeBat">Type</label>
 		<select name="typeBat" id="typeBat">
 			<option value="1">BPC</option>
@@ -18,17 +18,19 @@
 		<label for="nomBat">Nom</label>
 		<input id="nomBat" type="text">
 		<br>
+<!--
 		<label for="vitesseBat">Vitesse Max (en noeuds)</label>
 		<input id="vitesseBat" type="number">
 		<br>
+-->
 		<label for="sonarBat">Sonar</label>
 		<select name="sonarBat" id="sonarBat">
 			<option value="1">10km</option>
 			<option value="2">20km</option>
 		</select>
 		<br>
-		<input type="submit">
-	</form>
+		<input type="submit" onclick="sendData('Bat')">
+
 
 	<script src="js/database.js"></script>
 
