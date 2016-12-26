@@ -1,41 +1,34 @@
-$("formBat").submit(function(event){
-	event.preventDefault();
-
-	var $form = $(this);
-	var type = document.getElementById('type' + vType).value;
-	var nom = document.getElementById('nom' + vType).value;
-	var sonar = document.getElementById('sonar' + vType).value;
-
-	console.log('type : ' + type);
-	console.log('nom : ' + nom);
-	console.log('sonar : ' + sonar);
-
-	xhr = new XMLHttpRequest();
-
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState == 4 && xmlhttp.status == 200) {
-			alert(xhr.responseText);
+$('#vType').change(function(){
+	$('#type').empty();
+	type = $(this).val();
+	data = 'func=askType&vType='+type;
+	$.ajax({
+		type: 'GET',
+		url: 'database.php',
+		data : data
+	}).done(function(msg){
+		result = msg.split(';');
+		console.log(result);
+		var option = document.createElement("option");
+		for (i=0;i<result.length-1;i++){
+			$('#type').append($('<option>',{
+				value: i+1,
+				text: result[i]
+			}));
 		}
-	};
-	xhr.open("GET", "insertToDB.php", $("#form").serialize());
+	});
 });
 
-//function sendData() {
-//	var vType = $("#vType").val();
-//	var typeVal = document.getElementById('type' + vType).value;
-//	var nomVal = document.getElementById('nom' + vType).value;
-//	var sonarVal = document.getElementById('sonar' + vType).value;
-//
-//	console.log('type : ' + typeVal);
-//	console.log('nom : ' + nomVal);
-//	console.log('sonar : ' + sonarVal);
-//
-//	xhr = new XMLHttpRequest();
-//
-//	xhr.onreadystatechange = function () {
-//		if (xhr.readyState == 4 && xmlhttp.status == 200) {
-//			alert(xhr.responseText);
-//		}
-//	};
-//	xhr.open("GET", "insertToDB.php", $("#form").serialize());
-//}
+$('#form').on('submit', function(){
+	event.preventDefault();
+	console.log('Submitted');
+	data = 'func=sendData&'+$(this).serialize();
+	console.log(data);
+	$.ajax({
+		type: 'GET',
+		url: 'database.php',
+		data: data
+	}).done(function(msg){
+		console.log('Data Saved : '+msg);
+	});
+});
