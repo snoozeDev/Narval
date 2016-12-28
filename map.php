@@ -29,7 +29,7 @@
 <body>
 	<div id="ajout_batiment" class="pop_up_inv hide">
 		<div class="pop_up" id="ajout_batiment_inv">
-			<p class="title">INFRASTRUCTURES</p>
+			<p class="title">BÂTIMENTS</p>
 			<select class="formula" id="icone_select" name="icone_select">
 				<option value="port">Port</option>
 				<option value="offshore">Plateforme offshore</option>
@@ -44,7 +44,7 @@
 			<br>
 			<textarea class="formula" id="bati_describ" name="description"></textarea>
 
-			<a href="#" class="btn" id="drawBatiment">Ajouter le batiment</a>
+			<a href="#" class="btn" id="drawBatiment">Ajouter le bâtiment</a>
 		</div>
 	</div>
 	<div class="grade_circle">
@@ -64,7 +64,7 @@
 					<a class="btn_polyline btn" id="btn_polyline">Lignes</a></div>
 				<div class="ligne">
 					<div id="form_text" class="formulaire hide">
-						<p class="title"> Ecrire sur la carte </p>
+						<p class="title"> Écrire sur la carte </p>
 						<input id="label_text" class="formula" placeholder="Votre texte">
 						<br>
 						<br>
@@ -137,8 +137,8 @@
 	<div id="ajout_bateau" class="pop_up_inv hide">
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
-				<p class="title">BATIMENTS</p>
-				<label>Type de vehicule</label>
+				<p class="title">UNITÉS</p>
+				<label>Type d'unité'</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>
 					<option value="asm">FASM</option>
@@ -148,8 +148,8 @@
 					<option value="fda">FDA</option>
 					<option value="bcr">BCR</option>
 					<option value="puma">Helico Puma</option>
-					<option value="tigre">Helico Tigre</option>
-					<option value="fennec">Helico Fennec</option>
+					<option value="tigre">Hélico Tigre</option>
+					<option value="fennec">Hélico Fennec</option>
 					<option value="avion">Mirage F1</option>
 					<option value="paquebot">Paquebot Civil</option>
 					<option value="cargo">Cargo Civil</option>
@@ -292,7 +292,7 @@
 					<div class="bouton">
 						<input class="checkbox" id="checkbox3" type="checkbox" checked="true">
 						<label id="structures" for="checkbox3"></label>
-						<span class="options">Infrastructures</span>
+						<span class="options">Bâtiments</span>
 					</div>
 
 				</div>
