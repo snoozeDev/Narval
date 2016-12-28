@@ -12,7 +12,7 @@
 	<select name="vType" id="vType">
 		<option value="Bat">Bateau</option>
 		<option value="Avi">Avion</option>
-		<option value="Hel">Helicopter</option>
+		<option value="Hel">Hélicoptère</option>
 	</select>
 	<br><br>
 	<label for="type">Type</label>
