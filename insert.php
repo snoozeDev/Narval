@@ -19,11 +19,11 @@
 	<select name="type" id="type">
 	</select>
 	<br><br>
-	<label for="nomBat">Nom</label>
-	<input name="nomBat" id="nomBat" type="text">
+	<label for="nom">Nom</label>
+	<input name="nom" id="nomBat" type="text">
 	<br><br>
-	<label for="sonarBat">Sonar</label>
-	<select name="sonarBat" id="sonarBat">
+	<label for="sonar">Sonar</label>
+	<select name="sonar" id="sonar">
 		<option value="1">10km</option>
 		<option value="2">20km</option>
 	</select>

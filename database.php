@@ -17,7 +17,7 @@ function askType() {
 		$table = 'BATEAUX';
 	} else if ($vType == "Avi"){
 		$table = 'AVIONS';
-	} else if ($vType == ''){ //TODO helicopter
+	} else if ($vType == 'Hel'){ //TODO helicopter
 		$table = 'HELICOS';
 	}
 
@@ -41,18 +41,18 @@ function sendData() {
 
 	$vType = $_GET['vType'];
 	$type = $_GET['type'];
-	$nom = $_GET['nomBat'];
-	$sonar = $_GET['sonarBat'];
+	$nom = $_GET['nom'];
+	$sonar = $_GET['sonar'];
 
 	if ($vType == "Bat"){
 		$table = 'BATEAUX';
 	} else if ($vType == "Avi"){
 		$table = 'AVIONS';
-	} else if ($vType == ''){ //TODO helicopter
+	} else if ($vType == 'Hel'){ //TODO helicopter
 		$table = 'HELICOS';
 	}
 
-	$sql = "INSERT INTO ".$table." (nom, TYPES_BATEAUX_ID, SONARS_ID) VALUES ('".$nom."', ".$type.", ".$sonar.")";
+	$sql = "INSERT INTO ".$table." (nom, TYPES_".$table."_ID, SONARS_ID) VALUES ('".$nom."', ".$type.", ".$sonar.")";
 
 //		echo $sql;
 
