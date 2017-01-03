@@ -138,6 +138,36 @@
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
 				<p class="title">UNITÉS</p>
+					<form id="form">
+						<label for="vType">Type de v&eacute;hicule</label>
+						<select name="vType" id="vType">
+							<option value="Bat">Bateau</option>
+							<option value="Avi">Avion</option>
+							<option value="Hel">Hélicoptère</option>
+						</select>
+						<br><br>
+						<label for="type">Type</label>
+						<select name="type_bateau" id="type_bateau">
+						</select>
+						<br><br>
+						<label for="nom">Nom</label>
+						<input name="nom" id="nomBat" type="text">
+						<br><br>
+						<label for="sonar">Sonar</label>
+						<select name="radar" id="radar">
+							<option value="1">10km</option>
+							<option value="2">20km</option>
+						</select>
+						<br><br>
+						<label for="align">Alignement</label>
+						<select class="formula" id="color_bateau" name="color_bateau">
+							<option value="blue">Allié</option>
+							<option value="green">Neutre</option>
+							<option value="red">Ennemi</option>
+						</select>
+						<a type="submit" class="btn" id="drawTrajet">LOL</a>
+					</form>
+<!--
 				<label>Type d'unité'</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>
@@ -172,6 +202,7 @@
 				<label>Description (facutatif)</label>
 				<textarea class="formula" id="description" name="description"></textarea>
 				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
+-->
 
 			</div>
 		</div>
@@ -461,6 +492,7 @@ $result = $conn->query($sql);
 
 
 	<script src='js/sauveguarde.js'></script>
+		<script src="js/sendData.js"></script>
 
 	<?php include 'load.php' ?>
 

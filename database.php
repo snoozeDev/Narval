@@ -40,9 +40,10 @@ function sendData() {
 //		echo 'DOING THE SENDING<br>';
 
 	$vType = $_GET['vType'];
-	$type = $_GET['type'];
+	$type = $_GET['type_bateau'];
 	$nom = $_GET['nom'];
-	$sonar = $_GET['sonar'];
+	$sonar = $_GET['radar'];
+	$faction = $_GET['color_bateau'];
 
 	if ($vType == "Bat"){
 		$table = 'BATEAUX';
@@ -52,7 +53,7 @@ function sendData() {
 		$table = 'HELICOS';
 	}
 
-	$sql = "INSERT INTO ".$table." (nom, TYPES_".$table."_ID, SONARS_ID) VALUES ('".$nom."', ".$type.", ".$sonar.")";
+	$sql = "INSERT INTO ".$table." (nom, TYPES_".$table."_ID, SONARS_ID, FACTIONS_color) VALUES ('".$nom."', ".$type.", ".$sonar.", '".$faction."')";
 
 //		echo $sql;
 

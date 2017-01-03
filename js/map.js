@@ -968,6 +968,12 @@ function addLatLngToTrajet(clickEventData) {
 
 		bool_bateau = 1;
 
+		console.log("TYPE == "+type_bateau);
+
+		for(i=0;i<100;i++){
+
+		}
+
 		switch (type_bateau) {
 
 		case 'porte-avion':
