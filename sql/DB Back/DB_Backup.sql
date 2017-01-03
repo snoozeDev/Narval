@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Jan 03, 2017 at 05:09 PM
+-- Generation Time: Jan 03, 2017 at 06:31 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -65,6 +65,13 @@ CREATE TABLE `HELICOS` (
   `TYPES_HELICOS_ID` int(11) NOT NULL,
   `SONARS_ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `HELICOS`
+--
+
+INSERT INTO `HELICOS` (`ID`, `nom`, `TYPES_HELICOS_ID`, `SONARS_ID`) VALUES
+(0, 'test1', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -129,7 +136,14 @@ CREATE TABLE `TYPES_AVIONS` (
 
 INSERT INTO `TYPES_AVIONS` (`ID`, `nom`, `vitesse-max`) VALUES
 (1, 'Rafale', 2222),
-(2, 'Mirage 2000-5', 2716);
+(2, 'Mirage 2000-5', 2716),
+(3, 'Super &eacutetendard modernis&eacute', 1560),
+(4, 'Falcon 50m', 915),
+(5, 'Atlantique ATL2', 650),
+(6, 'Embraer EMB-121 Xingu', 465),
+(7, 'Falcon 10', 912),
+(8, 'Mudy Cap 10', 340),
+(9, 'Hawkeye', 604);
 
 -- --------------------------------------------------------
 
@@ -149,7 +163,29 @@ CREATE TABLE `TYPES_BATEAUX` (
 
 INSERT INTO `TYPES_BATEAUX` (`ID`, `nom`, `vitesse-max`) VALUES
 (1, 'BPC', 18),
-(2, 'FREGATE', 15);
+(2, 'FREGATE', 15),
+(3, 'BCR', 19),
+(4, 'FDA', 29),
+(5, 'PA', 27),
+(6, 'FAA', 29),
+(7, 'FS', 20),
+(8, 'PATROUILLEURS', 24),
+(9, 'PATROUILLEURS P400', 24),
+(10, 'FREMM', 27),
+(11, 'F70', 30),
+(12, 'CHASSEURS DE MINES', 15),
+(13, 'BÂTIMENTS D’EXPERIMENTATION D’ESSAIS ET DE MESURES', 17),
+(14, 'PATROUILLEUR DE SERVICE PUBLIC', 12),
+(15, 'MOYEN PORTUAIRE', 10),
+(16, 'A69', 24),
+(17, 'TCD', 9),
+(18, 'FLF', 25),
+(19, 'BÂTIMENTS HYDROGRAPHIQUE', 14),
+(20, 'PATROUILLEUR AUSTRAL', 14),
+(21, 'BATRAL', 16),
+(22, 'EDA-R', 30),
+(23, 'BRS', 11),
+(24, 'CTM', 9);
 
 -- --------------------------------------------------------
 
@@ -161,7 +197,7 @@ CREATE TABLE `TYPES_HELICOS` (
   `ID` int(11) NOT NULL,
   `nom` varchar(255) NOT NULL,
   `vitesse-max` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `TYPES_HELICOS`
@@ -169,7 +205,12 @@ CREATE TABLE `TYPES_HELICOS` (
 
 INSERT INTO `TYPES_HELICOS` (`ID`, `nom`, `vitesse-max`) VALUES
 (1, 'type1', 20),
-(2, 'type2', 40);
+(2, 'type2', 40),
+(3, 'nom', 0),
+(4, 'Panther', 306),
+(5, 'EC 225', 324),
+(6, 'Dauphin SP', 296),
+(7, 'Alouette III', 210);
 
 --
 -- Indexes for dumped tables
@@ -247,7 +288,7 @@ ALTER TABLE `save_marine_table`
 -- AUTO_INCREMENT for table `TYPES_HELICOS`
 --
 ALTER TABLE `TYPES_HELICOS`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- Constraints for dumped tables
 --
