@@ -232,7 +232,7 @@ $('#close_console').click(function () {
 		notif = 0;
 		$('.black').css('height', "0");
 		$('#close_console').css('height', "60");
-		$('#console').css('height', "auto");
+		$('#console').css('height', "70");
 		$('#notif').show();
 		$('#close').hide();
 		console_message = 1;
@@ -240,8 +240,8 @@ $('#close_console').click(function () {
 	} else {
 		notif = 0;
 		$('.black').css('height', "80%");
-		$('#close_console').css('height', "25");
-		$('#console').css('height', "50%");
+		$('#close_console').css('height', "60");
+		$('#console').css('height', "33%");
 		$('#notif').hide();
 		$('#close').show();
 		console_message = 0;
