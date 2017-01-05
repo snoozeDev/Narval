@@ -1,4 +1,4 @@
-$().ready(function () {
+/* $().ready(function () {
 
 	$('#newDiv').css('display', 'none');
 	$('#loadDiv').css('display', 'none');
@@ -7,6 +7,7 @@ $().ready(function () {
 		videoId: 'VOuRqBnBYrY'
 	}); // where idOfYourVideo is the YouTube ID.
 });
+*/
 
 $('header').click(function () { //faire apparaittre le popup des bateaux
 
