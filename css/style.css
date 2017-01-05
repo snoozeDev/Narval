@@ -24,8 +24,11 @@ body {
 	position: absolute;
 	width: 28%;
 	top: 0;
-	height: 50%;
-	background-color: rgba(0, 0, 0, 0.7);
+	height: 33%;
+	background-color:rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba( 23, 32, 28, 0.8);
 	color: white;
 	z-index: 100;
 	display: none;
@@ -37,13 +40,13 @@ body {
 }
 
 #close_console {
-	/*	padding: 3%;*/
-	height: 10%;
-	background-color: rgba(171, 171, 171, 0.8);
+		padding: 1%;
+	height: 60px;
+	background-color: rgba(23, 32, 28, 0.8);
 }
 
 #close_console img {
-    padding: 1% 5% 0 40%;
+    padding: 2% 0% 0 42%;
 	width: 10%;
 	/*	float: right;*/
 	/*	display: none;*/
