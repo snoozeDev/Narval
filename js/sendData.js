@@ -32,6 +32,18 @@ $('#vType').change(function () {
 		var option = document.createElement("option");
 
 		for (i = 0; i < result.length - 1; i++) {
+			value = result[i].toLowerCase();
+			spaces = 0;
+			for (j = 0; j < value.length; j++){
+				if (value[j] == ' '){
+					spaces++;
+				}
+			}
+			while (spaces > 0) {
+				value = value.replace(' ', '_');
+				spaces--;
+			}
+			console.log(value);
 			$('#type_bateau').append($('<option>', {
 				value: i + 1,
 				text: result[i]
