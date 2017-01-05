@@ -8,14 +8,14 @@
 <body>
 	<nav class="menu" tabindex="0">
 		<div class="smartphone-menu-trigger"></div>
-		<header class="avatar">
+		<!-- <header class="avatar">
 			<img src="http://www.defense.gouv.fr/var/dicod/storage/images/base-de-medias/images/marine/photos-au-fil-de-l-eau/image001/2252802-1-fre-FR/image001.jpg" />
-			<h2>Centre d'Études Stratégiques de la Marine</h2>
-		</header>
+            <h2>Centre d'Études Stratégiques de la Marine</h2>
+		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard"><span>Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers"><span>Charger Carte</span></li>
-			<li tabindex="0" id="tuto" class="icon-users"><span>Tutoriel</span></li>
+			<li tabindex="0" id="new" class="icon-dashboard" src="image/Logo_IIM.svg"><span>Nouvelle Carte</span></li>
+			<li tabindex="0" id="load" class="icon-customers" src="image/Logo_Marine.svg"><span>Charger Carte</span></li>
+			<li tabindex="0" id="tuto" class="icon-users" src="image/Logo_CESM.svg"><span>Tutoriel</span></li>
 
 		</ul>
 	</nav>
@@ -23,11 +23,10 @@
 	<main>
 		<div style="z-index:1" class="helper">
 			<div id="indexDiv">
-
 				NARVAL
 				<span>Prototype d'un simulateur de gestion de crises navales</span>
-
-			</div>
+            </div>
+        </div>
 
 		</div>
 		<div id="newDiv" style="color:red">
@@ -261,8 +260,9 @@
 
 
 		</div>
+		<!--
 		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+		!-->
 		<script type="text/javascript" charset="utf-8" src="js/scriptIndex.js"></script>
-
 	</main>
 </body>
