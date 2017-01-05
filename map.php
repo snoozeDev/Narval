@@ -219,7 +219,7 @@
 		</div>
 		<div id="close_console">
 			<p id="notif"></p>
-			<img id="close" src="image/close.png">
+			<img id="close" src="image/close2.png">
 		</div>
 	</div>
 
