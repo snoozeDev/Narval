@@ -2703,16 +2703,20 @@ function calculDistance() {
 					lng = bateaux[i]._latlng.lng.toFixed(5);
 					if (bateaux[i].editDetection == true) { //si le bateau est détecté on envoie le message de détection
 						if (bateaux[i].editColor == "red") {
-							etat = "ennemie";
+							etat = "ennemi";
 						} else {
 							etat = "neutre";
 						}
-						$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
-						notif++;
+                        if (bateaux[i].editType == 'peche'){
+                            $("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " bateau de " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
+                        } else{
+                            $("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
+						    notif++;
+                        }
 
 					} else { //bateau disparu on envoie le message de disparition
 						if (bateaux[i].editColor == "red") {
-							etat = "ennemie";
+							etat = "ennemi";
 						} else {
 							etat = "neutre";
 						}
