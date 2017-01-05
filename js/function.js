@@ -235,6 +235,7 @@ $('#close_console').click(function () {
 		$('#console').css('height', "70");
 		$('#notif').show();
 		$('#close').hide();
+        $('#open').show();
 		console_message = 1;
 
 	} else {
@@ -244,6 +245,7 @@ $('#close_console').click(function () {
 		$('#console').css('height', "33%");
 		$('#notif').hide();
 		$('#close').show();
+        $('#open').hide();
 		console_message = 0;
 
 	}
