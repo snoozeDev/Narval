@@ -64,12 +64,12 @@ function sendData() {
 	}
 }
 
-function getVehicules() {
-	include 'db.php';
-	$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
-
-	$sql = "SELECT * FROM VEHICULES"
-
-}
+//function getVehicules() {
+//	include 'db.php';
+//	$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
+//
+//	$sql = "SELECT * FROM VEHICULES"
+//
+//}
 
 ?>
