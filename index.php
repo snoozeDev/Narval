@@ -13,9 +13,9 @@
             <h2>Centre d'Études Stratégiques de la Marine</h2>
 		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard"><span>Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers"><span>Charger Carte</span></li>
-			<li tabindex="0" id="tuto" class="icon-users"><span>Tutoriel</span></li>
+			<li tabindex="0" id="new" class="icon-dashboard" src="Logo_IIM.svg"><span>Nouvelle Carte</span></li>
+			<li tabindex="0" id="load" class="icon-customers" src="Logo_IIM.svg"><span>Charger Carte</span></li>
+			<li tabindex="0" id="tuto" class="icon-users" src="Logo_IIM.svg"><span>Tutoriel</span></li>
 
 		</ul>
 	</nav>
