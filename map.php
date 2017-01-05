@@ -134,6 +134,7 @@
 		<a href="#" class="btn" id="fin">Retourner sur la carte</a>
 
 	</div>
+	<!--NOTE Formulaire ajout de bateaux-->
 	<div id="ajout_bateau" class="pop_up_inv hide">
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">

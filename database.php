@@ -1,5 +1,6 @@
 <?php
 
+/*---Execute appropriate function---*/
 if ($_GET['func'] == 'sendData'){
 	echo 'sending<br>';
 	sendData();
@@ -7,6 +8,7 @@ if ($_GET['func'] == 'sendData'){
 	askType();
 }
 
+/*---Return all types linked to a vehicule---*/
 function askType() {
 	include 'db.php';
 	$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
@@ -33,6 +35,7 @@ function askType() {
 	}
 }
 
+/*---Insert new vehicule in DB---*/
 function sendData() {
 	include 'db.php';
 	$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db);

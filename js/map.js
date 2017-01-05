@@ -7,9 +7,9 @@ var detection = [];
 var data = 'func=getVehicules';
 var bateaux = $.ajax({ //TODO tableau de tous les bateaux
 	type: 'GET',
-	url : 'database.php',
-	data : data
-}).done(function(msg){
+	url: 'database.php',
+	data: data
+}).done(function (msg) {
 
 });
 
@@ -915,7 +915,7 @@ stopDrawTrajet.addEventListener('click', function () {
 	$(CurrentIcon).removeClass(color_bateau+(bat-1));
 	}*/
 
-	console.log("bat : "+bat);
+	console.log("bat : " + bat);
 	console.log(bateaux[bat]);
 
 	bateaux[bat] = L.Marker.movingMarker(currentTrajet._latlngs, TOTAL, CurrentIcon).addTo(map);
@@ -981,9 +981,9 @@ function addLatLngToTrajet(clickEventData) {
 
 		bool_bateau = 1;
 
-		console.log("TYPE == "+type_bateau);
+		console.log("TYPE == " + type_bateau);
 
-		for(i=0;i<100;i++){
+		for (i = 0; i < 100; i++) {
 
 		}
 
@@ -1707,7 +1707,7 @@ function startTimer() {
 			}
 		}
 
-				if (mins < 10) {
+		if (mins < 10) {
 			$("#mins").text('0' + mins + ' : ');
 		} else {
 			$("#mins").text(mins + ' : ');
@@ -1721,7 +1721,7 @@ function startTimer() {
 
 
 		startTimer();
-		}, 1000 / speed);
+	}, 1000 / speed);
 }
 //*****
 
