@@ -1,5 +1,5 @@
 $('#vType').change(function(){
-	$('#type').empty();
+	$('#type_bateau').empty();
 	type = $(this).val();
 	data = 'func=askType&vType='+type;
 	$.ajax({
@@ -10,8 +10,9 @@ $('#vType').change(function(){
 		result = msg.split(';');
 		console.log(result);
 		var option = document.createElement("option");
+
 		for (i=0;i<result.length-1;i++){
-			$('#type').append($('<option>',{
+			$('#type_bateau').append($('<option>',{
 				value: i+1,
 				text: result[i]
 			}));
@@ -19,10 +20,10 @@ $('#vType').change(function(){
 	});
 });
 
-$('#form').on('submit', function(){
+$('#drawTrajet').on('click', function(){
 	event.preventDefault();
 	console.log('Submitted');
-	data = 'func=sendData&'+$(this).serialize();
+	data = 'func=sendData&'+$("#form").serialize();
 	console.log(data);
 	$.ajax({
 		type: 'GET',
