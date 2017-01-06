@@ -5,83 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
 </head>
 
-<body>
-	<nav class="menu" tabindex="0">
-		<div class="smartphone-menu-trigger"></div>
-		<!-- <header class="avatar">
-			<img src="http://www.defense.gouv.fr/var/dicod/storage/images/base-de-medias/images/marine/photos-au-fil-de-l-eau/image001/2252802-1-fre-FR/image001.jpg" />
-            <h2>Centre d'Études Stratégiques de la Marine</h2>
-		</header> !-->
-		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard" src="image/Logo_IIM.svg"><span>Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers" src="image/Logo_Marine.svg"><span><a href="chargercarte.php">Charger Carte</a></span></li>
-			<li tabindex="0" id="tuto" class="icon-users" src="image/Logo_CESM.svg"><span><a href="tutoriel.php">Tutoriel</a></span></li>
-
-		</ul>
-	</nav>
-
-	<main>
-		<div style="z-index:1" class="helper">
-			<div id="indexDiv">
-				NARVAL
-				<span>Prototype d'un simulateur de gestion de crises navales</span>
-            </div>
-        </div>
-
-<!--
-		<div id="newDiv" style="color:red">
-			<div class='container'>
-				<div class='loading'>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-		</div>
-		<div id="loadDiv" style="z-index:100">
-			<h4 style="padding-bottom: 5%">Charger une carte sauvegardée</h4>
-
-			<?php
-    include 'db.php';
 
 
-
-
-
-
-    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    $sql = "SELECT id, mapName, mapDescription, cercles, polygs, texts, polyls, batis, bateaux FROM save_marine_table";
-    $result = $conn->query($sql);
-
-
-
-    while($row = $result->fetch_assoc()) {
-
-      echo '
-
-           <ul class="" style="position:relative;z-index:1000">
-      <li class="resource--article ">
-        <h10 class="resource__title" style="color:black">'.$row["mapName"].'</h10>
-        <p class="resource__summary">'.$row["mapDescription"].'</p>
-        <a href="map.php?id='.$row["id"].'" style="cursor: pointer;" class="btn"  id="Load">Charger la carte</a>
-         <a href="delete.php?id='.$row["id"].'" style="background:red;cursor: pointer;" class="btn"  id="Load">Supprimer la carte</a>
-
-
-      </ul>
-
-       ';
-
-    }
-    ?>
 
 
 
@@ -260,10 +185,3 @@
 
 
 		</div>
-		!-->
-		<!--
-		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
-		!-->
-		<script type="text/javascript" charset="utf-8" src="js/scriptIndex.js"></script>
-	</main>
-</body>
