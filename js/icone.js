@@ -1056,21 +1056,21 @@ var falcon_10_ennemi = L.icon({
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 
-var cap_10m_allie = L.icon({
+var cap_10_m_allie = L.icon({
 	iconUrl: 'image/cap_10m_allie.svg',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 
-var cap_10m_neutre = L.icon({
+var cap_10_m_neutre = L.icon({
 	iconUrl: 'image/cap_10m_neutre.svg',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
 	popupAnchor: [-0, -9] // point from which the popup should open relative to the iconAnchor
 });
 
-var cap_10m_ennemi = L.icon({
+var cap_10_m_ennemi = L.icon({
 	iconUrl: 'image/cap_10m_ennemi.svg',
 	iconSize: [30, 30], // size of the icon
 	iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
