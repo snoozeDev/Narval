@@ -13,9 +13,9 @@
             <h2>Centre d'Études Stratégiques de la Marine</h2>
 		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard" src="image/Logo_IIM.svg"><span>Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers" src="image/Logo_Marine.svg"><span><a href="chargercarte.php">Charger Carte</a></span></li>
-			<li tabindex="0" id="tuto" class="icon-users" src="image/Logo_CESM.svg"><span><a href="tutoriel.php">Tutoriel</a></span></li>
+			<li tabindex="0" id="new" class="icon-dashboard"><span>Nouvelle Carte</span></li>
+			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php">Charger Carte</a></span></li>
+			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php">Tutoriel</a></span></li>
 
 		</ul>
 	</nav>
@@ -23,9 +23,13 @@
 	<main>
 		<div style="z-index:1" class="helper">
 			<div id="indexDiv">
-				NARVAL
+				<h1>NARVAL</h1>
 				<span>Prototype d'un simulateur de gestion de crises navales</span>
             </div>
+        </div>
+
+        <div class="logos">
+            <img src="image/Logo_CESM.sg">
         </div>
 
 <!--
