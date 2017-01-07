@@ -28,7 +28,7 @@ function askType() {
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
-			echo $row["nom"].";";
+			echo $row["nom"]."/";
 		}
 	} else {
 		echo "0 results";

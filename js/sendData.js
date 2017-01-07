@@ -27,7 +27,7 @@ $('#vType').change(function () {
 		url: 'database.php',
 		data: data
 	}).done(function (msg) { //msg = php response
-		result = msg.split(';');
+		result = msg.split('/');
 		console.log(result);
 		var option = document.createElement("option");
 
