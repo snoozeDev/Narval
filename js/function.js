@@ -222,8 +222,8 @@ $("#simulation").click(function () { // on repasse en mode admin
 	$("#admin").show();
 	$('.red').css("display", "block");
 	$('.rred2').show();
-	$('#console').show();
-	$('#console').css('z-index', "1000");
+	$('#console').hide();
+	$('#console').css('display', "none");
 
 });
 var console_message = 0;
