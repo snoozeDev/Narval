@@ -139,7 +139,7 @@
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
 				<p class="title">UNITÉS</p>
-					<form id="form">
+<!--					<form id="form">
 						<label for="vType">Type de v&eacute;hicule</label>
 						<select name="vType" id="vType">
 							<option value="Bat">Bateau</option>
@@ -167,8 +167,7 @@
 							<option value="red">Ennemi</option>
 						</select>
 						<a type="submit" class="btn" id="drawTrajet">LOL</a>
-					</form>
-<!--
+					</form>-->
 				<label>Type d'unité'</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>
@@ -203,7 +202,6 @@
 				<label>Description (facutatif)</label>
 				<textarea class="formula" id="description" name="description"></textarea>
 				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
--->
 
 			</div>
 		</div>
