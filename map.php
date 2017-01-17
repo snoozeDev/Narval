@@ -6,6 +6,9 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+<!--
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+-->
 
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 
@@ -139,7 +142,7 @@
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
 				<p class="title">UNITÉS</p>
-					<form id="form">
+<!--					<form id="form">
 						<label for="vType">Type de v&eacute;hicule</label>
 						<select name="vType" id="vType">
 							<option value="Bat">Bateau</option>
@@ -167,8 +170,7 @@
 							<option value="red">Ennemi</option>
 						</select>
 						<a type="submit" class="btn" id="drawTrajet">LOL</a>
-					</form>
-<!--
+					</form>-->
 				<label>Type d'unité'</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>
@@ -203,7 +205,6 @@
 				<label>Description (facutatif)</label>
 				<textarea class="formula" id="description" name="description"></textarea>
 				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
--->
 
 			</div>
 		</div>
@@ -494,7 +495,7 @@ $result = $conn->query($sql);
 
 
 	<script src='js/sauveguarde.js'></script>
-		<script src="js/sendData.js"></script>
+<!--	<script src="js/sendData.js"></script>-->
 
 	<?php include 'load.php' ?>
 

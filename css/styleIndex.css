@@ -29,7 +29,45 @@ color:black;
 
 #indexDiv{
     width: 100vw;
+    margin-left: 68px;
 
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+.logos{
+    width: 20vw;
+    height: 20vh;
+}
+
+.logos #iim{
+    position: fixed;
+    max-width: 15%;
+    height: auto;
+    left: 5vw;
+    top: 25vh;
+}
+.logos #marine{
+    position: fixed;
+    max-width: 15%;
+    height: auto;
+    left: 38vw;
+    top: 23vh;
+}
+.logos #cesm{
+    position: fixed;
+    max-width: 15%;
+    height: auto;
+    left: 70vw;
+    top: 25vh;
+}
+
+.iconesMenu{
+    position: fixed;
+    max-width: 10%;
+    height: auto;
 }
 main .helper {
 	background: rgba(0, 0, 0, 0);
@@ -58,9 +96,12 @@ main .helper {
 main .helper span {
     width: 100vw;
 	color: rgba(255, 255, 255, 0.71);
-	font-size: 0.4em;
+	font-size: 0.6em;
 	display: block;
     padding-left: 0;
+    position: absolute;
+    bottom: 8vh;
+    left: 3vw;
 }
 
 .menu {
@@ -803,8 +844,9 @@ transform:rotate(360deg);
 
 h4,
 h1 {
-	margin-left: 0;
-}
+    position: absolute;
+    bottom: 12vh;
+    left: 850;}
 
 p {
 	padding: 20px 20px;

@@ -13,9 +13,9 @@
             <h2>Centre d'Études Stratégiques de la Marine</h2>
 		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard"><span>Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php">Charger Carte</a></span></li>
-			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php">Tutoriel</a></span></li>
+			<li tabindex="0" id="new" class="icon-dashboard"><span><img class="iconesMenu" src="image/Btn_New.svg">Nouvelle Carte</span></li>
+			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php"><img class="iconesMenu" src="image/Btn_Load.svg">Charger Carte</a></span></li>
+			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php"><img class="iconesMenu" src="image/Btn_Tutoriel.svg">Tutoriel</a></span></li>
 
 		</ul>
 	</nav>
@@ -29,7 +29,9 @@
         </div>
 
         <div class="logos">
-            <img src="image/Logo_CESM.sg">
+            <img id ="iim" src="image/Logo_IIM.svg">
+            <img id="marine" src="image/Logo_Marine_Nationale.svg">
+            <img id="cesm" src="image/Logo_CESM.svg">
         </div>
 
 <!--
