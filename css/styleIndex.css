@@ -69,6 +69,26 @@ img{
     max-width: 10%;
     height: auto;
 }
+
+#iconeNew{
+    position: fixed;
+    width: 120px;
+    left: 835px;
+    bottom:145px;
+}
+#iconeLoad{
+    position: fixed;
+    width: 120px;
+    left: 670px;
+    bottom: 40px;
+}
+#iconeTuto{
+    position: fixed;
+    width: 120px;
+    right: 820px;
+    bottom: 40px;
+}
+
 main .helper {
 	background: rgba(0, 0, 0, 0);
 	color: #ffffff;
@@ -109,7 +129,7 @@ main .helper span {
 	height: 25vh;
 	width: 100vw;
 	position: fixed;
-	bottom: 70px;
+	bottom: 0px;
 	left: 0;
 	z-index: 5;
 	outline: none;
