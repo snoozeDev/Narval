@@ -74,19 +74,37 @@ img{
     position: fixed;
     width: 120px;
     left: 835px;
-    bottom:145px;
+    bottom:160px;
+}
+#iconeNew:hover{
+    position: fixed;
+    width: 130px;
+    left: 825px;
+    bottom:160px;
 }
 #iconeLoad{
     position: fixed;
     width: 120px;
     left: 670px;
-    bottom: 40px;
+    bottom: 55px;
+}
+#iconeLoad:hover{
+    position: fixed;
+    width: 130px;
+    left: 660px;
+    bottom: 55px;
 }
 #iconeTuto{
     position: fixed;
     width: 120px;
     right: 820px;
-    bottom: 40px;
+    bottom: 55px;
+}
+#iconeTuto:hover{
+    position: fixed;
+    width: 130px;
+    right: 810px;
+    bottom: 55px;
 }
 
 main .helper {
@@ -126,7 +144,7 @@ main .helper span {
 
 .menu {
 	background: #2c3e50;
-	height: 25vh;
+	height: 32vh;
 	width: 100vw;
 	position: fixed;
 	bottom: 0px;
@@ -189,13 +207,13 @@ main .helper span {
 	background-image: url("http://www.entypo.com/images//tools.svg");
 }
 
-.menu ul li:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-}
+.menu ul li img:hover {
+	/*background-color: rgba(0, 0, 0, 0.1);*/
+   }
 
-.active {
+/*.active {
 	background-color: rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .menu ul li:focus {
 	outline: none;

@@ -13,9 +13,9 @@
             <h2>Centre d'Études Stratégiques de la Marine</h2>
 		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard"><span><img class="iconesMenu" id="iconeNew" src="image/Btn_New.svg">Nouvelle Carte</span></li>
-			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php"><img class="iconesMenu" id="iconeLoad" src="image/Btn_Load.svg">Charger Carte</a></span></li>
-			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php"><img class="iconesMenu"id="iconeTuto" src="image/Btn_Tutoriel.svg">Tutoriel</a></span></li>
+			<li tabindex="0" id="new" class="icon-dashboard"><span><img class="iconesMenu" id="iconeNew" src="image/Btn_New.svg"><!--Nouvelle Carte--></span></li>
+			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php"><img class="iconesMenu" id="iconeLoad" src="image/Btn_Load.svg"><!--Charger Carte--></a></span></li>
+			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php"><img class="iconesMenu"id="iconeTuto" src="image/Btn_Tutoriel.svg"><!--Tutoriel--></a></span></li>
 
 		</ul>
 	</nav>
