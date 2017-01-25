@@ -6,19 +6,19 @@
 </head>
 
 <body>
-	<nav class="menu" tabindex="0">
+	<div class="menu" tabindex="0">
 		<div class="smartphone-menu-trigger"></div>
 		<!-- <header class="avatar">
 			<img src="http://www.defense.gouv.fr/var/dicod/storage/images/base-de-medias/images/marine/photos-au-fil-de-l-eau/image001/2252802-1-fre-FR/image001.jpg" />
             <h2>Centre d'Études Stratégiques de la Marine</h2>
 		</header> !-->
 		<ul>
-			<li tabindex="0" id="new" class="icon-dashboard"><span><img class="iconesMenu" id="iconeNew" src="image/Btn_New.svg"><!--Nouvelle Carte--></span></li>
-			<li tabindex="0" id="load" class="icon-customers"><span><a href="chargercarte.php"><img class="iconesMenu" id="iconeLoad" src="image/Btn_Load.svg"><!--Charger Carte--></a></span></li>
-			<li tabindex="0" id="tuto" class="icon-users"><span><a href="tutoriel.php"><img class="iconesMenu"id="iconeTuto" src="image/Btn_Tutoriel.svg"><!--Tutoriel--></a></span></li>
+			<span><img class="iconesMenu icon-dashboard" id="iconeNew" src="image/Btn_New.svg"></span>
+			<span><a href="chargercarte.php"><img class="iconesMenu icon-customers" id="iconeLoad" src="image/Btn_Load.svg"></a></span>
+			<span><a href="tutoriel.php"><img class="iconesMenu icon-users" id="iconeTuto" src="image/Btn_Tutoriel.svg"></a></span>
 
 		</ul>
-	</nav>
+	</div>
 
 	<main>
 		<div style="z-index:1" class="helper">
