@@ -1,4 +1,4 @@
-# BapMarine2017
+# BapMarine2017 :fr:
 
 Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/BapMarineNationale).
 
@@ -39,7 +39,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 
 
-# :penguin: GIT
+# GIT
 
 ## Installation de Git (Mac) :
 
@@ -136,3 +136,5 @@ _reset.css_|ficher de style pour reste les charactéristiques de chaque naviguat
 _screen.css_|fichier de style du plugin de vidéo tubular  
 _style.css_|fichier de style d ela page map.php
 _styleIndex.css_|fichier de style de la page index.php
+
+# :penguin:
