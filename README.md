@@ -7,7 +7,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 # Configuration Brackets
 
-**//!\\** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **//!\\**
+**/!\** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **/!\**
 
 
 ## Ajustage des paramètres :
@@ -16,9 +16,9 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 2. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
 4. *Si vous avez un resultat* : changer sa valeur a “true”.
 5. *Si vous n’avez pas de resultats* :
-• Chercher ”wordWrap”.
-• Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
-• Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
+	• Chercher ”wordWrap”.
+	• Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
+	• Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
 
 ## Les Plugins Brackets :
 
@@ -62,9 +62,10 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
 2. Ouvrez votre le Terminal et tapez  
-• `cd C:/MAMP/htdocs/votre_dossier` (Windows)  
-• `cd /Applications/MAMP/htdocs/votre_dossier` (Mac)  
-et appuyez sur Entrée. 3\. Puis tapez `git clone https://github.com/jblafon/BapMarine2017.git` et appuyez sur Entrée.
+	• `cd C:/MAMP/htdocs/votre_dossier` (Windows)  
+	• `cd /Applications/MAMP/htdocs/votre_dossier` (Mac)  
+et appuyez sur Entrée.
+3. Puis tapez `git clone https://github.com/jblafon/BapMarine2017.git` et appuyez sur Entrée.
 
 ## Commandes Git
 
