@@ -1,4 +1,4 @@
-# BapMarine2017 :fr:
+# :fr: BapMarine2017 :fr:
 
 Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/BapMarineNationale).
 
