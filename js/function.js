@@ -214,6 +214,7 @@ $("#simulation").click(function () { // on repasse en mode admin
 	$('#console').css('display', "none");
 
 });
+
 var console_message = 0;
 $('#close_console').click(function () {
 	if (console_message == 0) {
@@ -239,7 +240,7 @@ $('#close_console').click(function () {
 	}
 
 });
-//TODO --- CHANGER LES PNGs EN SVGs
+// TODO: [x]CHANGER LES PNGs EN SVGs
 /*  fonction changement image icone    */
 $('#icone_select').change(function () {
 	var ico = "image/" + $('#icone_select').val() + ".svg";

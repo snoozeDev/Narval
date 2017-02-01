@@ -1,0 +1,24 @@
+{
+	"regex": {
+		"prefix": "(?:<!--|\\/\\*|\\/\\/|#) *@?(",
+		"suffix": "):? *(.*?) ?(?=-->|\\*/|\\n|$)"
+	},
+	"tags": [
+		"TODO:#FF9800",
+		"NOTE:#4CAF50",
+		"FIX ?ME:#673AB7",
+		"CHANGES:#009688",
+		"FUTURE:#795548",
+		"IMPORTANT:#F44336",
+		"MARK:#03A9F4"
+	],
+	"case": false,
+	"search": {
+		"scope": "project",
+		"excludeFolders": [],
+		"excludeFiles": []
+	},
+	"sort": {
+		"done": true
+	}
+}

@@ -137,7 +137,7 @@
 		<a href="#" class="btn" id="fin">Retourner sur la carte</a>
 
 	</div>
-	<!--NOTE Formulaire ajout de bateaux-->
+	<!--MARK Formulaire ajout de bateaux-->
 	<div id="ajout_bateau" class="pop_up_inv hide">
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
@@ -244,10 +244,10 @@
 
 	<img id="boussole" src="image/boussole.png">
 
-	<!--NOTE MAP DIV-->
+	<!--MARK MAP DIV-->
 	<div id="map"></div>
 
-	<!--NOTE CONSOLE PART1-->
+	<!--MARK CONSOLE PART1-->
 	<div id="console">
 
 		<div class="black">

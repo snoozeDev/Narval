@@ -6,7 +6,7 @@ var detection = [];
 var bateaux = []; // IMPORTANT tableau de tous les bateaux
 
 //var data = 'func=getVehicules';
-//var bateaux = $.ajax({ //TODO tableau de tous les bateaux
+//var bateaux = $.ajax({ // tableau de tous les bateaux
 //	type: 'GET',
 //	url: 'database.php',
 //	data: data
@@ -679,7 +679,7 @@ function addLatLngToMarker(clickEventData) {
 
 }
 
-//TODO dessiner un cercle
+//MARK dessiner un cercle
 var drawCircleButton = document.getElementById('drawCircle');
 var stopDrawCircle = document.getElementById('stopDrawCircle');
 var cercle = []; //tableau de tous les cercles
@@ -1517,12 +1517,12 @@ $('#pause').click(function () {
 	playOrPause = 0;
 	console.log(playOrPause);
 });
-//NOTE SLIDER SPEED
+
+//MARK: SLIDER SPEED
 var speed = 1;
 $('.speed').change(function () { //lorsque le coef de vitesse change on refait les trajets desbateaux qui bougent
 	//	var speed = $('.speed option:selected').val();
 
-	//NOTE SLIDER SPEED
 	var speed1 = $('.speed').val();
 	if (speed1 == 1) {
 		speed = 1;
@@ -2696,7 +2696,7 @@ function calculDistance() {
 				};
 			}
 		};
-		for (var i = bateaux.length - 1; i >= 0; i--) { //NOTE fonction de message
+		for (var i = bateaux.length - 1; i >= 0; i--) { //MARK fonction de message
 			if (bateaux[i] != "" && bateaux[i].editColor != "blue") { //le bateau n'a pas été supprimé
 				if (bateaux[i].editDetection != detection2[i]) {
 					console.log('ça change');
@@ -2734,7 +2734,7 @@ function calculDistance() {
 	setTimeout(calculDistance, 1000); /* rappel après 2 secondes = 2000 millisecondes */
 }
 
-//NOTE Changement SIM <-> ADMIN
+//MARK Changement SIM <-> ADMIN
 $('#admin').on('click', function () {
 	notif = 0;
 	simulation = true;
