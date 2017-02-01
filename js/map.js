@@ -2672,7 +2672,7 @@ function calculDistance() {
 
 						if (d < bateaux[j].editRadar) { //distance de radar plus grande que distance entre bat
 							if (bateaux[i].editDetection == false && bateaux[j].editColor == "red") { //si le bateau a déjà été détecté
-								$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[j].editType + " <span class='consoleEnnemi'>ennemi(e)</span> vous a repéré</li><br>");
+								$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[j].editType + " ennemi(e) vous a repéré</li><br>");
 								notif++;
 								bateaux[i].editDetection = true;
 							}
@@ -2704,9 +2704,9 @@ function calculDistance() {
 					lng = bateaux[i]._latlng.lng.toFixed(5);
 					if (bateaux[i].editDetection == true) { //si le bateau est détecté on envoie le message de détection
 						if (bateaux[i].editColor == "red") {
-							etat = "<span class='consoleEnnemi'>ennemi</span>";
+							etat = "ennemi";
 						} else {
-							etat = "<span class='consoleNeutre'>neutre</span>";
+							etat = "neutre";
 						}
                         if (bateaux[i].editType == 'peche'){
                             $("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " bateau de " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
@@ -2717,9 +2717,9 @@ function calculDistance() {
 
 					} else { //bateau disparu on envoie le message de disparition
 						if (bateaux[i].editColor == "red") {
-							etat = "<span class='consoleEnnemi'>ennemi</span>";
+							etat = "ennemi";
 						} else {
-							etat = "<span class='consoleNeutre'>neutre</span>";
+							etat = "neutre";
 						}
 						$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " a disparu aux coordonnées " + lat + "," + lng + "</li><br>");
 						notif++;
