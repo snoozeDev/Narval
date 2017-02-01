@@ -37,7 +37,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 2. *Show Whitespace* | Affiche les espaces (pratique pour s’assurer que les indentations sont en tabs).
 3. *Indent Guides* | Pour bien aligner les blocs.
 
-
+<!--TODO: []Ajouter les consignes de codage-->
 
 # GIT
 
