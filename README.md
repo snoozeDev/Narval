@@ -93,7 +93,7 @@ Git va nous permettre de travailler sur le même projet en même temps mais **NE
 2. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php"
 3. Remplacer la ligne 6 par `$db = 'marinedb';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)
 
-## Architecture du code :
+# Architecture du code :
 
 _index.php_|page d'accueil  
 _load.php_|script php récupérant les informations d'une sauvagarde si la page actuelle est une carte sauvagardée  
