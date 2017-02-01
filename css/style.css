@@ -89,6 +89,13 @@ body {
 	overflow-y: scroll;
 }
 
+.consoleEnnemi {
+	color: red;
+}
+
+.consoleNeutre {
+	color: green;
+}
 
 /*-------------------------------*/
 
