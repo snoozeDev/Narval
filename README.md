@@ -10,10 +10,10 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 **//!\\** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **//!\\**
 
 ### Ajustage des paramètres :
-1\. Ouvrir les paramètres.
-2\. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
-4\. *Si vous avez un resultat* : changer sa valeur a “true”.
-4 bis\. *Si vous n’avez pas de resultats* :
+1. Ouvrir les paramètres.
+2. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
+4. *Si vous avez un resultat* : changer sa valeur a “true”.
+5. *Si vous n’avez pas de resultats* :
 - Chercher ”wordWrap”.
 - Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
 - Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
@@ -24,28 +24,28 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 *Comment Installer des Plugins ? Cliquez [ICI](https://www.youtube.com/watch?v=xL0XZ33E7uI)*
 
 #### Les plugins OBIGATOIRES :
-1\. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
-2\. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
-3\. **EMMET** | [Website](http://emmet.io/)
-4\. **brackets-typescript** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-typescript)
+1. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
+2. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
+3. **EMMET** | [Website](http://emmet.io/)
+4. **brackets-typescript** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-typescript)
 
 #### Les plugins conseillés :
-1\. *Beautify* | Permet de rendre le code plus lisible avec CMD+L (Mac).
-2\. *Show Whitespace* | Affiche les espaces (pratique pour s’assurer que les indentations sont en tabs).
-3\. *Indent Guides* | Pour bien aligner les blocs.
+1. *Beautify* | Permet de rendre le code plus lisible avec CMD+L (Mac).
+2. *Show Whitespace* | Affiche les espaces (pratique pour s’assurer que les indentations sont en tabs).
+3. *Indent Guides* | Pour bien aligner les blocs.
 
 ## Installation de Git (Mac) :
 
-1\. Téléchargez et installez [Git for Mac](https://git-scm.com/downloads)
-2\. Téléchargez et installez [iTerm 2](https://www.iterm2.com/downloads.html). Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
-3\. Passez à la [mise en place des fichiers.](#anchor1)
+1. Téléchargez et installez [Git for Mac](https://git-scm.com/downloads)
+2. Téléchargez et installez [iTerm 2](https://www.iterm2.com/downloads.html). Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
+3. Passez à la [mise en place des fichiers.](#anchor1)
 
 ## Installation de Git for Windows (Windows):
 
-1\. Téléchargez [Git for Windows](https://github.com/git-for-windows/git/releases/v2.10.2.windows.1) (en bas de la page).
-2\. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault.
-3\. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
-4\. Passez à la [mise en place des fichiers.](#anchor1)
+1. Téléchargez [Git for Windows](https://github.com/git-for-windows/git/releases/v2.10.2.windows.1) (en bas de la page).
+2. Installez dans "C:/Program Files/Git", puis séléctionnez toutes les cases sauf la dernière, puis séléctionnez "Use Git from Git Bash only", puis laissez tout par défault.
+3. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
+4. Passez à la [mise en place des fichiers.](#anchor1)
 
 ## Mise en place des fichiers :
 
@@ -62,33 +62,35 @@ Git va nous permettre de travailler sur le même projet en même temps mais **NE
 
 ### Envoyer un fichier vers le git :
 
-1\. ouvrir le Terminal
-2\. tapez  
+1. ouvrir le Terminal
+2. tapez  
 	• `cd C:/MAMP/htdocs/votre_dossier/BapMarine2017` (Windows)  
 	• `cd /Applications/MAMP/htdocs/votre_dossier/BapMarine2017` (Mac)
-3\. tapez `git add le_fichier_modifié.html` pour ajouter le fichier à la liste de push (répetez si vous avez modifié plusieurs fichiers)
-4\. tapez `git commit -m "descriptif de vos modifs"` **N'oubliez pas de décrire vos modifs svp**
-5\. tapez `git origin master`
+3. tapez `git add le_fichier_modifié.html` pour ajouter le fichier à la liste de push (répetez si vous avez modifié plusieurs fichiers)
+4. tapez `git commit -m "descriptif de vos modifs"` **N'oubliez pas de décrire vos modifs svp**
+5. tapez `git origin master`
 
 ### Récuperer les fichier depuis le Git :
 
-1\. ouvrir le Terminal 2\. tapez  
+1. ouvrir le Terminal
+2. tapez  
 	• `cd C:/MAMP/htdocs/Votre_dossier/BapMarine2017` (Windows)  
-	• `cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017` (Mac) 3\. tapez `git pull`
+	• `cd /Applications/MAMP/htdocs//Votre_dossier/BapMarine2017` (Mac) 
+3. tapez `git pull`
 
 ## Mise en place de la base de donnée :
 
 ### Importation de la base de données:
 
-1\. Allez sur PhpMyAdmin de votre localhost.
-2\. Créez une nouvelle base de donnée nommée `marinedb` en collation `utf8_general_ci`.
-3\. Cliquez sur la base de donnée puis sur l'onglet "Import" et importez le fichier "votre_dossier/BapMarine2017/sql/marine_nationale_db.sql".
+1. Allez sur PhpMyAdmin de votre localhost.
+2. Créez une nouvelle base de donnée nommée `marinedb` en collation `utf8_general_ci`.
+3. Cliquez sur la base de donnée puis sur l'onglet "Import" et importez le fichier "votre_dossier/BapMarine2017/sql/marine_nationale_db.sql".
 
 ### Changement des identifiants de connection à la base de donnée:
 
-1\. Dans "BapMarine2017", créez un fichier "db.php"
-2\. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php"
-3\. Remplacer la ligne 6 par `$db = 'marinedb';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)
+1. Dans "BapMarine2017", créez un fichier "db.php"
+2. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php"
+3. Remplacer la ligne 6 par `$db = 'marinedb';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)
 
 ## Architecture du code :
 
