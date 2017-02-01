@@ -984,9 +984,9 @@ function addLatLngToTrajet(clickEventData) {
 
 		console.log("TYPE == " + type_bateau);
 
-//		for (i = 0; i < 100; i++) {
-//
-//		}
+		//		for (i = 0; i < 100; i++) {
+		//
+		//		}
 
 		switch (type_bateau) {
 
@@ -2708,12 +2708,12 @@ function calculDistance() {
 						} else {
 							etat = "<span class='consoleNeutre'>neutre</span>";
 						}
-                        if (bateaux[i].editType == 'peche'){
-                            $("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " bateau de " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
-                        } else{
-                            $("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
-						    notif++;
-                        }
+						if (bateaux[i].editType == 'peche') {
+							$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " bateau de " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
+						} else {
+							$("#console ul").prepend("<li>" + $('#hours').text() + $('#mins').text() + " " + bateaux[i].editType + " " + etat + " repéré aux coordonnées " + lat + "," + lng + "</li><br>");
+							notif++;
+						}
 
 					} else { //bateau disparu on envoie le message de disparition
 						if (bateaux[i].editColor == "red") {

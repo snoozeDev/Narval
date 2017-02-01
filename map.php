@@ -6,7 +6,7 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
-<!--
+	<!--
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
 
@@ -145,7 +145,7 @@
 
 				<!--FORMULAIRE POUR DB-->
 
-					<!--<form id="form">
+				<!--<form id="form">
 						<label for="vType">Type de v&eacute;hicule</label>
 						<select name="vType" id="vType">
 							<option value="Bat">Bateau</option>
@@ -500,7 +500,7 @@ $result = $conn->query($sql);
 
 
 	<script src='js/sauveguarde.js'></script>
-<!--	<script src="js/sendData.js"></script>-->
+	<!--	<script src="js/sendData.js"></script>-->
 
 	<?php include 'load.php' ?>
 
