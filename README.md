@@ -9,29 +9,35 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 **//!\\** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **//!\\**
 
+
 ## Ajustage des paramètres :
+
 1. Ouvrir les paramètres.
 2. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
 4. *Si vous avez un resultat* : changer sa valeur a “true”.
 5. *Si vous n’avez pas de resultats* :
-- Chercher ”wordWrap”.
-- Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
-- Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
+• Chercher ”wordWrap”.
+• Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
+• Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
 
 ## Les Plugins Brackets :
 
 *Comment Installer des Plugins ? Cliquez [ICI](https://www.youtube.com/watch?v=xL0XZ33E7uI)*
 
 ### Les plugins OBIGATOIRES :
+
 1. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
 2. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
 3. **EMMET** | [Website](http://emmet.io/)
 4. **brackets-typescript** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-typescript)
 
 ### Les plugins conseillés :
+
 1. *Beautify* | Permet de rendre le code plus lisible avec CMD+L (Mac).
 2. *Show Whitespace* | Affiche les espaces (pratique pour s’assurer que les indentations sont en tabs).
 3. *Indent Guides* | Pour bien aligner les blocs.
+
+
 
 # GIT
 
@@ -52,7 +58,10 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 **ATTENTION le chemin vers htdocs est :**  
 • "C:/MAMP/htdocs" pour Windows  
-• "/Applications/MAMP/htdocs" pour Mac 1\. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet. 2\. Ouvrez votre le Terminal et tapez  
+• "/Applications/MAMP/htdocs" pour Mac 
+
+1. Dans le dossier htdocs , créez un dossier qui sera votre dossier du projet.
+2. Ouvrez votre le Terminal et tapez  
 • `cd C:/MAMP/htdocs/votre_dossier` (Windows)  
 • `cd /Applications/MAMP/htdocs/votre_dossier` (Mac)  
 et appuyez sur Entrée. 3\. Puis tapez `git clone https://github.com/jblafon/BapMarine2017.git` et appuyez sur Entrée.
@@ -92,6 +101,8 @@ Git va nous permettre de travailler sur le même projet en même temps mais **NE
 1. Dans "BapMarine2017", créez un fichier "db.php"
 2. Ouvrez le fichier "db.php.example" et copiez le contenu dans "db.php"
 3. Remplacer la ligne 6 par `$db = 'marinedb';` (_ATTENTION_ : ne pas supprimer ou renommer le fichier initial)
+
+
 
 # Architecture du code :
 
