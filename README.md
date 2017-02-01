@@ -7,7 +7,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 # Configuration Brackets
 
-**[!]** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **[!]**
+:warning: *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* :warning:
 
 
 ## Ajustage des paramètres :
@@ -39,7 +39,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 
 
-# GIT
+# :penguin: GIT
 
 ## Installation de Git (Mac) :
 
@@ -56,7 +56,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 ## Mise en place des fichiers :
 
-**ATTENTION le chemin vers htdocs est :**  
+:heavy_exclamation_mark: **ATTENTION le chemin vers htdocs est :**  
 • "C:/MAMP/htdocs" pour Windows  
 • "/Applications/MAMP/htdocs" pour Mac 
 
@@ -67,7 +67,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 et appuyez sur Entrée.
 3. Puis tapez `git clone https://github.com/jblafon/BapMarine2017.git` et appuyez sur Entrée.
 
-## Commandes Git
+## Commandes Git 
 
 Git va nous permettre de travailler sur le même projet en même temps mais **NE JAMAIS MODIFIER SUR LES MÊMES LIGNE D'UN MÊME FICHIER EN MÊME TEMPS !!!**
 
