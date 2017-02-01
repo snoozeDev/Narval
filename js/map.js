@@ -3,7 +3,7 @@
 var simulation = false;
 
 var detection = [];
-var bateaux = []; // IMPORTANT --> tableau de tous les bateaux
+var bateaux = []; // IMPORTANT tableau de tous les bateaux
 
 //var data = 'func=getVehicules';
 //var bateaux = $.ajax({ //TODO tableau de tous les bateaux
