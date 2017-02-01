@@ -171,7 +171,6 @@ function delete_obj(elem, form) {
 			$('#' + elem).html('<div class="margepolyline">remettre ' + form + '</div><div class="oeilvert"><div class=" yeux rouge"></div></div>'); //mettre oeil rouge
 			tableau[increment].visible = 0;
 			doubleclique = 0;
-
 		}
 
 
@@ -186,20 +185,9 @@ function delete_obj(elem, form) {
 			$('#' + elem).html('<div class="margepolyline">cacher ' + form + '</div><div class="oeilvert"><div class=" yeux vert"></div></div>');
 			doubleclique = 0;
 			tableau[increment].visible = 1;
-
 		}
-
 	}
-
 }
-//TODO CONSOLE PART1
-//function consoleHide(){
-//	$(this).css('display', 'none');
-//}
-//function consoleShow(){
-//	$(this).css('display', 'flex');
-//}
-
 
 $("#simulation").hide();
 $('#console').hide();
