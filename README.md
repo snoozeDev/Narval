@@ -5,11 +5,11 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 **Editeur de Code :**  
 [Brackets](http://brackets.io/) 
 
-## Configuration Brackets
+# Configuration Brackets
 
 **//!\\** *Nous demandons a tous nos codeurs de bien vouloir être rigoureux  (voir maniaques) dans la presentation de leur code.* **//!\\**
 
-### Ajustage des paramètres :
+## Ajustage des paramètres :
 1. Ouvrir les paramètres.
 2. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
 4. *Si vous avez un resultat* : changer sa valeur a “true”.
@@ -18,21 +18,22 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 - Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).
 - Ecrivez `"useTabChar": true` (et ajouter une virgule si cette ligne n’est **PAS** en fin de bloc).
 
-
-### Les Plugins Brackets :
+## Les Plugins Brackets :
 
 *Comment Installer des Plugins ? Cliquez [ICI](https://www.youtube.com/watch?v=xL0XZ33E7uI)*
 
-#### Les plugins OBIGATOIRES :
+### Les plugins OBIGATOIRES :
 1. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
 2. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
 3. **EMMET** | [Website](http://emmet.io/)
 4. **brackets-typescript** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-typescript)
 
-#### Les plugins conseillés :
+### Les plugins conseillés :
 1. *Beautify* | Permet de rendre le code plus lisible avec CMD+L (Mac).
 2. *Show Whitespace* | Affiche les espaces (pratique pour s’assurer que les indentations sont en tabs).
 3. *Indent Guides* | Pour bien aligner les blocs.
+
+# GIT
 
 ## Installation de Git (Mac) :
 
