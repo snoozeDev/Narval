@@ -142,7 +142,10 @@
 		<div class="pop_up">
 			<div class="formulaire_bat" id="ajout_bateau_inv">
 				<p class="title">UNITÉS</p>
-<!--					<form id="form">
+
+				<!--FORMULAIRE POUR DB-->
+
+					<!--<form id="form">
 						<label for="vType">Type de v&eacute;hicule</label>
 						<select name="vType" id="vType">
 							<option value="Bat">Bateau</option>
@@ -171,6 +174,8 @@
 						</select>
 						<a type="submit" class="btn" id="drawTrajet">LOL</a>
 					</form>-->
+
+
 				<label>Type d'unité'</label>
 				<select class="formula" id="type_bateau" name="type_bateau">
 					<option value="porte-avion">Porte-avion</option>

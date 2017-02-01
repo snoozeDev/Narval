@@ -3,15 +3,16 @@
 var simulation = false;
 
 var detection = [];
+var bateaux = []; // IMPORTANT --> tableau de tous les bateaux
 
-var data = 'func=getVehicules';
-var bateaux = $.ajax({ //TODO tableau de tous les bateaux
-	type: 'GET',
-	url: 'database.php',
-	data: data
-}).done(function (msg) {
-
-});
+//var data = 'func=getVehicules';
+//var bateaux = $.ajax({ //TODO tableau de tous les bateaux
+//	type: 'GET',
+//	url: 'database.php',
+//	data: data
+//}).done(function (msg) {
+//
+//});
 
 bat = 0;
 
@@ -983,9 +984,9 @@ function addLatLngToTrajet(clickEventData) {
 
 		console.log("TYPE == " + type_bateau);
 
-		for (i = 0; i < 100; i++) {
-
-		}
+//		for (i = 0; i < 100; i++) {
+//
+//		}
 
 		switch (type_bateau) {
 
