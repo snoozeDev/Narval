@@ -65,7 +65,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 	• `cd C:/MAMP/htdocs/votre_dossier` (Windows)  
 	• `cd /Applications/MAMP/htdocs/votre_dossier` (Mac)  
 et appuyez sur Entrée.
-3. Puis tapez `git clone https://github.com/jblafon/BapMarine2017.git` et appuyez sur Entrée.
+3. Puis tapez `git clone https://jblafon@bitbucket.org/tmn2017/bapmarine2017.git` et appuyez sur Entrée.
 
 ## Commandes Git 
 
