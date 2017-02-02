@@ -46,21 +46,21 @@ img{
     position: fixed;
     max-width: 15%;
     height: auto;
-    left: 5vw;
-    top: 25vh;
+    left: 11vw;
+    top: 27vh;
 }
 .logos #marine{
     position: fixed;
     max-width: 15%;
     height: auto;
-    left: 38vw;
+    left: 43vw;
     top: 23vh;
 }
 .logos #cesm{
     position: fixed;
     max-width: 15%;
     height: auto;
-    left: 70vw;
+    left: 73vw;
     top: 25vh;
 }
 
@@ -73,7 +73,7 @@ img{
 #iconeNew{
     position: fixed;
     width: 120px;
-    left: 835px;
+    left: 913px;
     bottom:160px;
 }
 #iconeNew:hover{
@@ -85,8 +85,8 @@ img{
 #iconeLoad{
     position: fixed;
     width: 120px;
-    left: 670px;
-    bottom: 55px;
+    left: 763px;
+    bottom: 35px;
 }
 #iconeLoad:hover{
     position: fixed;
@@ -97,8 +97,8 @@ img{
 #iconeTuto{
     position: fixed;
     width: 120px;
-    right: 820px;
-    bottom: 55px;
+    right: 735px;
+    bottom: 32px;
 }
 #iconeTuto:hover{
     position: fixed;

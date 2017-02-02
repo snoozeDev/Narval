@@ -1,1 +1,14 @@
-<svg id="Btn_NOUVEAU" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 465 465"><defs><style>.cls-1{fill:#4d4a76;}.cls-2{fill:#fff;}</style></defs><title>Btn_New</title><circle class="cls-1" cx="232.5" cy="232.5" r="232.5"/><rect class="cls-2" x="212.06" y="124.4" width="40.88" height="216.2"/><rect class="cls-2" x="229.56" y="141.9" width="40.88" height="216.2" transform="translate(482.5 -17.5) rotate(90)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Btn_NOUVEAU" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 465 465" style="enable-background:new 0 0 465 465;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4D4A76;}
+	.st1{fill:#FFFFFF;}
+</style>
+<title>Btn_New</title>
+<circle class="st0" cx="232.5" cy="232.5" r="232.5"/>
+<rect x="212.1" y="124.4" class="st1" width="40.9" height="216.2"/>
+<rect x="124.4" y="212.1" class="st1" width="216.2" height="40.9"/>
+<text transform="matrix(1 0 0 1 33.4155 556.4912)" class="st1" style="font-family:'Helvetica-Bold'; font-size:95.2158px;">Nouveau</text>
+</svg>
