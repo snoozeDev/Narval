@@ -54,7 +54,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 3. Trouvez Git Bash sur votre Bureau et lancez-le. Ceci est votre **Terminal** dans laquelle vous ferez vos commandes Git.
 4. Passez à la [mise en place des fichiers.](#anchor1)
 
-## Mise en place des fichiers :
+## Mise en place des fichiers : 
 
 :heavy_exclamation_mark: **ATTENTION le chemin vers htdocs est :**  
 • "C:/MAMP/htdocs" pour Windows  
