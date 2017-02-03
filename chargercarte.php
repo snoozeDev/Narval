@@ -28,6 +28,7 @@
 	<h4 id='loadTitle'>Charger une carte sauvegardée</h4>
 	<a href="index.php">
 		<img id='backIcon' src="image/backArrow.svg" alt="">
+		<!--'backIcon' properties in 'changerCarte.css'-->
 	</a>
 
 <?php
