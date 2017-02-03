@@ -551,37 +551,6 @@ a {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-/* @media screen and (min-width: 37.5em) {
-	.resource--article,
-	.resource--book,
-	.resource--talks,
-	.resource--add {
-		width: 80%;
-	}
-}
-
-@media screen and (min-width: 50em) {
-	.resource--article,
-	.resource--book,
-	.resource--talks,
-	.resource--add {
-		float: left;
-		margin-left: 2.5%;
-		width: 46%;
-	}
-}
-
-@media screen and (min-width: 75em) {
-	.resource--article,
-	.resource--book,
-	.resource--talks,
-	.resource--add {
-		float: left;
-		width: 70%;
-		margin-left: 15%;
-	}
-}
-*/
 .resource__title,
 .resource--add__title {
 	font-weight: 400;
@@ -880,7 +849,6 @@ transform:rotate(360deg);
 	border-color: White;
 }
 
-h4,
 h1 {
     position: absolute;
     bottom: 12vh;
@@ -906,3 +874,40 @@ a {
 body {
 	background: #283848!important
 }
+
+#loadTitle {
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+/* @media screen and (min-width: 37.5em) {
+	.resource--article,
+	.resource--book,
+	.resource--talks,
+	.resource--add {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 50em) {
+	.resource--article,
+	.resource--book,
+	.resource--talks,
+	.resource--add {
+		float: left;
+		margin-left: 2.5%;
+		width: 46%;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.resource--article,
+	.resource--book,
+	.resource--talks,
+	.resource--add {
+		float: left;
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+*/

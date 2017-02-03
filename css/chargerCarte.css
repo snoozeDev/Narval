@@ -1,0 +1,17 @@
+body {
+	padding: 0px;
+}
+
+#backIcon {
+	width: 72px;
+	padding: 16px;
+	position: absolute;
+	top: 5%;
+	left: 2%;
+}
+
+#backIcon:hover {
+	width: 82px;
+	top: 4.5%;
+	left: 1.5%;
+}
