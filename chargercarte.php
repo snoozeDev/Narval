@@ -7,6 +7,8 @@
 </head>
 
 
+<!-- LOADING BAR -->
+
 <!--
 <div id="newDiv" style="color:red">
 			<div class='container'>
@@ -23,6 +25,8 @@
 			</div>
 </div>
 -->
+
+<!--END LOADING BAR-->
 
 <div id="loadDiv" style="z-index:100">
 	<h4 id='loadTitle'>Charger une carte sauvegardée</h4>
