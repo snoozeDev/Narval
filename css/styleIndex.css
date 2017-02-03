@@ -18,6 +18,8 @@ main {
 	position: relative;
 	height: 100vh;
 }
+
+
 /*
 .top{
 height: 70px;
@@ -27,84 +29,91 @@ color:black;
 }
 */
 
-#indexDiv{
-    width: 100vw;
-    margin-left: 68px;
-
+#indexDiv {
+	width: 100vw;
+	margin-left: 68px;
 }
 
-img{
-    display: block;
-    margin: auto;
-}
-.logos{
-    width: 20vw;
-    height: 20vh;
+img {
+	display: block;
+	margin: auto;
 }
 
-.logos #iim{
-    position: fixed;
-    max-width: 15%;
-    height: auto;
-    left: 11vw;
-    top: 27vh;
-}
-.logos #marine{
-    position: fixed;
-    max-width: 15%;
-    height: auto;
-    left: 43vw;
-    top: 23vh;
-}
-.logos #cesm{
-    position: fixed;
-    max-width: 15%;
-    height: auto;
-    left: 73vw;
-    top: 25vh;
+.logos {
+	width: 20vw;
+	height: 20vh;
 }
 
-.iconesMenu{
-    position: fixed;
-    max-width: 10%;
-    height: auto;
+.logos #iim {
+	position: fixed;
+	max-width: 15%;
+	height: auto;
+	left: 11vw;
+	top: 27vh;
 }
 
-#iconeNew{
-    position: fixed;
-    width: 120px;
-    left: 913px;
-    bottom:160px;
+.logos #marine {
+	position: fixed;
+	max-width: 15%;
+	height: auto;
+	left: 43vw;
+	top: 23vh;
 }
-#iconeNew:hover{
-    position: fixed;
-    width: 130px;
-    left: 908px;
-    bottom:160px;
+
+.logos #cesm {
+	position: fixed;
+	max-width: 15%;
+	height: auto;
+	left: 73vw;
+	top: 25vh;
 }
-#iconeLoad{
-    position: fixed;
-    width: 120px;
-    left: 763px;
-    bottom: 32px;
+
+.iconesMenu {
+	position: fixed;
+	max-width: 10%;
+	height: auto;
 }
-#iconeLoad:hover{
-    position: fixed;
-    width: 130px;
-    left: 758px;
-    bottom: 32px;
+
+#iconeNew {
+	position: fixed;
+	width: 120px;
+	left: 913px;
+	bottom: 160px;
 }
-#iconeTuto{
-    position: fixed;
-    width: 120px;
-    right: 735px;
-    bottom: 32px;
+
+#iconeNew:hover {
+	position: fixed;
+	width: 130px;
+	left: 908px;
+	bottom: 160px;
 }
-#iconeTuto:hover{
-    position: fixed;
-    width: 130px;
-    right: 730px;
-    bottom: 32px;
+
+#iconeLoad {
+	position: fixed;
+	width: 120px;
+	left: 763px;
+	bottom: 32px;
+}
+
+#iconeLoad:hover {
+	position: fixed;
+	width: 130px;
+	left: 758px;
+	bottom: 32px;
+}
+
+#iconeTuto {
+	position: fixed;
+	width: 120px;
+	right: 735px;
+	bottom: 32px;
+}
+
+#iconeTuto:hover {
+	position: fixed;
+	width: 130px;
+	right: 730px;
+	bottom: 32px;
 }
 
 main .helper {
@@ -132,14 +141,14 @@ main .helper {
 }
 
 main .helper span {
-    width: 100vw;
+	width: 100vw;
 	color: rgba(255, 255, 255, 0.71);
 	font-size: 0.6em;
 	display: block;
-    padding-left: 0;
-    position: absolute;
-    bottom: 8vh;
-    left: 3vw;
+	padding-left: 0;
+	position: absolute;
+	bottom: 8vh;
+	left: 3vw;
 }
 
 .menu {
@@ -174,11 +183,11 @@ main .helper span {
 }
 
 .menu ul {
-    width: 100vw;
+	width: 100vw;
 	list-style: none;
 	padding: 0.5em 0;
 	margin: 0;
-    display: inline-flex;
+	display: inline-flex;
 }
 
 .menu ul li {
@@ -209,7 +218,8 @@ main .helper span {
 
 .menu ul li img:hover {
 	/*background-color: rgba(0, 0, 0, 0.1);*/
-   }
+}
+
 
 /*.active {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -850,9 +860,10 @@ transform:rotate(360deg);
 }
 
 h1 {
-    position: absolute;
-    bottom: 12vh;
-    left: 850;}
+	position: absolute;
+	bottom: 12vh;
+	left: 850;
+}
 
 p {
 	padding: 20px 20px;
@@ -879,6 +890,7 @@ body {
 	padding-bottom: 5%;
 	padding-top: 5%;
 }
+
 
 /* @media screen and (min-width: 37.5em) {
 	.resource--article,
