@@ -79,20 +79,20 @@ img{
 #iconeNew:hover{
     position: fixed;
     width: 130px;
-    left: 825px;
+    left: 908px;
     bottom:160px;
 }
 #iconeLoad{
     position: fixed;
     width: 120px;
     left: 763px;
-    bottom: 35px;
+    bottom: 32px;
 }
 #iconeLoad:hover{
     position: fixed;
     width: 130px;
-    left: 660px;
-    bottom: 55px;
+    left: 758px;
+    bottom: 32px;
 }
 #iconeTuto{
     position: fixed;
@@ -103,8 +103,8 @@ img{
 #iconeTuto:hover{
     position: fixed;
     width: 130px;
-    right: 810px;
-    bottom: 55px;
+    right: 730px;
+    bottom: 32px;
 }
 
 main .helper {
@@ -144,7 +144,7 @@ main .helper span {
 
 .menu {
 	background: #2c3e50;
-	height: 32vh;
+	height: 34vh;
 	width: 100vw;
 	position: fixed;
 	bottom: 0px;
