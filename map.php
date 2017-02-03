@@ -336,7 +336,7 @@
 
 				</div>
 				<div>
-					<form class="sauvegarde" action='sauveguarde.php' method='post' id='myform'>
+					<form class="sauvegarde" action='sauveguarde.php' id='myform'>
 						<?php
                     if(isset($_GET['id']) && ($_GET['id'] !=null)){
 
