@@ -24,7 +24,7 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 *Comment Installer des Plugins ? Cliquez [ICI](https://www.youtube.com/watch?v=xL0XZ33E7uI)*
 
-### Les plugins OBIGATOIRES :
+### Les plugins OBLIGATOIRES :
 
 1. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
 2. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
