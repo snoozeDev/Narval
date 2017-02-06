@@ -56,6 +56,9 @@ $('#insert').on('click', function () {
 
 	console.log($('#myform :input').serialize());
 
+//	IMPORTANT: AJAX SAVE
+//	TODO: []Pass data using POST method
+
 	if (bateauxJsonString == "{}"){
 		if(confirm("Aucun bateaux sur la carte, êtes-vous sûr(e) de vouloir saugarder ?")){
 			$.ajax({
