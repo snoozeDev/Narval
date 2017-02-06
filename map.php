@@ -337,58 +337,46 @@
 				</div>
 				<div>
 					<form class="sauvegarde" action='sauveguarde.php' id='myform'>
+
 						<?php
-                    if(isset($_GET['id']) && ($_GET['id'] !=null)){
+							if(isset($_GET['id']) && ($_GET['id'] !=null)){
+								include 'db.php';
 
-                        include 'db.php';
+								$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
 
+								if ($conn->connect_error) {
+									die("Connection failed: " . $conn->connect_error);
+								}
+								$sql = "SELECT id, mapName, mapDescription, cercles, polygs, texts, polyls, batis, bateaux FROM save_marine_table";
+								$result = $conn->query($sql);
 
+								while($row = $result->fetch_assoc()) {
+									if($row["id"] == $_GET["id"]){
+										echo '<h3 class="sauvegarde_title" style="color:black">Carte actuelle :</h3>
+										<p style="color:black;text-align:center">'.$row["mapName"].'</p>
+										<input name="idUpdate" type="hidden" value="'.$row["id"].'">
+										<button id="insert2" name="update" class="save2" >Ecraser la sauvegarde</button>';
+									}
+								}
+							}
+						?>
 
-
-
-
-    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-
-    if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT id, mapName, mapDescription, cercles, polygs, texts, polyls, batis, bateaux FROM save_marine_table";
-$result = $conn->query($sql);
-
-
-
-    while($row = $result->fetch_assoc()) {
-        if($row["id"] == $_GET["id"]){
-          echo '<h3 class="sauvegarde_title" style="color:black">Carte actuelle :</h3><p style="color:black;text-align:center">'.$row["mapName"].'</p><input name="idUpdate" type="hidden" value="'.$row["id"].'"><button id="insert2" name="update" class="save2" >Ecraser la sauvegarde</button>';
-        }
-    }
-
-}
-?>
-
-
-							<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
-
-
-
-
-
-							<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
-							<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
-							<input type="hidden" id="cer" name="cercles">
-							<input type="hidden" id="polyg" name="polygs">
-							<input type="hidden" id="text" name="texts">
-							<input type="hidden" id="polyl" name="polyls">
-							<input type="hidden" id="bati" name="batis">
-							<input type="hidden" id="bateau_save" name="bateau_save">
-							<button class="save" name="save" id='insert'>Sauvegarder</button>
+						<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
+`
+						<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
+						<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
+						<input type="hidden" id="cer" name="cercles">
+						<input type="hidden" id="polyg" name="polygs">
+						<input type="hidden" id="text" name="texts">
+						<input type="hidden" id="polyl" name="polyls">
+						<input type="hidden" id="bati" name="batis">
+						<input type="hidden" id="bateau_save" name="bateau_save">
+						<button class="save" name="save" id='insert'>Sauvegarder</button>
 
 					</form>
-
 				</div>
 
 				<div class="simulation">
-
 					<a href="#" class="btn_simulation" id="simulation">Arreter la simulation</a>
 					<a href="#" class="btn_admin" id="admin">Lancer la simulation</a>
 				</div>
