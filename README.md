@@ -14,7 +14,8 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 1. Ouvrir les paramètres.
 2. Deux fichiers s’ouvrent alors. Dans “brackets.json” chercher  (CMD+F) “useTabChar”.
-4. *Si vous avez un resultat* : changer sa valeur a “true”.
+4. *Si vous avez un resultat* :  
+	• Changer sa valeur a `true`.
 5. *Si vous n’avez pas de resultats* :  
 	• Chercher ”wordWrap”.  
 	• Ajouter une ligne en dessous (sans oublier d’ajouter une virgule si “wordWrap” est en fin de bloc).  
@@ -26,10 +27,10 @@ Continuation du projet [BapMarineNationale](https://github.com/NicolasGauvin/Bap
 
 ### Les plugins OBLIGATOIRES :
 
-1. **Brackets Git** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-git)
-2. **Todo** (par Mikael Jorhult) | [GitHub](https://github.com/mikaeljorhult/brackets-todo)
-3. **EMMET** | [Website](http://emmet.io/)
-4. **brackets-typescript** (par Martin Zagora) | [GitHub](https://github.com/zaggino/brackets-typescript)
+1. **Brackets Git** (par Martin Zagora) | Permet l'intégration de Git dans Brackets || [GitHub](https://github.com/zaggino/brackets-git)
+2. **Todo** (par Mikael Jorhult) | Permet d'annoter le code et de mieux se reperer || [GitHub](https://github.com/mikaeljorhult/brackets-todo)
+3. **EMMET** | Facilite l'écriture avec des raccourcis || [Website](http://emmet.io/)
+4. **brackets-typescript** (par Martin Zagora) | Ajoute le support Typescript à Brackets || [GitHub](https://github.com/zaggino/brackets-typescript)
 
 ### Les plugins conseillés :
 
