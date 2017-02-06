@@ -55,17 +55,24 @@
 		<input id="grade" type="range" min="10" max="1500" step="10" value="50">
 
 	</div>
+
+	<!--MARK: AJOUT FORMES-->
+
 	<div id="ajout_pins" class="pop_up_inv hide">
 		<div class="pop_up" id="ajout_pins_inv">
-
 			<form>
+
 				<p class="title"> FORMES </p>
+
 				<div id="selecteur">
 					<a class="btn_text btn" id="btn_text">Texte</a>
 					<a class="btn_circle btn" id="btn_circle">Cercle</a>
 					<a class="btn_polygone btn" id="btn_polygone">Polygone</a>
-					<a class="btn_polyline btn" id="btn_polyline">Lignes</a></div>
+					<a class="btn_polyline btn" id="btn_polyline">Lignes</a>
+				</div>
+
 				<div class="ligne">
+
 					<div id="form_text" class="formulaire hide">
 						<p class="title"> Écrire sur la carte </p>
 						<input id="label_text" class="formula" placeholder="Votre texte">
@@ -74,7 +81,6 @@
 
 
 						<a href="#" class="btn" id="drawText">Ajouter texte</a>
-
 					</div>
 
 					<div id="form_circle" class="formulaire hide">
@@ -95,8 +101,8 @@
 						</select>
 
 						<a href="#" class="btn" id="drawCircle">Ajouter Cercle</a>
-
 					</div>
+
 					<div id="form_polygone" class="formulaire hide">
 						<p class="title">Créer une forme</p>
 						<p class="align">Couleur de la forme</p>
@@ -108,8 +114,8 @@
 						</select>
 						<br>
 						<a href="#" class="btn" id="drawPolygon">Ajouter Polygone</a>
-
 					</div>
+
 					<div id="form_polyline" class="formulaire hide">
 						<p class="title">Créer une ligne</p>
 						<p>Couleur de la ligne</p>
@@ -121,14 +127,9 @@
 						</select>
 						<br>
 						<a href="#" class="btn" id="drawPolyline">Ajouter Polyline</a>
-
 					</div>
 
 				</div>
-
-
-
-
 			</form>
 		</div>
 	</div>
@@ -249,7 +250,6 @@
 
 	<!--MARK CONSOLE PART1-->
 	<div id="console">
-
 		<div class="black">
 			<p class="reperer">Vous ne devez pas vous faire repérer</p>
 			<ul>
@@ -272,31 +272,25 @@
 	<div class="stop">
 		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
 		<br>
-
 		<!--Remplacement des icônes de fin d'action-->
 		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
 		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
-
-
 	</div>
 
-
+	<!--MARK: SIDEBAR BTN-->
 	<button id="sidebar-btn" class="sidebar-btn">
 		<img id="menu-stripes1" src="image/menu.svg">
 	</button>
+
 	<section id="sidebar" class="sidebar">
-
 		<div class="settings">
-
-
 
 			<div class="btn_retourhome">
 				<a href="index.php"> Retour au menu </a>
 			</div>
-
 
 			<h1 class="parametre">Paramètres</h1>
 
@@ -306,13 +300,14 @@
 				<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
 			</div>
 
-			<!-- <button id="onglet-btn" class="onglet1-btn onglet-btn active">
-                 <h2>Filtres</h2>
-               </button>
-               <button id="onglet-btn" class="onglet2-btn onglet-btn inactive">
-                <h2>Suppression</h2>
-              </button> -->
-			<!-- <div class="onglet1 is-open"> -->
+			<!--<button id="onglet-btn" class="onglet1-btn onglet-btn active">
+				<h2>Filtres</h2>
+			</button>
+			<button id="onglet-btn" class="onglet2-btn onglet-btn inactive">
+				<h2>Suppression</h2>
+			</button>-->
+			<!--<div class="onglet1 is-open">-->
+
 			<div class="contenu_onglet" id="contenu_onglet_options">
 				<div class="options-cont">
 					<h3 class="filtres_title">Filtres des éléments natifs</h3>
@@ -443,19 +438,13 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
-
-
-
 			</div>
-
 
 			<script type="text/javascript">
 				var anc_onglet = 'options';
 				change_onglet(anc_onglet);
 			</script>
-
 
 		</div>
 	</section>
@@ -468,24 +457,14 @@
 	<script src='js/coord.js'></script>
 	<script type="text/javascript" src="js/function.js"></script>
 
-
-
 	<script type="text/javascript" src="js/onglet.js"></script>
 
-
-
 	<!--
-    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 -->
 
-	<script>
-	</script>
-
-
-
 	<script src="js/slider.js"></script>
-
 
 	<script src='js/sauveguarde.js'></script>
 	<!--	<script src="js/sendData.js"></script>-->
