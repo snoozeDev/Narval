@@ -56,19 +56,21 @@ $('#insert').on('click', function () {
 
 	console.log($('#myform :input').serialize());
 
-
-
-	$.ajax({
-		type: 'GET',
-		url: $('#myform').attr('action'),
-		data:data+'&save='
-	}).done(function (msg) {
-		var url = window.location.href;
-		msgArray = msg.split('/');
-		alert(msgArray[0]);
-		window.location.replace(url+'?id='+msgArray[1]);
-		console.log('RESULT : ' + msg);
-	});
+	if (bateauxJsonString == "{}"){
+		if(confirm("Aucun bateaux sur la carte, êtes-vous sûr(e) de vouloir saugarder ?")){
+			$.ajax({
+			type: 'GET',
+			url: $('#myform').attr('action'),
+			data:data+'&save='
+			}).done(function (msg) {
+				var url = window.location.href;
+				msgArray = msg.split('/');
+				alert(msgArray[0]);
+				window.location.replace(url+'?id='+msgArray[1]);
+				console.log('RESULT : ' + msg);
+			});
+		}
+	}
 });
 
 $('#insert2').on('click', function () { //TODO: []Empecher l'update si aucune modifs ou si trajet pas valider !
@@ -140,7 +142,7 @@ $('#insert2').on('click', function () { //TODO: []Empecher l'update si aucune mo
 
 //	alert("Carte sauvegardee");
 //	$.post($('#myform').attr('action'), $('#myform :input').serializeArray()).done( function (result) {
-////		$('#result').html(result);
+//		$('#result').html(result);
 //		console.log(result);
 //	});
 });
