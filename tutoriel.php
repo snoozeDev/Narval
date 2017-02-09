@@ -3,12 +3,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+	<link rel="stylesheet" type="text/css" href="css/chargeEtTuto.css">
 </head>
-
-
-
-
-
 
 		</div>
 		<div id="tutoDiv" class="tuto">
