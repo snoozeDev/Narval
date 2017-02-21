@@ -415,7 +415,7 @@ L.Marker.movingMarker = function (latlngs, duration, options) {
 
 
 
-//affichage toolbar et popup
+// MARK affichage toolbar et popup
 $('#map').click(function () {
 	$('#ajout_bateau').hide();
 	$('#ajout_pins').hide();
@@ -503,7 +503,7 @@ $('#btn_polyline').click(function () { //faire apparaitre le form de polyline
 //création du plugin
 // suppression
 
-//ajout de batiments
+//MARK ajout de batiments
 
 var drawBatimentButton = document.getElementById('drawBatiment');
 var batiment = [];
@@ -557,9 +557,10 @@ function addLatLngToBati(clickEventData) {
 
 }
 
+//======================
 
+//MARK Dessiner polygone
 
-// Dessiner polygone
 var drawPolygonButton = document.getElementById('drawPolygon');
 var stopDrawButton = document.getElementById('stopDraw');
 var getDataButton = document.getElementById('getData');
@@ -627,7 +628,9 @@ function addLatLngToPolygon(clickEventData) {
 
 }
 
-//ecrire texte
+//=================
+
+//MARK ecrire texte
 
 var drawMarkerButton = document.getElementById('drawText');
 var texte = [];
@@ -678,8 +681,10 @@ function addLatLngToMarker(clickEventData) {
 
 
 }
+//========================
 
 //MARK dessiner un cercle
+
 var drawCircleButton = document.getElementById('drawCircle');
 var stopDrawCircle = document.getElementById('stopDrawCircle');
 var cercle = []; //tableau de tous les cercles
@@ -689,12 +694,14 @@ var cercleJson = {};
 var taille;
 var color;
 var cercle_name;
+
 drawCircleButton.addEventListener('click', function () {
 	$('#toolbar').hide();
 	$('#ajout_pins').css('display', 'none');
 	$('#stopDrawCircle').show();
 	map.on('click', addLatLngToCircle); //Listen for clicks on map.
 });
+
 stopDrawCircle.addEventListener('click', function arrete() {
 	$('#toolbar').show();
 	$('#stopDrawCircle').hide();
@@ -704,10 +711,12 @@ stopDrawCircle.addEventListener('click', function arrete() {
 	$('#cer').val(cercleJsonString);
 	cer++;
 });
+
 var rangeGradeCircle = document.querySelector('input[type="range"]'); //cercle changement valeur du grade
 var target = document.querySelector('.value');
 target = document.querySelector('.value');
 target.innerHTML = 0 + " km";
+
 var rangeValue = function () {
 	var newValue = rangeGradeCircle.value;
 	target = document.querySelector('.value');
@@ -733,7 +742,6 @@ $('.grade_circle').change(function () {
 });
 
 function stop() {
-
 	map.off('click', addLatLngToCircle); //Stop listening for clicks on map.
 	var elem = "cercle" + cer;
 	var color_fr = cercle[cer].options.color;
@@ -760,11 +768,7 @@ function stop() {
 
 
 	$('.grade_circle').show();
-
-
-
 }
-
 
 function addLatLngToCircle(clickEventData) {
 	taille = $('#taille_circle option:selected').val();
@@ -783,10 +787,12 @@ function addLatLngToCircle(clickEventData) {
 	var cercleJsonString = JSON.stringify(cercleJson);
 	$('#cer').val(cercleJsonString);
 	stop(); //pour ne pas dessiner d'autres cercles
-
-
 }
-// deesiner une ligne
+
+//========================
+
+// MARK dessiner une ligne
+
 var drawPolylineButton = document.getElementById('drawPolyline');
 var currentPolyline = {}; //Empty object to be used later;
 var CurrentMarkerTrajet = {};
@@ -805,13 +811,14 @@ drawPolylineButton.addEventListener('click', function () {
 		className: polyName
 	}).addTo(map);
 	map.on('click', addLatLngToPolyline); //Listen for clicks on map.
-
 });
+
 stopDrawPolyline.addEventListener('click', function () {
 	$('#toolbar').show();
 	var elem = "polyline" + poly;
 	var color_fr = polyline[poly].options.color;
 	poly2 = poly + 1;
+
 	switch (color_fr) {
 	case "blue":
 		color_fr = 'bleu';
@@ -828,9 +835,11 @@ stopDrawPolyline.addEventListener('click', function () {
 	default:
 		break;
 	}
+
 	polylineJson[poly] = [polyline[poly]._latlngs, polyline[poly].options];
 	var polylineJsonString = JSON.stringify(polylineJson);
 	$('#polyl').val(polylineJsonString);
+
 	var form = 'la ligne ' + color_fr + ' n°' + poly2;
 	$('.delete_polyline_p').append('<div class="bord" ><div class="margepolyline" class="form" id="' + elem + '"onclick="delete_obj(&#34;' + elem + '&#34;,&#34;' + form + '&#34;);return false"><p>Cacher ' + form + ' </p> <div class="oeilvert" id="oeil"><div id="oeil' + elem + '" class="vert yeux"></div></div></div> </div> ');
 	poly++;
@@ -842,11 +851,11 @@ function addLatLngToPolyline(clickEventData) {
 	//console.log(clickEventData);
 	//console.log(clickEventData.latlng.lat)
 	polyline[poly].addLatLng(clickEventData.latlng);
-
-
 }
 
-// dessiner une trajectoire
+//=========================
+
+//MARK dessiner une trajectoire
 
 //var DistanceTotaleM=20000;
 var playOrPause = 0;
@@ -874,10 +883,6 @@ drawTrajetButton.addEventListener('click', function () {
 		className: color_bateau
 	}).addTo(map);
 	map.on('click', addLatLngToTrajet); //Listen for clicks on map.
-
-
-
-
 });
 
 stopDrawTrajet.addEventListener('click', function () {
@@ -893,11 +898,9 @@ stopDrawTrajet.addEventListener('click', function () {
 	radar = radar * 100;
 	vitesse_bateau = 1;
 
-	// Calcul longeur Trajet*********************************
-
+	// -------Calcul longeur Trajet--------
 
 	//On calcule la distance entre chaque points du tableau
-
 
 	var nombreDePoints = currentTrajet._latlngs.length;
 	var DistanceTotaleM = 0;
@@ -927,8 +930,6 @@ stopDrawTrajet.addEventListener('click', function () {
 			}
 		}
 	}
-
-
 
 	map.removeLayer(CurrentMarkerTrajet);
 
@@ -966,7 +967,6 @@ stopDrawTrajet.addEventListener('click', function () {
 	console.log(bateaux[bat]);
 	bat++;
 
-
 	//console.log(myMovingMarker);
 });
 bool_bateau = 0;
@@ -982,7 +982,7 @@ function addLatLngToTrajet(clickEventData) {
 
 		bool_bateau = 1;
 
-		console.log("TYPE == " + type_bateau);
+		//console.log("TYPE == " + type_bateau);
 
 		//		for (i = 0; i < 100; i++) {
 		//
@@ -1022,16 +1022,10 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
 
 
-
-
-
-
 		case 'asm':
-
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1061,8 +1055,6 @@ function addLatLngToTrajet(clickEventData) {
 
 
 			break;
-
-
 
 
 		case 'bpc':
@@ -1095,8 +1087,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'fs':
 
@@ -1128,8 +1120,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'phm':
 
@@ -1161,8 +1153,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'fda':
 
@@ -1192,7 +1184,6 @@ function addLatLngToTrajet(clickEventData) {
 					icon: fda_neutre
 				};
 			}
-
 
 
 			break;
@@ -1228,12 +1219,7 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
-
-
-
-
 
 
 		case 'avion':
@@ -1264,9 +1250,8 @@ function addLatLngToTrajet(clickEventData) {
 				};
 			}
 
+
 			break;
-
-
 
 
 		case 'tigre':
@@ -1298,8 +1283,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'puma':
 
@@ -1329,9 +1314,8 @@ function addLatLngToTrajet(clickEventData) {
 				};
 			}
 
+
 			break;
-
-
 
 
 		case 'fennec':
@@ -1363,8 +1347,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'paquebot':
 
@@ -1395,8 +1379,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'cargo':
 
@@ -1427,8 +1411,8 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
+
 
 		case 'peche':
 
@@ -1459,17 +1443,14 @@ function addLatLngToTrajet(clickEventData) {
 			}
 
 
-
 			break;
 
 		}
 	}
-	//console.log(bateaux[bat]);
-
 }
 
 
-// editer une trajectoire
+// MARK editer une trajectoire
 
 $('#play').click(function () {
 	//simulation=true;
@@ -1494,7 +1475,7 @@ $('#pause').click(function () {
 		};
 		//myMovingMarker.start();
 	})
-	//TIMER
+	//MARK TIMER
 var hours = 0;
 var mins = 0;
 var secs = 0;
