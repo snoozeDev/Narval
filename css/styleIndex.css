@@ -44,28 +44,28 @@ img {
 	height: 20vh;
 }
 
-.logos #iim {
+#iim {
 	position: fixed;
 	max-width: 15%;
-	height: auto;
-	left: 11vw;
-	top: 27vh;
+	height: 90px;
+	left: 1vw;
+	top: 90vh;
 }
 
 .logos #marine {
 	position: fixed;
 	max-width: 15%;
-	height: auto;
+	height: 300px;
 	left: 43vw;
-	top: 23vh;
+	top: 3vh;
 }
 
 .logos #cesm {
 	position: fixed;
 	max-width: 15%;
-	height: auto;
-	left: 73vw;
-	top: 25vh;
+	height: 150px;
+	left: 63vw;
+	top: 3vh;
 }
 
 .iconesMenu {
@@ -76,44 +76,58 @@ img {
 
 #iconeNew {
 	position: fixed;
-	width: 120px;
-	left: 913px;
-	bottom: 160px;
+	width: 150px;
+	left: 900px;
+	bottom: 180px;
 }
 
 #iconeNew:hover {
 	position: fixed;
-	width: 130px;
-	left: 908px;
-	bottom: 160px;
+	width: 160px;
+	left: 895px;
+	bottom: 180px;
 }
 
 #iconeLoad {
 	position: fixed;
-	width: 120px;
-	left: 763px;
+	width: 150px;
+	left: 693px;
 	bottom: 32px;
 }
 
 #iconeLoad:hover {
 	position: fixed;
-	width: 130px;
-	left: 758px;
+	width: 160px;
+	left: 688px;
 	bottom: 32px;
 }
 
 #iconeTuto {
 	position: fixed;
-	width: 120px;
-	right: 735px;
+	width: 150px;
+	right: 665px;
 	bottom: 32px;
 }
 
 #iconeTuto:hover {
 	position: fixed;
-	width: 130px;
-	right: 730px;
+	width: 160px;
+	right: 660px;
 	bottom: 32px;
+}
+
+#iconeInfos {
+	position: fixed;
+	width: 70px;
+	right: 35px;
+	bottom: 26px;
+}
+
+#iconeInfos:hover {
+	position: fixed;
+	width: 80px;
+	right: 35px;
+	bottom: 26px;
 }
 
 main .helper {
@@ -143,17 +157,17 @@ main .helper {
 main .helper span {
 	width: 100vw;
 	color: rgba(255, 255, 255, 0.71);
-	font-size: 0.6em;
+	font-size: 1em;
 	display: block;
 	padding-left: 0;
 	position: absolute;
-	bottom: 8vh;
+	bottom: -33vh;
 	left: 3vw;
 }
 
 .menu {
-	background: #2c3e50;
-	height: 34vh;
+	background: #050e3c;
+	height: 40vh;
 	width: 100vw;
 	position: fixed;
 	bottom: 0px;
@@ -861,8 +875,9 @@ transform:rotate(360deg);
 
 h1 {
 	position: absolute;
-	bottom: 12vh;
-	left: 850;
+	bottom: -28vh;
+	left: 745px;
+    font-size: 150px;
 }
 
 p {
@@ -883,7 +898,7 @@ a {
 }
 
 body {
-	background: #283848!important
+	background: #2c498c!important
 }
 
 #loadTitle {
