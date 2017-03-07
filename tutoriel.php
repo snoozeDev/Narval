@@ -8,9 +8,10 @@
 
 <body>
 
-<a href="index.php">
-		<img id='backIcon' src="image/backArrow.svg" alt="">
-		<!--'backIcon' properties in 'changerCarte.css'-->
+	<a href="index.php">
+<!--[]TODO : Fix back button-->
+		<img id='backIcon' src="image/backArrow.svg" alt=""/>
+		<!--'backIcon' properties in 'chargeEtTuto.css'-->
 	</a>
 	<div id="tutoDiv" class="tuto">
 		<div class="title">TUTORIEL</div>
