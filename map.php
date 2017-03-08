@@ -9,8 +9,9 @@
 	<!--
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
-
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+
+
 
 
 
@@ -26,6 +27,10 @@
 		}
 	</script>
 
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
 
@@ -263,9 +268,8 @@
 	</div>
 
 	<div id="toolbar">
-		<div class="forme" id="bateau"> <img src="image/bateau.png"></div>
-
-		<div class="forme" id="forme"> <img src="image/forme.png"></div>
+		<div class="forme"> <img src="image/bateau.png"></div>
+		<div class="forme"> <img src="image/forme.png"></div>
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
 	</div>
 
@@ -470,6 +474,31 @@
 	<!--	<script src="js/sendData.js"></script>-->
 
 	<?php include 'load.php' ?>
+
+
+<div id="control-container" class="container control-container">
+			<!-- Top Navigation -->
+			<div class="component">
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				      <li><a href="#"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+				      <li id="forme"><a href="#"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+				      <li><a href="#"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+				      <li><a href="#"><span class="icon-inversion"><img src="image/inversion.png"></span></a></li>
+				      <li><a href="#"><span class="icon-parametre"><img src="image/Paramètres.png"></span></a></li>
+				     </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+			</div>
+		</div><!-- /container -->
+		<script src="js/polyfills.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/demo1.js"></script>
+
+
 
 </body>
 

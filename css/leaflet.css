@@ -431,13 +431,13 @@
 /* img Day Night*/
 
 .leaflet-control-layers-toggle {
-	background-image: url(../image/basemapToggle.svg);
+	background-image: url(../image/Jour-Nuit.svg);
 	width: 80px;
 	height: 80px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(../image/basemapToggle.svg);
+	background-image: url(../image/Jour-Nuit.svg);
 	background-size: 80px 80px;
 }
 
