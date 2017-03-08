@@ -341,7 +341,7 @@
 }
 
 
-/*NOTE Zoom Icon Color [finished]*/
+/*TODO [x]Zoom Icon Color*/
 
 .leaflet-bar a,
 .leaflet-bar a:hover {
@@ -414,12 +414,17 @@
 }
 
 
-/*NOTE ==> LAYERS STYLE OPTIONS  [finished]*/
+/*---------------------------------------*/
+
+/*       MARK LAYERS STYLE OPTIONS       */
+
+/*---------------------------------------*/
 
 
 /* layers control */
 
 .leaflet-control-layers {
+	transition: transform 0.5s ease-in-out;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.4);
 	background: rgba(0, 0, 0, 0);
 	border-radius: 100px;
@@ -431,13 +436,21 @@
 /* img Day Night*/
 
 .leaflet-control-layers-toggle {
+<<<<<<< HEAD
 	background-image: url(../image/Jour-Nuit.svg);
+=======
+	background-image: url(../image/Jour_Nuit.svg);
+>>>>>>> origin/master
 	width: 80px;
 	height: 80px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
+<<<<<<< HEAD
 	background-image: url(../image/Jour-Nuit.svg);
+=======
+	background-image: url(../image/Jour_Nuit.svg);
+>>>>>>> origin/master
 	background-size: 80px 80px;
 }
 
@@ -454,7 +467,7 @@
 }
 
 
-/*NOTE layer control list style*/
+/*MARK layer control list style*/
 
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
 	display: block;
