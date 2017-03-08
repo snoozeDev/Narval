@@ -341,7 +341,7 @@
 }
 
 
-/*NOTE Zoom Icon Color [finished]*/
+/*TODO [x]Zoom Icon Color*/
 
 .leaflet-bar a,
 .leaflet-bar a:hover {
@@ -414,7 +414,7 @@
 }
 
 
-/*NOTE ==> LAYERS STYLE OPTIONS  [finished]*/
+/*MARK LAYERS STYLE OPTIONS*/
 
 
 /* layers control */
@@ -431,13 +431,13 @@
 /* img Day Night*/
 
 .leaflet-control-layers-toggle {
-	background-image: url(../image/basemapToggle.svg);
+	background-image: url(../image/Jour_Nuit.svg);
 	width: 80px;
 	height: 80px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(../image/basemapToggle.svg);
+	background-image: url(../image/Jour_Nuit.svg);
 	background-size: 80px 80px;
 }
 
