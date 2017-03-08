@@ -108,9 +108,12 @@ Git va nous permettre de travailler sur le même projet en même temps mais **NE
 
 # Architecture du code :
 
-_index.php_|page d'accueil  
-_load.php_|script php récupérant les informations d'une sauvagarde si la page actuelle est une carte sauvagardée  
+_index.php_|page d'accueil
 _map.php_|page principale du projet; c'est la page où on trouve la carte  
+_chargercarte.php_|page pour charger un scénario
+_tutoriel.php_|page du toturiel
+_insert.php_ (*obsolète*)|script php d'insertion de véhicules 
+_load.php_|script php récupérant les informations d'une sauvagarde si la page actuelle est une carte sauvagardée  
 _sauveguarde.php_|script php permettant de sauveguarder une nouvelle carte ou d'écraser une sauvegarde existant  
 _delete.php_|script php permettant de supprimer une carte  
 _db.php.example_|voir setup de l'installation partie 2  
@@ -130,7 +133,10 @@ _leaflet-src.js_|fichier js de la librairie leaflet
 _map.js_|fichier principale de js. Gestion des bateaux, des formes, du radar, du chargement de la sauvegarde...  
 _onglet.js_|fichier js de gestion des onglets dans les paramètres  
 _sauveguarde.js_|fichier de sauveguarde (principalement de preparation de la save des bateaux)  
-_scriptIndex.js_|divers scripts d'affichage de la page index.php  
+_scriptIndex.js_|divers scripts d'affichage de la page index.php 
+_layers.js_|script qui gère le filtre des structures et l'affichage de ces dernières en fonction du niveau de zoom
+_sendData.js_|script qui envoie des données sur la db via des méthodes AJAX
+_slider.js_|script qui gère le slider du temps
 **dossier css**  
 _leaflet.css_|fichier de style de la librairie leaflet  
 _reset.css_|ficher de style pour reste les charactéristiques de chaque naviguateurs  
