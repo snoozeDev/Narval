@@ -72,14 +72,16 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
 	var layersControl = L.control.layers(baseMaps).addTo(map);
 	layersControl.setPosition('bottomright');
-	$(layersControl.getContainer()).addClass('layerControl');
-	/*
-var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-, maxZoom: 19,
+
+	/* ORIGINAL LAYER */
+/*
+	var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	, maxZoom: 19,
 
 
-});*/
+});
+*/
 	// map.addLayer(TopoLayer);
 	//L.control.fullscreen().addTo(map);
 	//map.addLayer(osmLayer);
@@ -100,7 +102,7 @@ attribution: ' <a href="http://osm.org/copyright">OpenStreetMap</a> contributors
 
 
 
-//PLUGIN MIVING MARKER
+//PLUGIN MOVING MARKER
 L.interpolatePosition = function (p1, p2, duration, t) {
 	var k = t / duration;
 	k = (k > 0) ? k : 0;

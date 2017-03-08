@@ -8,16 +8,17 @@
 
 <body>
 
-<a href="index.php">
-		<img id='backIcon' src="image/backArrow.svg" alt="">
-		<!--'backIcon' properties in 'changerCarte.css'-->
-	</a>
+
 	<div id="tutoDiv" class="tuto">
+	<a id='backIcon-Tuto' href="index.php">
+<!--TODO: [x] Fix back button-->
+		<img class="backarrow "src="image/backArrow.svg" alt=""/>
+		<!--'backIcon' properties in 'chargeEtTuto.css'-->
+	</a>
 		<div class="title">TUTORIEL</div>
 		<div class="sommaire">
-			</br>
+
 			<h1>SOMMAIRE</h1>
-			</br>
 
 			</br>
 			<a href="#tutounite">
@@ -67,11 +68,8 @@
 			<h4>1 - Sauvegarder une carte</h4>
 			</br>
 			<h4>2 - Charger une carte</h4>
-			</br>
-
 		</div>
-		</br>
-		</br>
+
 
 		<a name="tutounite" id="tutounite">
 			<h2 style="text-align:center;">I – Unités Maritimes et Aériennes</h2> </a>

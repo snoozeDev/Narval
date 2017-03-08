@@ -62,25 +62,28 @@ var sidebar = (function () {
 
 	function toggleMenu() {
 
+
 		$toggleCol.toggleClass('sidebar-show');
 		$sidebar.toggleClass('show');
 
 		var image = document.getElementById('menu-stripes1');
 
 		var timer = document.getElementById('timer');
-		var layerControl = document.getElementsByClassName('layerControl');
+		var layerControl = document.getElementsByClassName('leaflet-control-layers');
 
 		if (!sidebarIsVisible) {
 			console.log(layerControl);
 			image.src = "image/cancel.svg";
 			image.style = "width:50%";
 			timer.style = "right:310px";
-			//			layerControl[0].style = "right:340px"; TODO move Layer.Control when sidebar is open
+			layerControl[0].className += ' layerControl-right';
+			//TODO [x]move Layer.Control when sidebar is open
 			sidebarIsVisible = true;
 		} else {
 			image.src = "image/menu.svg";
 			timer.style = "right:90px";
 			image.style = "width:100%";
+			layerControl[0].className = layerControl[0].className.replace( /(?:^|\s)layerControl-right(?!\S)/g , '' )
 			sidebarIsVisible = false;
 		}
 	}

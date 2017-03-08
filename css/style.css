@@ -1543,8 +1543,8 @@ p.blast {}
 
 /*-------------------------------*/
 
-.layerControl {
-	transition: 0.1s linear;
+.layerControl-right {
+	transform: translateX(-300px);
 }
 
 
