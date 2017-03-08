@@ -13088,8 +13088,10 @@
 	};
 
 
+/*---------------------------
+*	MARK: LAYER CONTROL
+*----------------------------
 
-	/*
 	 * @class Control.Layers
 	 * @aka L.Control.Layers
 	 * @inherits Control
@@ -13128,7 +13130,7 @@
 	 * ```
 	 */
 
-	//TODO: [x]Control.Layers [finished]
+	//TODO: [x]Control.Layers
 	L.Control.Layers = L.Control.extend({
 		// @section
 		// @aka Control.Layers options
