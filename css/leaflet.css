@@ -446,11 +446,12 @@
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-<<<<<<< HEAD
+/* <<<<<<< HEAD
 	background-image: url(../image/Jour-Nuit.svg);
 =======
 	background-image: url(../image/Jour_Nuit.svg);
->>>>>>> origin/master
+>>>>>>> origin/master */
+    background-image: url(../image/Jour-Nuit.svg);
 	background-size: 80px 80px;
 }
 
