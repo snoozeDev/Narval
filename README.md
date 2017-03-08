@@ -133,15 +133,15 @@ _leaflet-src.js_|fichier js de la librairie leaflet
 _map.js_|fichier principale de js. Gestion des bateaux, des formes, du radar, du chargement de la sauvegarde...  
 _onglet.js_|fichier js de gestion des onglets dans les paramètres  
 _sauveguarde.js_|fichier de sauveguarde (principalement de preparation de la save des bateaux)  
-_scriptIndex.js_|divers scripts d'affichage de la page index.php 
-_layers.js_|script qui gère le filtre des structures et l'affichage de ces dernières en fonction du niveau de zoom
-_sendData.js_|script qui envoie des données sur la db via des méthodes AJAX
+_scriptIndex.js_|divers scripts d'affichage de la page index.php  
+_layers.js_|script qui gère le filtre des structures et l'affichage de ces dernières en fonction du niveau de zoom  
+_sendData.js_|script qui envoie des données sur la db via des méthodes AJAX  
 _slider.js_|script qui gère le slider du temps
 **dossier css**  
 _leaflet.css_|fichier de style de la librairie leaflet  
 _reset.css_|ficher de style pour reste les charactéristiques de chaque naviguateurs  
 _screen.css_|fichier de style du plugin de vidéo tubular  
-_style.css_|fichier de style d ela page map.php
+_style.css_|fichier de style d ela page map.php  
 _styleIndex.css_|fichier de style de la page index.php
 
 # :penguin:
