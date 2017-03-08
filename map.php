@@ -487,7 +487,7 @@
 				      <li id="forme"><a href="#"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
 				      <li><a href="#"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
 				      <li><a href="#"><span class="icon-inversion"><img src="image/inversion.png"></span></a></li>
-				      <li><a href="#"><span class="icon-parametre"><img src="image/Paramètres.png"></span></a></li>
+				      <li><a href="#"><span class="icon-parametre"><img src="image/parametres.png"></span></a></li>
 				     </ul>
 				</div>
 				<div id="cn-overlay" class="cn-overlay"></div>
