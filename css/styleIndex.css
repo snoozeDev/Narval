@@ -861,9 +861,11 @@ transform:rotate(360deg);
 .sommaire {
 	background-color: #2C3E50;
 	margin-right: 70%;
+	margin-bottom: 40px;
 	border-width: 2px;
 	border-style: dotted;
 	border-color: White;
+	padding: 20px;
 }
 
 .tutoriel {
@@ -877,7 +879,7 @@ h1 {
 	position: absolute;
 	bottom: -28vh;
 	left: 745px;
-    font-size: 150px;
+	font-size: 150px;
 }
 
 p {

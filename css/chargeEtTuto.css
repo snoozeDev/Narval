@@ -2,16 +2,26 @@ body {
 	padding: 10px;
 }
 
+h1 {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	font-size: 48px;
+	text-align: center;
+}
+
+h4 {
+	padding-left: 25px;
+}
+
 #backIcon {
 	width: 72px;
 	padding: 16px;
 	position: absolute;
-	top: 5%;
-	left: 2%;
+	left: -16px; /* To set on left border */
 }
 
 #backIcon:hover {
 	width: 82px;
-	top: 4.5%;
-	left: 1.5%;
+	top:-5px;
 }
