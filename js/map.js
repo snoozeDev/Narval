@@ -72,7 +72,6 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
 	var layersControl = L.control.layers(baseMaps).addTo(map);
 	layersControl.setPosition('bottomright');
-	$(layersControl.getContainer()).addClass('layerControl');
 
 	/* ORIGINAL LAYER */
 /*
