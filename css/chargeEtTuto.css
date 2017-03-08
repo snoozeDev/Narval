@@ -14,14 +14,26 @@ h4 {
 	padding-left: 25px;
 }
 
-#backIcon {
+#backIcon-Tuto {
 	width: 72px;
 	padding: 16px;
 	position: absolute;
 	left: -16px; /* To set on left border */
 }
 
-#backIcon:hover {
+#backIcon-Tuto:hover {
 	width: 82px;
 	top:-5px;
+}
+
+#backIcon-Charge {
+	width: 72px;
+	padding: 16px;
+	position: absolute;
+	left: 0px;
+}
+
+#backIcon-Charge:hover {
+	width: 82px;
+	top:5px;
 }
