@@ -39,6 +39,14 @@ img {
 	margin: auto;
 }
 
+img.backarrow{
+     width: 60px;
+    margin-left: 10px;
+}
+
+#backIcon-Tuto{
+    width: auto;
+}
 .logos {
 	width: 20vw;
 	height: 20vh;

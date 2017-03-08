@@ -30,7 +30,7 @@
 
 <div id="loadDiv" style="z-index:100">
 	<a  id='backIcon-Charge' href="index.php">
-		<img src="image/backArrow.svg" alt="">
+		<img class=backarrow src="image/backArrow.svg" alt="">
 		<!--'backIcon' properties in 'changerCarte.css'-->
 	</a>
 	<h4 id='loadTitle'>Charger une carte sauvegardée</h4>

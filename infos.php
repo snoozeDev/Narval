@@ -8,7 +8,7 @@
 
 <body>
 <a href="index.php">
-		<img id='backIcon' src="image/backArrow.svg" alt="">
+		<img class="backarrow" src="image/backArrow.svg" alt="">
 		<!--'backIcon' properties in 'changerCarte.css'-->
 	</a>
 </body>

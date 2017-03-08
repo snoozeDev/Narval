@@ -12,7 +12,7 @@
 	<div id="tutoDiv" class="tuto">
 	<a id='backIcon-Tuto' href="index.php">
 <!--TODO: [x] Fix back button-->
-		<img src="image/backArrow.svg" alt=""/>
+		<img class="backarrow "src="image/backArrow.svg" alt=""/>
 		<!--'backIcon' properties in 'chargeEtTuto.css'-->
 	</a>
 		<div class="title">TUTORIEL</div>
