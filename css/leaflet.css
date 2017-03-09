@@ -436,22 +436,13 @@
 /* img Day Night*/
 
 .leaflet-control-layers-toggle {
-<<<<<<< HEAD
 	background-image: url(../image/Jour-Nuit.svg);
-=======
-	background-image: url(../image/Jour_Nuit.svg);
->>>>>>> origin/master
 	width: 80px;
 	height: 80px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-/* <<<<<<< HEAD
 	background-image: url(../image/Jour-Nuit.svg);
-=======
-	background-image: url(../image/Jour_Nuit.svg);
->>>>>>> origin/master */
-    background-image: url(../image/Jour-Nuit.svg);
 	background-size: 80px 80px;
 }
 
