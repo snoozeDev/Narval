@@ -3319,7 +3319,7 @@
         position: "topleft",
         zoomInText: "+",
         zoomInTitle: "Zoom in",
-        zoomOutText: "-",
+        zoomOutText: "|",
         zoomOutTitle: "Zoom out"
       },
       onAdd: function (t) {

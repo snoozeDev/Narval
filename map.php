@@ -266,7 +266,7 @@
 		<div class="forme"> <img src="image/bateau.png"></div>
 		<div class="forme"> <img src="image/forme.png"></div>
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
-	</div>-->
+	</div>
 
 	<div class="stop">
 		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
@@ -481,8 +481,8 @@
 					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
 					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
 					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-					<li><a href="#"><span class="icon-inversion"><img src="image/inversion.png"></span></a></li>
-					<li><a href="#"><span class="icon-parametre"><img src="image/parametres.png"></span></a></li>
+					<li><a href="#"><span class="icon-inversion"><img src="image/parametres.png"></span></a></li>
+					<li><a href="#"><span class="icon-parametre"><img src="image/retour-menu.png"></span></a></li>
 				</ul>
 			</div>
 			<div id="cn-overlay" class="cn-overlay"></div>

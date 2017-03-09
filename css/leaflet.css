@@ -157,6 +157,9 @@
 	pointer-events: visiblePainted;
 	/* IE 9-10 doesn't have auto */
 	pointer-events: auto;
+  left : 676px;
+  bottom: 0px;
+  transform: rotate(90deg);
 }
 
 .leaflet-top,
@@ -387,9 +390,9 @@
 /*ZOOM CONTROL CSS [V.1.0.2]*/
 
 .leaflet-touch .leaflet-bar a {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	width: 70px;
+	height: 70px;
+	line-height: 60px;
 }
 
 
@@ -410,7 +413,7 @@
 }
 
 .leaflet-touch .leaflet-control-zoom-out {
-	font-size: 32px;
+	font-size: 22px;
 }
 
 
