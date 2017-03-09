@@ -261,12 +261,12 @@
 			<img id="open" src="image/open.png" style="display: none;">
 		</div>
 	</div>
-
+<!--
 	<div id="toolbar">
 		<div class="forme"> <img src="image/bateau.png"></div>
 		<div class="forme"> <img src="image/forme.png"></div>
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
-	</div>
+	</div>-->
 
 	<div class="stop">
 		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
