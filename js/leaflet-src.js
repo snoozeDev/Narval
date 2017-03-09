@@ -12710,7 +12710,7 @@
 
 			// @option zoomOutText: String = '-'
 			// The text set on the 'zoom out' button.
-			zoomOutText: '-',
+			zoomOutText: '|',
 
 			// @option zoomOutTitle: String = 'Zoom out'
 			// The title set on the 'zoom out' button.
