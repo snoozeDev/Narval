@@ -423,6 +423,14 @@ $('#map').click(function () {
 	$('#ajout_pins').hide();
 	$('#ajout_batiment').hide();
 });
+
+function openPopUp(name){
+	if (name != null){
+		$('#ajout_'+name).css('display', 'block');
+	}
+}
+
+/*
 $('#bateau').click(function () { //faire apparaittre le popup des bateaux
 	$('#ajout_bateau').css('display', 'block');
 });
@@ -433,7 +441,7 @@ $('#forme').click(function () { //faire apparaittre le popup des formes
 $('#batiment').click(function () { //faire apparaittre le popup des batiments
 	$('#ajout_batiment').css('display', 'block');
 });
-
+*/
 
 $(document).mouseup(function (e) { //clique en dehors
 	var container = $("#ajout_pins");

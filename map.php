@@ -478,9 +478,9 @@
 			<button class="cn-button" id="cn-button">+</button>
 			<div class="cn-wrapper" id="cn-wrapper">
 				<ul>
-					<li><a href="#" onclick="$('#ajout_bateau').css('display', 'block');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-					<li id="forme"><a href="#"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-					<li><a href="#"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
 					<li><a href="#"><span class="icon-inversion"><img src="image/inversion.png"></span></a></li>
 					<li><a href="#"><span class="icon-parametre"><img src="image/parametres.png"></span></a></li>
 				</ul>
