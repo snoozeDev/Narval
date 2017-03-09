@@ -14,17 +14,19 @@
         <!--'backIcon' properties in 'changerCarte.css'-->
     </a>
 
-    <div class="photos">
+        <div id="conteneur">
 
-        <div id="julien"><img src="image/Ju_Langlais.png"></div>
-        <div id="jb"><img src="image/JB_Lafon.png"></div>
-        <div id="nicolas"><img src="image/Nicolas_Dumontier.png"></div>
-        <div id="antoine"><img src="image/Antoine_Delacommune.png"></div>
-        <div id="louis"><img src="image/Louis_Gaudet.png"></div>
-        <div id="baloo"><img src="image/Alexis_Durieu.png"></div>
-        <div id="matthieu"><img src="image/Matthieu_Mignon.png"></div>
-        <div id="alexis"><img src="image/Alexis_Lamarche.png"></div>
+        <div class="photo"><img id="julien" src="image/Ju_Langlais.png"><h2>Julien Langlais</h2><h3>Scrum Master</h3></div>
+        <div class="photo"><img id="jb" src="image/JB_Lafon.png"><h2>Jean-Baptiste Lafon</h2><h3>Product Owner</h3></div>
+        <div class="photo"><img id="nicolas" src="image/Nicolas_Dumontier.png"><h2>Nicolas Dumontier</h2><h3>Scrum Master</h3></div>
+        <div class="photo"><img id="antoine" src="image/Antoine_Delacommune.png"><h2>Antoine Delacommune</h2><h3>Product Owner</h3></div>
+        </div>
 
-    </div>
+        <div id="conteneur2">
+        <div class="photo"><img id="louis" src="image/Louis_Gaudet.png"><h2>Louis Gaudet</h2><h3>Responsable Hardware</h3></div>
+        <div class="photo"><img id="baloo" src="image/Alexis_Durieu.png"><h2>Alexis Durieu</h2><h3>UX Designer</h3></div>
+        <div class="photo"><img id="matthieu" src="image/Matthieu_Mignon.png"><h2>Matthieu Mignon</h2><h3>Game Designer</h3></div>
+        <div class="photo"><img id="alexis" src="image/Alexis_Lamarche.png"><h2>Alexis Lamarche</h2><h3>Scénariste</h3></div>
 
+        </div>
 </body>
