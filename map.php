@@ -30,33 +30,40 @@
 </head>
 
 <body>
+
+    <!-- MARK: AJOUT BATIMENTS -->
 	<div id="ajout_batiment" class="pop_up_inv hide">
+
 		<div class="pop_up" id="ajout_batiment_inv">
 			<p class="title">BÂTIMENTS</p>
-			<select class="formula" id="icone_select" name="icone_select">
-				<option value="port">Port</option>
-				<option value="offshore">Plateforme offshore</option>
-				<option value="phare">Phare</option>
-				<option value="ville">Ville</option>
-				<option value="village">Village</option>
+			    <select class="formula" id="icone_select" name="icone_select">
+				    <option value="port">Port</option>
+				    <option value="offshore">Plateforme offshore</option>
+				    <option value="phare">Phare</option>
+				    <option value="ville">Ville</option>
+				    <option value="village">Village</option>
+			    </select>
 
-			</select>
 			<img src="image/port.svg" id="icone_img">
 
 			<label>Description (facutatif)</label>
 			<br>
+
 			<textarea class="formula" id="bati_describ" name="description"></textarea>
 
 			<a href="#" class="btn" id="drawBatiment">Ajouter le bâtiment</a>
 		</div>
+
 	</div>
+
 	<div class="grade_circle">
+
 		<div class="value">0</div>
 		<input id="grade" type="range" min="10" max="1500" step="10" value="50">
 
 	</div>
 
-	<!--MARK: AJOUT FORMES-->
+	<!-- MARK: AJOUT FORMES -->
 
 	<div id="ajout_pins" class="pop_up_inv hide">
 		<div class="pop_up" id="ajout_pins_inv">
@@ -65,10 +72,10 @@
 				<p class="title"> FORMES </p>
 
 				<div id="selecteur">
-					<a class="btn_text btn" id="btn_text">Texte</a>
-					<a class="btn_circle btn" id="btn_circle">Cercle</a>
-					<a class="btn_polygone btn" id="btn_polygone">Polygone</a>
-					<a class="btn_polyline btn" id="btn_polyline">Lignes</a>
+					<a class="btn_text btn" id="btn_text"><img src="image/Ajout_Texte.svg" width="50px" height="50px"></a>
+					<a class="btn_circle btn" id="btn_circle"><img src="image/Ajout_Cercle.svg" width="50px" height="50px"></a>
+					<a class="btn_polygone btn" id="btn_polygone"><img src="image/Ajout_Polygone.svg" width="50px" height="50px"></a>
+					<a class="btn_polyline btn" id="btn_polyline"><img src="image/Ajout_Ligne.svg" width="50px" height="50px"></a>
 				</div>
 
 				<div class="ligne">
@@ -104,8 +111,8 @@
 					</div>
 
 					<div id="form_polygone" class="formulaire hide">
-						<p class="title">Créer une forme</p>
-						<p class="align">Couleur de la forme</p>
+						<p class="title">Créer un polygone</p>
+						<p class="align">Couleur du polygone</p>
 						<select class="formula" id="color_polygone" name="color_polygone">
 							<option value="blue">Bleu</option>
 							<option value="red">Rouge</option>
