@@ -133,7 +133,7 @@
 							<option value="gray">Gris</option>
 						</select>
 						<br>
-						<a href="#" class="btn" id="drawPolyline">Ajouter Polyline</a>
+						<a href="#" class="btn" id="drawPolyline">Ajouter Ligne</a>
 					</div>
 
 				</div>
