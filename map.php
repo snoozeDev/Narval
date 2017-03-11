@@ -488,8 +488,8 @@
 					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
 					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
 					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-					<li><a href="#"><span class="icon-inversion"><img src="image/parametres.png"></span></a></li>
-					<li><a href="#"><span class="icon-parametre"><img src="image/exit.png"></span></a></li>
+					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
 				</ul>
 			</div>
 			<div id="cn-overlay" class="cn-overlay"></div>
