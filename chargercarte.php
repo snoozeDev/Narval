@@ -35,13 +35,13 @@
 	</a>
 	<h4 id='loadTitle'>Charger une carte sauvegardée</h4>
 
-<?php
+	<?php
 	include 'db.php';
 
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
 
 	if ($conn->connect_error) {
-		  die("Connection failed: " . $conn->connect_error);
+		die("Connection failed: " . $conn->connect_error);
 	}
 	$sql = "SELECT id, mapName, mapDescription, cercles, polygs, texts, polyls, batis, bateaux FROM save_marine_table";
 	$result = $conn->query($sql);
@@ -58,6 +58,8 @@
 				<a href="delete.php?id='.$row["id"].'" style="background:red;cursor: pointer;" class="btn"  id="Load">Supprimer la carte</a>
 			</li>
 		</ul>
-	';
+		';
 	}
-?>
+	?>
+
+
