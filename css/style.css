@@ -357,9 +357,9 @@ body {
 .stop {
 	position: absolute;
 	z-index: 1000;
-	bottom: 4.5%;
+	bottom: 3.3%;
 	left: 22.5%;
-	width: 4%;
+	width: 3.9%;
 }
 
 
@@ -467,6 +467,8 @@ body {
 	left: 10px;
 	width: 50px !important;
 	text-align: center;
+	/* BOUSSOLE CACHEE CAR INUTILE ? */
+	display:none;
 }
 
 .formulaire,

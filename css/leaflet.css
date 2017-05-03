@@ -157,16 +157,18 @@
 	pointer-events: visiblePainted;
 	/* IE 9-10 doesn't have auto */
 	pointer-events: auto;
-  left : 676px;
-  bottom: 0px;
-  transform: rotate(90deg);
+
 }
+
+
+
 
 .leaflet-top,
 .leaflet-bottom {
 	position: absolute;
 	z-index: 1000;
 	pointer-events: none;
+
 }
 
 .leaflet-top {
@@ -397,7 +399,11 @@
 
 
 /* zoom control */
-
+.leaflet-control-zoom{
+	left : 676px;
+	bottom: 0px;
+	transform: rotate(90deg);
+}
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
 	font: bold 30px 'Lucida Console', Monaco, monospace;
@@ -433,32 +439,56 @@
 	border-radius: 100px;
 	width: 80px;
 	height: 80px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 
 /* img Day Night*/
 
 .leaflet-control-layers-toggle {
-	background-image: url(../image/Jour-Nuit.svg);
+	background-image: url(../image/Jour_Nuit.svg);
 	width: 80px;
 	height: 80px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
+
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(../image/Jour-Nuit.svg);
+	background-image: url(../image/Jour_Nuit.svg);
 	background-size: 80px 80px;
-}
 
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
+
+
+}
+/* ICI CEST PARIS 
+.leaflet-control-attribution, .leaflet-control-layers-list{position: absolute;right: 820%;bottom: 40%;}*/
 .leaflet-touch .leaflet-control-layers-toggle {
 	border-radius: 100px;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 	width: 80px;
 	height: 80px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
+
+
 }
 
 .leaflet-control-layers .leaflet-control-layers-list,
 .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-	display: none;
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 
@@ -468,17 +498,29 @@
 	display: block;
 	position: relative;
 	margin-top: 8px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 .leaflet-control-layers-expanded {
 	padding: 6px 6px 6px 6px;
 	color: #446E58;
 	background: #17201C;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 .leaflet-control-layers-scrollbar {
 	overflow-y: scroll;
 	padding-right: 5px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 /*Layers checkboxes*/
@@ -488,17 +530,30 @@
 	margin-left: 15px;
 	position: relative;
 	top: 1px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 .leaflet-control-layers label {
 	display: block;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
 
 .leaflet-control-layers-separator {
 	height: 0;
 	border-top: 1px solid #ddd;
 	margin: 5px -10px 5px -6px;
+
+	/* CACHE CAR DUR A DEPLACER */
+	display:none;
+
 }
+
 
 
 /* Default icon URLs */
