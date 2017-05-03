@@ -31,18 +31,18 @@
 
 <body>
 
-    <!-- MARK: AJOUT BATIMENTS -->
+	<!-- MARK: AJOUT BATIMENTS -->
 	<div id="ajout_batiment" class="pop_up_inv hide">
 
 		<div class="pop_up" id="ajout_batiment_inv">
 			<p class="title">BÂTIMENTS</p>
-			    <select class="formula" id="icone_select" name="icone_select">
-				    <option value="port">Port</option>
-				    <option value="offshore">Plateforme offshore</option>
-				    <option value="phare">Phare</option>
-				    <option value="ville">Ville</option>
-				    <option value="village">Village</option>
-			    </select>
+				<select class="formula" id="icone_select" name="icone_select">
+					<option value="port">Port</option>
+					<option value="offshore">Plateforme offshore</option>
+					<option value="phare">Phare</option>
+					<option value="ville">Ville</option>
+					<option value="village">Village</option>
+				</select>
 
 			<img src="image/port.svg" id="icone_img">
 
