@@ -14,7 +14,7 @@ body {
 /* PAGE CREDITS */
 
 #julien{
-    width: 300px;
+	width: 300px;
 }
 
 /*-------------------------------*/
@@ -41,7 +41,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
-*/
+	*/
 }
 
 #close_console {
@@ -357,13 +357,14 @@ body {
 .stop {
 	position: absolute;
 	z-index: 1000;
-	top: 25%;
-	left: 1%;
+	bottom: 4.5%;
+	left: 22.5%;
 	width: 4%;
 }
 
-.forme {
-	padding: 10%;
+
+.valide{
+	height: 75px;
 }
 
 .batiment {
