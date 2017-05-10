@@ -1543,7 +1543,7 @@ p.blast {}
 }
 
 /* DEBUT CHAT */
-#page-wrap						{ z-index: 999; position: absolute;}
+#page-wrap						{ z-index: 999; position: absolute; bottom: 0;width:20vw;}
 #chat-area                      { border-radius: 10px; height: 300px; overflow: auto; padding: 20px; background: white; }
 #chat-area span                 { color: white; background: #333; padding: 4px 8px; margin: 0 5px 0 0; }
 #chat-area p                    { padding: 8px 0; }
@@ -1551,7 +1551,7 @@ p.blast {}
 #name-area span                 { color: #fa9f00; }
 
 #send-message-area p            {  color: white; padding-top: 27px; font-size: 14px; }
-#sendie                         {  width: 360px; padding: 10px; border-radius: 10px;}
+#sendie                         {  width: 360px; padding: 10px; border-radius: 10px; width: 19vw;}
 
 /* FIN CHAT */
 

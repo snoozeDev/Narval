@@ -478,7 +478,7 @@
 	</section>
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
+	<script src="js/L.Graticule.js"></script>
 	<script src="js/leaflet-src.js"></script>
 	<script type="text/javascript" src="js/icone.js"></script>
 	<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
@@ -606,8 +606,12 @@
             });
 
          		});
-         	</script>
 
-         </body>
+  // Add a basic graticule with divisions every 20 degrees
+// as a layer on a map
+L.graticule().addTo(map);
+</script>
 
-         </html>
+</body>
+
+</html>

@@ -33,3 +33,6 @@
 <span>Soldat</span>Mdrr 
 <span>Soldat</span>SERGENT, ON NOUS ATTAQUE ! 
 <span>Sergent</span>Bah riposte, nom de diiieu ! 
+<span>Soldat</span>Coucou ! 
+<span>G&eacute;n&eacute;ral</span>Hey ! 
+<span>Soldat</span>ATTAQUE 
