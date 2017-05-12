@@ -36,11 +36,10 @@
 
 	<!-- CE FICHIER CONTIENT LES FONCTIONS DU CHAT -->
 	<?php include('chat.php') ?>
+	<p id="name-area"></p>
 
-	<div id="page-wrap">
-
-		<p id="name-area"></p>
-
+	<div id="ajout_chatbox" >
+		<p id="closechat" onclick="closePopUp('chatbox')">Fermer le chat</p>
 		<div id="chat-wrap"><div id="chat-area"></div></div>
 		<form id="send-message-area">
 			<textarea id="sendie" maxlength = '100'></textarea>
@@ -478,7 +477,6 @@
 	</section>
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/L.Graticule.js"></script>
 	<script src="js/leaflet-src.js"></script>
 	<script type="text/javascript" src="js/icone.js"></script>
 	<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
@@ -510,8 +508,10 @@
 				<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
 				<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
 				<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-				<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+				<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
 				<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+				<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+
 			</ul>
 		</div>
 		<div id="cn-overlay" class="cn-overlay"></div>
@@ -607,11 +607,8 @@
 
          		});
 
-  // Add a basic graticule with divisions every 20 degrees
-// as a layer on a map
-L.graticule().addTo(map);
-</script>
+         	</script>
 
-</body>
+         </body>
 
-</html>
+         </html>

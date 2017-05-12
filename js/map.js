@@ -44,19 +44,19 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 	//initialisation de la map
 
 	var depth = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-			/*attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',*/
-			maxZoom: 16
-		}),
-		day = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-			/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
-			subdomains: 'abcd',
-			maxZoom: 19
-		}),
-		night = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-			/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
-			subdomains: 'abcd',
-			maxZoom: 19
-		});
+		/*attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',*/
+		maxZoom: 16
+	}),
+	day = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+		/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
+		subdomains: 'abcd',
+		maxZoom: 19
+	}),
+	night = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+		/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
+		subdomains: 'abcd',
+		maxZoom: 19
+	});
 
 	map = L.map('map', {
 		center: [-1.743, 4.8],
@@ -98,7 +98,7 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 
 	    });*/
 
-}
+	}
 
 
 
@@ -333,7 +333,7 @@ L.Marker.MovingMarker = L.Marker.extend({
 	 * @return {Number} elapsed time on the current line or null if
 	 * we reached the end or marker is at a station
 	 */
-	_updateLine: function (timestamp) {
+	 _updateLine: function (timestamp) {
 		// time elapsed since the last latlng
 		var elapsedTime = timestamp - this._startTimeStamp;
 
@@ -429,7 +429,11 @@ function openPopUp(name){
 		$('#ajout_'+name).css('display', 'block');
 	}
 }
-
+function closePopUp(name){
+	if (name != null){
+		$('#ajout_'+name).css('display', 'none');
+	}
+}
 /*
 $('#bateau').click(function () { //faire apparaittre le popup des bateaux
 	$('#ajout_bateau').css('display', 'block');
@@ -600,19 +604,19 @@ stopDraw.addEventListener('click', function () {
 	var color_fr = polygone[polyg].options.color;
 	polyg2 = polyg + 1;
 	switch (color_fr) {
-	case "blue":
+		case "blue":
 		color_fr = 'bleu';
 		break;
-	case "green":
+		case "green":
 		color_fr = 'vert';
 		break;
-	case "red":
+		case "red":
 		color_fr = 'rouge';
 		break;
-	case "gray":
+		case "gray":
 		color_fr = 'gris';
 		break;
-	default:
+		default:
 		break;
 	}
 
@@ -757,19 +761,19 @@ function stop() {
 	var color_fr = cercle[cer].options.color;
 	cer2 = cer + 1;
 	switch (color_fr) {
-	case "blue":
+		case "blue":
 		color_fr = 'bleu';
 		break;
-	case "green":
+		case "green":
 		color_fr = 'vert';
 		break;
-	case "red":
+		case "red":
 		color_fr = 'rouge';
 		break;
-	case "gray":
+		case "gray":
 		color_fr = 'gris';
 		break;
-	default:
+		default:
 		break;
 	}
 	var form = 'le cercle ' + color_fr + ' n°' + cer2;
@@ -830,19 +834,19 @@ stopDrawPolyline.addEventListener('click', function () {
 	poly2 = poly + 1;
 
 	switch (color_fr) {
-	case "blue":
+		case "blue":
 		color_fr = 'bleu';
 		break;
-	case "green":
+		case "green":
 		color_fr = 'vert';
 		break;
-	case "red":
+		case "red":
 		color_fr = 'rouge';
 		break;
-	case "gray":
+		case "gray":
 		color_fr = 'gris';
 		break;
-	default:
+		default:
 		break;
 	}
 
@@ -927,23 +931,23 @@ stopDrawTrajet.addEventListener('click', function () {
 	var elem = "bateau" + bat;
 	/*if(bat>0){
 	$(CurrentIcon).removeClass(color_bateau+(bat-1));
-	}*/
+}*/
 
-	console.log("bat : " + bat);
-	console.log(bateaux[bat]);
+console.log("bat : " + bat);
+console.log(bateaux[bat]);
 
-	bateaux[bat] = L.Marker.movingMarker(currentTrajet._latlngs, TOTAL, CurrentIcon).addTo(map);
-	if (playOrPause == 1) {
-		if (bateaux[bat]._latlngs) {
-			if (currentTrajet._latlngs[1]) {
-				bateaux[bat].start();
-			}
+bateaux[bat] = L.Marker.movingMarker(currentTrajet._latlngs, TOTAL, CurrentIcon).addTo(map);
+if (playOrPause == 1) {
+	if (bateaux[bat]._latlngs) {
+		if (currentTrajet._latlngs[1]) {
+			bateaux[bat].start();
 		}
 	}
+}
 
-	map.removeLayer(CurrentMarkerTrajet);
+map.removeLayer(CurrentMarkerTrajet);
 
-	var description_bateau = $('#description').val();
+var description_bateau = $('#description').val();
 	//edit de bateaux
 	CurrentType = $('#type_bateau option:selected').val();
 
@@ -1000,7 +1004,7 @@ function addLatLngToTrajet(clickEventData) {
 
 		switch (type_bateau) {
 
-		case 'porte-avion':
+			case 'porte-avion':
 
 
 			if (color_bateau == "blue") {
@@ -1035,7 +1039,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'asm':
+			case 'asm':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1067,7 +1071,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'bpc':
+			case 'bpc':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1100,7 +1104,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'fs':
+			case 'fs':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1133,7 +1137,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'phm':
+			case 'phm':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1166,7 +1170,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'fda':
+			case 'fda':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1199,7 +1203,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'bcr':
+			case 'bcr':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1232,7 +1236,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'avion':
+			case 'avion':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1264,7 +1268,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'tigre':
+			case 'tigre':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1296,7 +1300,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'puma':
+			case 'puma':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1328,7 +1332,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'fennec':
+			case 'fennec':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1360,7 +1364,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'paquebot':
+			case 'paquebot':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1392,7 +1396,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'cargo':
+			case 'cargo':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1424,7 +1428,7 @@ function addLatLngToTrajet(clickEventData) {
 			break;
 
 
-		case 'peche':
+			case 'peche':
 
 			if (color_bateau == "blue") {
 				CurrentMarkerTrajet = L.marker([clickEventData.latlng.lat, clickEventData.latlng.lng], {
@@ -1486,28 +1490,28 @@ $('#pause').click(function () {
 		//myMovingMarker.start();
 	})
 	//MARK TIMER
-var hours = 0;
-var mins = 0;
-var secs = 0;
-var days = 0;
-var speed = 1;
-var editRadar;
+	var hours = 0;
+	var mins = 0;
+	var secs = 0;
+	var days = 0;
+	var speed = 1;
+	var editRadar;
 
-$("#pause").css("display", "none");
-$('#play').click(function () {
-	startTimer();
-	$("#pause").css("display", "inline-block");
-	$("#play").css("display", "none");
-	playOrPause = 1;
-	console.log(playOrPause);
-});
-$('#pause').click(function () {
-	clearTimeout(timex);
-	$("#play").css("display", "inline-block");
 	$("#pause").css("display", "none");
-	playOrPause = 0;
-	console.log(playOrPause);
-});
+	$('#play').click(function () {
+		startTimer();
+		$("#pause").css("display", "inline-block");
+		$("#play").css("display", "none");
+		playOrPause = 1;
+		console.log(playOrPause);
+	});
+	$('#pause').click(function () {
+		clearTimeout(timex);
+		$("#play").css("display", "inline-block");
+		$("#pause").css("display", "none");
+		playOrPause = 0;
+		console.log(playOrPause);
+	});
 
 //MARK: SLIDER SPEED
 var speed = 1;
@@ -1574,16 +1578,16 @@ $('.speed').change(function () { //lorsque le coef de vitesse change on refait l
 				}
 				if (boolean_vitesse == true) { //if pour reprendre le trajet à partir des points ou l'on en est
 					currentPolyline2.addLatLng(editCurrentLine[i]);
-				}
-				/*bateaux[i]._latlngs*/
-			};
+			}
+			/*bateaux[i]._latlngs*/
+		};
 
-			boolean_vitesse = false;
-			map.removeLayer(bateaux[j]);
-			edit_vitesse = "";
+		boolean_vitesse = false;
+		map.removeLayer(bateaux[j]);
+		edit_vitesse = "";
 
-			var nombreDePoints = currentPolyline2._latlngs.length;
-			var DistanceTotaleM = 0;
+		var nombreDePoints = currentPolyline2._latlngs.length;
+		var DistanceTotaleM = 0;
 
 			for (var i = 1; i < nombreDePoints; i++) { //fonction pour la convertir la vitesse en noeud
 				DistanceTotaleM += currentPolyline2._latlngs[i].distanceTo(currentPolyline2._latlngs[i - 1]);
@@ -1808,13 +1812,13 @@ $('#map').on('click', '.bateau_vitesse', function () { //changement vitesse
 			editCurrentLine = bateaux[id]._latlngs; //recup trajet
 			if (bateaux[id]._currentLine[1]) { //si le bateau n'a pas encore bougé il n'a pas de currentline
 				editCurrentPoint = bateaux[id]._currentLine[1]; //recup position
-			} else {
-				editCurrentPoint = editCurrentLine[0];
-			}
+		} else {
+			editCurrentPoint = editCurrentLine[0];
+		}
 
-			console.log(bateaux[id]._currentLine[1]);
+		console.log(bateaux[id]._currentLine[1]);
 
-			$('#stopEditPolyline').css('display', 'block');
+		$('#stopEditPolyline').css('display', 'block');
 
 
 			// console.log(bateau[bat]);
@@ -1835,14 +1839,14 @@ $('#map').on('click', '.bateau_vitesse', function () { //changement vitesse
 				}
 				if (boolean_vitesse == true) { //if pour reprendre le trajet à partir des points ou l'on en est
 					currentPolyline2.addLatLng(editCurrentLine[i]);
-				}
-				/*bateaux[i]._latlngs*/
-			};
-			boolean_vitesse = false;
-
-		}
+			}
+			/*bateaux[i]._latlngs*/
+		};
+		boolean_vitesse = false;
 
 	}
+
+}
 });
 
 function editLatLngToPolyline(clickEventData) {
@@ -1990,19 +1994,19 @@ function loadPolyg(polygsPhp) {
 		var color_fr = polygone[polyg].options.color;
 		polyg2 = polyg + 1;
 		switch (color_fr) {
-		case "blue":
+			case "blue":
 			color_fr = 'bleu';
 			break;
-		case "green":
+			case "green":
 			color_fr = 'vert';
 			break;
-		case "red":
+			case "red":
 			color_fr = 'rouge';
 			break;
-		case "gray":
+			case "gray":
 			color_fr = 'gris';
 			break;
-		default:
+			default:
 			break;
 		}
 
@@ -2060,19 +2064,19 @@ function loadPolyl(polylsPhp) {
 		var color_fr = polyline[poly].options.color;
 		poly2 = poly + 1;
 		switch (color_fr) {
-		case "blue":
+			case "blue":
 			color_fr = 'bleu';
 			break;
-		case "green":
+			case "green":
 			color_fr = 'vert';
 			break;
-		case "red":
+			case "red":
 			color_fr = 'rouge';
 			break;
-		case "gray":
+			case "gray":
 			color_fr = 'gris';
 			break;
-		default:
+			default:
 			break;
 		}
 		polylineJson[poly] = [polyline[poly]._latlngs, polyline[poly].options];
@@ -2116,9 +2120,9 @@ function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
 	var dLat = deg2rad(lat2 - lat1); // deg2rad below
 	var dLon = deg2rad(lon2 - lon1);
 	var a =
-		Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-		Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
-		Math.sin(dLon / 2) * Math.sin(dLon / 2);
+	Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+	Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+	Math.sin(dLon / 2) * Math.sin(dLon / 2);
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 	var d = R * c; // Distance in km
 	return d;
@@ -2148,7 +2152,7 @@ function loadBateaux(bateauxPhp) {
 		var color_bateau = bateauxPhp[a][2];
 		switch (bateauxPhp[a][5]) {
 
-		case 'porte-avion':
+			case 'porte-avion':
 
 
 			if (color_bateau == "blue") {
@@ -2179,7 +2183,7 @@ function loadBateaux(bateauxPhp) {
 
 
 
-		case 'asm':
+			case 'asm':
 
 
 			if (color_bateau == "blue") {
@@ -2205,7 +2209,7 @@ function loadBateaux(bateauxPhp) {
 
 
 
-		case 'bpc':
+			case 'bpc':
 
 			if (color_bateau == "blue") {
 
@@ -2230,7 +2234,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'fs':
+			case 'fs':
 
 			if (color_bateau == "blue") {
 
@@ -2257,7 +2261,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'phm':
+			case 'phm':
 
 			if (color_bateau == "blue") {
 
@@ -2284,7 +2288,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'fda':
+			case 'fda':
 
 			if (color_bateau == "blue") {
 
@@ -2312,7 +2316,7 @@ function loadBateaux(bateauxPhp) {
 			break;
 
 
-		case 'bcr':
+			case 'bcr':
 
 			if (color_bateau == "blue") {
 
@@ -2342,7 +2346,7 @@ function loadBateaux(bateauxPhp) {
 
 
 
-		case 'avion':
+			case 'avion':
 
 			if (color_bateau == "blue") {
 
@@ -2366,7 +2370,7 @@ function loadBateaux(bateauxPhp) {
 
 
 
-		case 'tigre':
+			case 'tigre':
 
 			if (color_bateau == "blue") {
 
@@ -2391,7 +2395,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'puma':
+			case 'puma':
 
 			if (color_bateau == "blue") {
 
@@ -2418,7 +2422,7 @@ function loadBateaux(bateauxPhp) {
 
 
 
-		case 'fennec':
+			case 'fennec':
 
 			if (color_bateau == "blue") {
 
@@ -2443,7 +2447,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'paquebot':
+			case 'paquebot':
 
 			if (color_bateau == "blue") {
 
@@ -2469,7 +2473,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'cargo':
+			case 'cargo':
 
 			if (color_bateau == "blue") {
 
@@ -2494,7 +2498,7 @@ function loadBateaux(bateauxPhp) {
 
 			break;
 
-		case 'peche':
+			case 'peche':
 
 			if (color_bateau == "blue") {
 
@@ -2562,8 +2566,8 @@ function loadBateaux(bateauxPhp) {
 		CurrentType = bateauxPhp[a][5];
 		//
 		//if (description_bateau.length == 0) {
-		bateaux[bat] = bateaux[bat].bindPopup('<label>Type d\'unité : </label>' + CurrentType + '<br><a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>');
-		bateaux[bat].editDescription = '<label>Type d\'unité : </label>' + CurrentType + '<br><a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>';
+			bateaux[bat] = bateaux[bat].bindPopup('<label>Type d\'unité : </label>' + CurrentType + '<br><a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>');
+			bateaux[bat].editDescription = '<label>Type d\'unité : </label>' + CurrentType + '<br><a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>';
 		//} else {
 		//bateaux[bat] = bateaux[bat].bindPopup('<label>Type d\'unité : </label>' + CurrentType + '<br>' + '<label>Description : </label><br>' + description_bateau + '<a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>');
 		//bateaux[bat].editDescription = '<label>Type d\'unité : </label>' + CurrentType + '<br>' + '<label>Description : </label><br>' + description_bateau + '<a href="#" id="' + bat + '" class="bateau">Changer Trajet</a><br><a href="#" data-id="' + bat + '" class="bateau_vitesse">Changer Vitesse</a><br><a href="#" data-id="' + bat + '" class="bateau_suppr">Supprimer bateau</a>';
@@ -2658,7 +2662,7 @@ function calculDistance() {
 						d = R * (Math.PI / 2 - Math.asin(Math.sin(lat_b) * Math.sin(lat_a) + Math.cos(lon_b - lon_a) * Math.cos(lat_b) * Math.cos(lat_a)))
 							/* if(detection[j]!=true){
 							 detection[j]="false";
-							 }*/
+							}*/
 
 
 						if (d < bateaux[j].editRadar) { //distance de radar plus grande que distance entre bat
