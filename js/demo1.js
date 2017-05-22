@@ -1,52 +1,52 @@
-(function(){
+(function () {
 
 	var button = document.getElementById('cn-button'),
-    wrapper = document.getElementById('cn-wrapper'),
-    overlay = document.getElementById('cn-overlay'),
-    container = document.getElementById('control-container'),
-    map = document.getElementById('map');
+		wrapper = document.getElementById('cn-wrapper'),
+		overlay = document.getElementById('cn-overlay'),
+		container = document.getElementById('control-container'),
+		map = document.getElementById('map');
 
 	//open and close menu when the button is clicked
 	var open = false;
 	map.addEventListener("dblclick", handler, false);
 	wrapper.addEventListener("dblclick", cnhandle, false);
 
-	function cnhandle(e){
+	function cnhandle(e) {
 		e.stopPropagation();
 	}
 
-	function handler(e){
+	function handler(e) {
 		if (!e) var e = window.event;
-	 	e.stopPropagation();//so that it doesn't trigger click event on document
+		e.stopPropagation(); //so that it doesn't trigger click event on document
 
-	  	if(!open){
-	    	openNav();
-	  	}
-	 	else{
-	    	closeNav();
-	  	}
+		if (!open) {
+			openNav();
+		} else {
+			closeNav();
+		}
 	}
-	function openNav(){
+
+	function openNav() {
 		open = true;
-	    button.innerHTML = "-";
+		button.innerHTML = "-";
 
-        container.style.left = event.clientX + "px";
-        container.style.top = event.clientY + "px";
+		container.style.left = event.clientX + "px";
+		container.style.top = event.clientY + "px";
 
-        console.log("new pos : x = " + event.clientX + "& y = " + event.clientY);
+		console.log("new pos : x = " + event.clientX + "& y = " + event.clientY);
 
-	    classie.add(overlay, 'on-overlay');
-	    classie.add(wrapper, 'opened-nav');
-	    classie.add(button, 'opened');
+		classie.add(overlay, 'on-overlay');
+		classie.add(wrapper, 'opened-nav');
+		classie.add(button, 'opened');
 	}
-	function closeNav(){
+
+	function closeNav() {
 		open = false;
 		button.innerHTML = "+";
 		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
-	    classie.remove(button, 'opened');
+		classie.remove(button, 'opened');
 	}
 	document.addEventListener('click', closeNav);
 
 })();
-

@@ -11,25 +11,27 @@
 	<!--
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
-<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 
-<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
+	<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
 
-<script type="text/javascript">
-	function change_onglet(name) {
-		document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
-		document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
-		document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
-		document.getElementById('contenu_onglet_' + name).style.display = 'block';
-		anc_onglet = name;
-	}
-</script>
+	<script type="text/javascript">
+		function change_onglet(name) {
+			document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
+			document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
+			document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
+			document.getElementById('contenu_onglet_' + name).style.display = 'block';
+			anc_onglet = name;
+		}
 
-<script src="js/modernizr-2.6.2.min.js"></script>
+	</script>
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <!-- ON RAFFRAICHIT LE CHAT TOUTES LES SECONDES -->
-<body  onload="setInterval('chat.update()', 1000)">
+
+<body onload="setInterval('chat.update()', 1000)">
 
 
 
@@ -38,11 +40,13 @@
 	<?php include('chat.php') ?>
 	<p id="name-area"></p>
 
-	<div id="ajout_chatbox" >
+	<div id="ajout_chatbox">
 		<p id="closechat" onclick="closePopUp('chatbox')">Fermer le chat</p>
-		<div id="chat-wrap"><div id="chat-area"></div></div>
+		<div id="chat-wrap">
+			<div id="chat-area"></div>
+		</div>
 		<form id="send-message-area">
-			<textarea id="sendie" maxlength = '100'></textarea>
+			<textarea id="sendie" maxlength='100'></textarea>
 			<!--  
 			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE
 			<p id="send">Envoyer</p>	 -->
@@ -202,8 +206,8 @@
 					</form>-->
 
 
-					<label>Type d'unité'</label>
-					<select class="formula" id="type_bateau" name="type_bateau">
+				<label>Type d'unité'</label>
+				<select class="formula" id="type_bateau" name="type_bateau">
 						<option value="porte-avion">Porte-avion</option>
 						<option value="asm">FASM</option>
 						<option value="bpc">BPC</option>
@@ -220,109 +224,109 @@
 						<option value="peche">Bateau de pêche Civil</option>
 
 					</select>
-					<label>Vitesse du trajet (en noeud)</label>
-					<input class="formula" type="text" id="vitesse_bateau" value="15">
+				<label>Vitesse du trajet (en noeud)</label>
+				<input class="formula" type="text" id="vitesse_bateau" value="15">
 
-					<label>Distance du radar (en km)</label>
-					<input class="formula" type="text" id="radar" value="800">
+				<label>Distance du radar (en km)</label>
+				<input class="formula" type="text" id="radar" value="800">
 
-					<label>Alignement</label>
-					<select class="formula" id="color_bateau" name="color_bateau">
+				<label>Alignement</label>
+				<select class="formula" id="color_bateau" name="color_bateau">
 						<option value="blue">Allié</option>
 						<option value="green">Neutre</option>
 						<option value="red">Ennemi</option>
 					</select>
 
-					<label>Description (facutatif)</label>
-					<textarea class="formula" id="description" name="description"></textarea>
-					<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
+				<label>Description (facutatif)</label>
+				<textarea class="formula" id="description" name="description"></textarea>
+				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
 
+			</div>
+		</div>
+	</div>
+
+	<div class="big_btn">
+		<div id="cont">
+			<div class="timer">
+				<div id="timerbtn">
+					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
+					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
+				</div>
+
+				<div id="timer">
+
+
+					<span id="days">J-00 / </span>
+					<span id="hours">00 :</span>
+					<span id="mins">00 :</span>
+					<span id="secs">00</span>
+
+				</div>
+
+				<div id="timeSlider">
+					<!--Slider Speed-->
+					<input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+					<div id="timeMulti">x 1</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="big_btn">
-			<div id="cont">
-				<div class="timer">
-					<div id="timerbtn">
-						<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
-						<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
-					</div>
+	<img id="boussole" src="image/boussole.png">
 
-					<div id="timer">
+	<!--MARK MAP DIV-->
+	<div id="map"></div>
 
-
-						<span id="days">J-00 / </span>
-						<span id="hours">00 :</span>
-						<span id="mins">00 :</span>
-						<span id="secs">00</span>
-
-					</div>
-
-					<div id="timeSlider">
-						<!--Slider Speed-->
-						<input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
-						<div id="timeMulti">x 1</div>
-					</div>
-				</div>
-			</div>
+	<!--MARK CONSOLE PART1-->
+	<div id="console">
+		<div class="black">
+			<p class="reperer">Vous ne devez pas vous faire repérer</p>
+			<ul>
+			</ul>
 		</div>
-
-		<img id="boussole" src="image/boussole.png">
-
-		<!--MARK MAP DIV-->
-		<div id="map"></div>
-
-		<!--MARK CONSOLE PART1-->
-		<div id="console">
-			<div class="black">
-				<p class="reperer">Vous ne devez pas vous faire repérer</p>
-				<ul>
-				</ul>
-			</div>
-			<div id="close_console">
-				<p id="notif"></p>
-				<img id="close" src="image/close2.png">
-				<img id="open" src="image/open.png" style="display: none;">
-			</div>
+		<div id="close_console">
+			<p id="notif"></p>
+			<img id="close" src="image/close2.png">
+			<img id="open" src="image/open.png" style="display: none;">
 		</div>
-<!--
+	</div>
+	<!--
 	<div id="toolbar">
 		<div class="forme"> <img src="image/bateau.png"></div>
 		<div class="forme"> <img src="image/forme.png"></div>
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
 	</div>
 -->
-<div class="stop">
-	<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
-	<br>
-	<!--Remplacement des icônes de fin d'action-->
-	<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
-</div>
+	<div class="stop">
+		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
+		<br>
+		<!--Remplacement des icônes de fin d'action-->
+		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
+	</div>
 
-<!--MARK: SIDEBAR BTN-->
-<button id="sidebar-btn" class="sidebar-btn">
+	<!--MARK: SIDEBAR BTN-->
+	<button id="sidebar-btn" class="sidebar-btn">
 	<img id="menu-stripes1" src="image/menu.svg">
 </button>
 
-<section id="sidebar" class="sidebar">
-	<div class="settings">
+	<section id="sidebar" class="sidebar">
+		<div class="settings">
 
-		<div class="btn_retourhome">
-			<a href="index.php"> Retour au menu </a>
-		</div>
+			<div class="btn_retourhome">
+				<a href="index.php"> Retour au menu </a>
+			</div>
 
-		<h1 class="parametre">Paramètres</h1>
+			<h1 class="parametre">Paramètres</h1>
 
-		<div class="onglets">
+			<div class="onglets">
 
-			<span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
-			<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
-		</div>
+				<span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
+				<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
+			</div>
 
 			<!--<button id="onglet-btn" class="onglet1-btn onglet-btn active">
 				<h2>Filtres</h2>
@@ -380,17 +384,17 @@
 						}
 						?>
 
-						<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
-						`
-						<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
-						<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
-						<input type="hidden" id="cer" name="cercles">
-						<input type="hidden" id="polyg" name="polygs">
-						<input type="hidden" id="text" name="texts">
-						<input type="hidden" id="polyl" name="polyls">
-						<input type="hidden" id="bati" name="batis">
-						<input type="hidden" id="bateau_save" name="bateau_save">
-						<button class="save" name="save" id='insert'>Sauvegarder</button>
+							<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
+							`
+							<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
+							<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
+							<input type="hidden" id="cer" name="cercles">
+							<input type="hidden" id="polyg" name="polygs">
+							<input type="hidden" id="text" name="texts">
+							<input type="hidden" id="polyl" name="polyls">
+							<input type="hidden" id="bati" name="batis">
+							<input type="hidden" id="bateau_save" name="bateau_save">
+							<button class="save" name="save" id='insert'>Sauvegarder</button>
 
 					</form>
 				</div>
@@ -468,11 +472,12 @@
 			<script type="text/javascript">
 				var anc_onglet = 'options';
 				change_onglet(anc_onglet);
+
 			</script>
 
 		</div>
 
-		
+
 
 	</section>
 
@@ -490,125 +495,125 @@
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 -->
 
-<script src="js/slider.js"></script>
+	<script src="js/slider.js"></script>
 
-<script src='js/sauveguarde.js'></script>
-<!--	<script src="js/sendData.js"></script>-->
+	<script src='js/sauveguarde.js'></script>
+	<!--	<script src="js/sendData.js"></script>-->
 
-<?php include 'load.php' ?>
+	<?php include 'load.php' ?>
 
 
-<div id="control-container" class="container control-container">
-	<!-- Top Navigation -->
-	<div class="component">
-		<!-- Start Nav Structure -->
-		<button class="cn-button" id="cn-button">+</button>
-		<div class="cn-wrapper" id="cn-wrapper">
-			<ul>
-				<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-				<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-				<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-				<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-				<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-				<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+	<div id="control-container" class="container control-container">
+		<!-- Top Navigation -->
+		<div class="component">
+			<!-- Start Nav Structure -->
+			<button class="cn-button" id="cn-button">+</button>
+			<div class="cn-wrapper" id="cn-wrapper">
+				<ul>
+					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
 
-			</ul>
+				</ul>
+			</div>
+			<div id="cn-overlay" class="cn-overlay"></div>
+			<!-- End Nav Structure -->
 		</div>
-		<div id="cn-overlay" class="cn-overlay"></div>
-		<!-- End Nav Structure -->
 	</div>
-</div>
-<!-- /container -->
-<script src="js/polyfills.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/demo1.js"></script>
 
-<!-- CHAT -->
-<script src="js/chat.js"></script>
-<script>
+	<!-- /container -->
+	<script src="js/polyfills.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/demo1.js"></script>
 
-  // ask user for name with popup prompt    
-  var name = prompt("Veuillez entrer un pseudonyme :", "Soldat");
+	<!-- CHAT -->
+	<script src="js/chat.js"></script>
+	<script>
+		// ask user for name with popup prompt
+		var name = prompt("Veuillez entrer un pseudonyme :", "Soldat");
 
-  // default name is 'Guest'
-  if (!name || name === ' ') {
-  	name = "Soldat";  
-  }
-  
-  // strip tags
-  name = name.replace(/(<([^>]+)>)/ig,"");
-  
-  // display name on page
-  $("#name-area").html("Vous êtes : <span>" + name + "</span>");
-  
-  // kick off chat
-  var chat =  new Chat();
+		// default name is 'Guest'
+		if (!name || name === ' ') {
+			name = "Soldat";
+		}
 
-  $(function() {
+		// strip tags
+		name = name.replace(/(<([^>]+)>)/ig, "");
 
-  	chat.getState(); 
+		// display name on page
+		$("#name-area").html("Vous êtes : <span>" + name + "</span>");
 
-     // watch textarea for key presses
-     $("#sendie").keydown(function(event) {  
+		// kick off chat
+		var chat = new Chat();
 
-     	var key = event.which;  
+		$(function() {
 
-         //all keys including return.  
-         if (key >= 33) {
+			chat.getState();
 
-         	var maxLength = $(this).attr("maxlength");  
-         	var length = this.value.length;  
+			// watch textarea for key presses
+			$("#sendie").keydown(function(event) {
 
-             // don't allow new content if length is maxed out
-             if (length >= maxLength) {  
-             	event.preventDefault();  
-             }  
-         }  
-     });
+				var key = event.which;
 
-     $("#send").click(function(e) {
-     	var text = $("#sendie").val();
-     	var maxLength = $("#sendie").attr("maxlength");  
-     	var length = text.length; 
+				//all keys including return.
+				if (key >= 33) {
 
-              // send 
-              if (length <= maxLength + 1) { 
-              	chat.send(text, name);  
-              	$("#sendie").val("");
-              } else {
-              	$("#sendie").val(text.substring(0, maxLength));
-              }  
-          });
+					var maxLength = $(this).attr("maxlength");
+					var length = this.value.length;
 
-         		 // watch textarea for release of key press
-         		 $('#sendie').keyup(function(e) {	
+					// don't allow new content if length is maxed out
+					if (length >= maxLength) {
+						event.preventDefault();
+					}
+				}
+			});
 
-         		 	if (e.keyCode == 13) { 
+			$("#send").click(function(e) {
+				var text = $("#sendie").val();
+				var maxLength = $("#sendie").attr("maxlength");
+				var length = text.length;
 
-         		 		var text = $(this).val();
-         		 		var maxLength = $(this).attr("maxlength");  
-         		 		var length = text.length; 
+				// send
+				if (length <= maxLength + 1) {
+					chat.send(text, name);
+					$("#sendie").val("");
+				} else {
+					$("#sendie").val(text.substring(0, maxLength));
+				}
+			});
 
-                    // send 
-                    if (length <= maxLength + 1) { 
+			// watch textarea for release of key press
+			$('#sendie').keyup(function(e) {
 
-                    	chat.send(text, name);	
-                    	$(this).val("");
+				if (e.keyCode == 13) {
 
-                    } else {
+					var text = $(this).val();
+					var maxLength = $(this).attr("maxlength");
+					var length = text.length;
 
-                    	$(this).val(text.substring(0, maxLength));
+					// send
+					if (length <= maxLength + 1) {
 
-                    }	
+						chat.send(text, name);
+						$(this).val("");
+
+					} else {
+
+						$(this).val(text.substring(0, maxLength));
+
+					}
 
 
-                }
-            });
+				}
+			});
 
-         		});
+		});
 
-         	</script>
+	</script>
 
-         </body>
+</body>
 
-         </html>
+</html>
