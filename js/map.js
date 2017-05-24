@@ -59,8 +59,8 @@ function initialize() { //fonction qui permet de charger la carte au lancement d
 	});
 
 	map = L.map('map', {
-		center: [-1.743, 4.8],
-		zoom: 5,
+		center: [2, 6],
+		zoom: 7,
 		layers: [night, day, depth]
 	});
 
