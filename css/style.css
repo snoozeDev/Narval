@@ -1104,9 +1104,9 @@ a:visited {
 
 .pop_up {
 	z-index: 2000;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: #1f1e1e;
-	border: solid #446E58 1px;
+	border: solid #446E58 5px;
 	max-height: auto;
 	-moz-box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.1);
