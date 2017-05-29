@@ -532,8 +532,8 @@
 	<script src="js/chat.js"></script>
 	<script>
 		// ask user for name with popup prompt
-		var name = prompt("Veuillez entrer un pseudonyme :", "Soldat");
-		if(name != "Formateur"){
+		var name = prompt("Veuillez entrer un pseudonyme :", "Écrivez ici");
+		if(name != "Formateur or Sergent or Commandant or Capitaine or Amiral"){
             $(".hideadmin").css("display","none");
             $(".leaflet-control-zoom").css("left","910px");
         }
