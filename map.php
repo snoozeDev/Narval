@@ -249,8 +249,8 @@
 		<div id="cont">
 			<div class="timer">
 				<div id="timerbtn">
-					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
-					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
+					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime hideadmin">
+					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime hideadmin">
 				</div>
 
 				<div id="timer">
@@ -265,8 +265,8 @@
 
 				<div id="timeSlider">
 					<!--Slider Speed-->
-					<input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
-					<div id="timeMulti">x 1</div>
+					<input class="speed hideadmin" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+					<div class="timeMulti hideadmin">x 1</div>
 				</div>
 			</div>
 		</div>
@@ -503,7 +503,7 @@
 	<?php include 'load.php' ?>
 
 
-	<div id="control-container" class="container control-container">
+	<div id="control-container" class="container control-container hideadmin">
 		<!-- Top Navigation -->
 		<div class="component">
 			<!-- Start Nav Structure -->
@@ -516,7 +516,6 @@
 					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
 					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
 					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
-
 				</ul>
 			</div>
 			<div id="cn-overlay" class="cn-overlay"></div>
@@ -534,7 +533,10 @@
 	<script>
 		// ask user for name with popup prompt
 		var name = prompt("Veuillez entrer un pseudonyme :", "Soldat");
-
+		if(name != "Formateur"){
+            $(".hideadmin").css("display","none");
+            $(".leaflet-control-zoom").css("left","910px");
+        }
 		// default name is 'Guest'
 		if (!name || name === ' ') {
 			name = "Soldat";
