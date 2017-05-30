@@ -505,7 +505,6 @@
 
 <!-- Script rotation menu -->
 <script>
-
 var angle = 0;
 
 interact('#control-container').gesturable({
@@ -519,7 +518,6 @@ interact('#control-container').gesturable({
 	'rotate(' + angle + 'deg)';
 }
 });
-
 </script>
 
 <!-- Script drag menu -->
@@ -528,7 +526,11 @@ interact('#control-container').gesturable({
 interact('.control-container')
 	.draggable({
 // enable inertial throwing
-	inertia: true,
+	inertia: {
+	resistance: 4,
+	minSpeed: 500,
+	endSpeed: 200,
+},
 // enable autoScroll
 	autoScroll: true,
 

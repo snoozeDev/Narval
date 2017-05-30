@@ -8,17 +8,17 @@
 
 	//open and close menu when the button is clicked
 	var open = false;
-	map.addEventListener("dblclick", handler, false);
-	wrapper.addEventListener("dblclick", cnhandle, false);
+	map.addEventListener("mousedown", handler, false);
+	wrapper.addEventListener("mousedown", cnhandle, false);
 
 	function cnhandle(e) {
 		e.stopPropagation();
 	}
 
 	function handler(e) {
-		if (!e) var e = window.event;
+		if (!e){ var e = window.event;
 		e.stopPropagation(); //so that it doesn't trigger click event on document
-
+		}
 		if (!open) {
 			openNav();
 		} else {
@@ -49,6 +49,6 @@
 		classie.remove(wrapper, 'opened-nav');
 		classie.remove(button, 'opened');
 	}
-	document.addEventListener('click', closeNav);
+	document.addEventListener('mousedown', closeNav);
 
 })();
