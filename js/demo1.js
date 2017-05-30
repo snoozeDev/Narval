@@ -30,8 +30,8 @@
 		open = true;
 		button.innerHTML = "-";
 
-		container.style.left = event.clientX + "px";
-		container.style.top = event.clientY + "px";
+		container.style.left = event.clientX - 40 + "px";
+		container.style.top = event.clientY - 40 + "px";
 
 		console.log("new pos : x = " + event.clientX + "& y = " + event.clientY);
 
