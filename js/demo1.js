@@ -16,9 +16,8 @@
 	}
 
 	function handler(e) {
-		if (!e){ var e = window.event;
+		if (!e) var e = window.event;
 		e.stopPropagation(); //so that it doesn't trigger click event on document
-		}
 		if (!open) {
 			openNav();
 		} else {
