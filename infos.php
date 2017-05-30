@@ -25,7 +25,7 @@
         <div id="conteneur2">
         <div class="photo"><img id="louis" src="image/Louis_Gaudet.png"><h2>Louis Gaudet</h2><h3>Responsable Hardware</h3></div>
         <div class="photo"><img id="baloo" src="image/Alexis_Durieu.png"><h2>Alexis Durieu</h2><h3>UX Designer</h3></div>
-        <div class="photo"><img id="matthieu" src="image/adam.png"><h2>Adam Alet</h2><h3>Développeur Web</h3></div>
+        <div class="photo"><img id="adam" src=""><h2>Adam Alet</h2><h3>Développeur Web</h3></div>
 
         </div>
 </body>
