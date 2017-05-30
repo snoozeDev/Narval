@@ -40,3 +40,7 @@
 <span>g&eacute;n&eacute;ral</span>hey ! 
 <span>Soldat</span>bou 
 <span>Soldat</span>n 
+<span>Soldat</span>bonjour amiral 
+<span>Soldat</span>Bonjour caporal chef  
+<span>Caporal Chef</span>bonjour soldat 
+<span>Soldat</span>je peux vous sucer ? 

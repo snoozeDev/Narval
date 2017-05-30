@@ -12,6 +12,7 @@
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	  <script src='http://code.interactjs.io/v1.2.6/interact.js'></script>
 
 	<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
 
@@ -502,7 +503,27 @@
 
 	<?php include 'load.php' ?>
 
+<!-- Script rotation menu -->
+<script>
 
+  var angle = 0;
+
+interact('#control-container').gesturable({
+  onmove: function (event) {
+    var menu = document.getElementById('cn-button');
+
+    angle += event.da;
+
+    menu.style.webkitTransform =
+    menu.style.transform =
+      'rotate(' + angle + 'deg)';
+
+  }
+});
+
+</script>
+
+<!-- MENU RADIAL -->
 	<div id="control-container" class="container control-container hideadmin">
 		<!-- Top Navigation -->
 		<div class="component">
@@ -533,7 +554,7 @@
 	<script>
 		// ask user for name with popup prompt
 		var name = prompt("Veuillez entrer un pseudonyme :", "Écrivez ici");
-		if(name != "Formateur or Sergent or Commandant or Capitaine or Amiral"){
+		if(name != "Formateur"){
             $(".hideadmin").css("display","none");
             $(".leaflet-control-zoom").css("left","910px");
         }
