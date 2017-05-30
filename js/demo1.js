@@ -38,6 +38,8 @@
 		classie.add(overlay, 'on-overlay');
 		classie.add(wrapper, 'opened-nav');
 		classie.add(button, 'opened');
+
+
 	}
 
 	function closeNav() {

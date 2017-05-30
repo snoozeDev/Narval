@@ -506,27 +506,61 @@
 <!-- Script rotation menu -->
 <script>
 
-  var angle = 0;
+var angle = 0;
 
 interact('#control-container').gesturable({
-  onmove: function (event) {
-    var menu = document.getElementById('cn-button');
+	onmove: function (event) {
+	var menu = document.getElementById('control-container');
 
-    angle += event.da;
+	angle += event.da;
 
-    menu.style.webkitTransform =
-    menu.style.transform =
-      'rotate(' + angle + 'deg)';
-
-  }
+	menu.style.webkitTransform =
+	menu.style.transform =
+	'rotate(' + angle + 'deg)';
+}
 });
 
+</script>
+
+<!-- Script drag menu -->
+<script>
+// target elements with the "draggable" class
+interact('.control-container')
+	.draggable({
+// enable inertial throwing
+	inertia: true,
+// enable autoScroll
+	autoScroll: true,
+
+// call this function on every dragmove event
+	onmove: dragMoveListener,
+// call this function on every dragend event
+});
+
+	function dragMoveListener (event) {
+var target = event.target,
+// keep the dragged position in the data-x/data-y attributes
+	x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+	y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+// translate the element
+	target.style.webkitTransform =
+	target.style.transform =
+	'translate(' + x + 'px, ' + y + 'px)';
+
+// update the posiion attributes
+	target.setAttribute('data-x', x);
+	target.setAttribute('data-y', y);
+}
+
+// this is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener;
 </script>
 
 <!-- MENU RADIAL -->
 	<div id="control-container" class="container control-container hideadmin">
 		<!-- Top Navigation -->
-		<div class="component">
+		<div class="component" id="component">
 			<!-- Start Nav Structure -->
 			<button class="cn-button" id="cn-button">+</button>
 			<div class="cn-wrapper" id="cn-wrapper">
@@ -553,7 +587,7 @@ interact('#control-container').gesturable({
 	<script src="js/chat.js"></script>
 	<script>
 		// ask user for name with popup prompt
-		var name = prompt("Veuillez entrer un pseudonyme :", "Écrivez ici");
+		var name = prompt("Veuillez entrer un pseudonyme :", "Formateur");
 		if(name != "Formateur"){
             $(".hideadmin").css("display","none");
             $(".leaflet-control-zoom").css("left","910px");
