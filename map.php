@@ -535,7 +535,7 @@ interact('.control-container')
 	restrict: {
 	restriction: "parent",
 	endOnly: true,
-	elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
+	elementRect: { top: 0, left: 0, bottom: 4, right: 0 }},
 // enable autoScroll
 	autoScroll: true,
 
@@ -565,7 +565,7 @@ window.dragMoveListener = dragMoveListener;
 </script>
 
 <!-- MENU RADIAL -->
-	<div id="control-container" class="container control-container hideadmin">
+	<div id="control-container" class="container control-container hideadmin" data-x="1500" data-y="795" style="transform: translate(1500px, 900px);">
 		<!-- Top Navigation -->
 		<div class="component" id="component">
 			<!-- Start Nav Structure -->
