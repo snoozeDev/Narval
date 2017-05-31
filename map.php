@@ -570,7 +570,7 @@ window.dragMoveListener = dragMoveListener;
 		<div class="component" id="component">
 			<!-- Start Nav Structure -->
 			<button class="cn-button opened" id="cn-button">+</button>
-			<div class="cn-wrapper opened-nav" id="cn-wrapper">
+			<div class="cn-wrapper" id="cn-wrapper">
 				<ul>
 					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
 					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
