@@ -48,9 +48,9 @@
 		</div>
 		<form id="send-message-area">
 			<textarea id="sendie" maxlength='100'></textarea>
-			<!--  
-			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE
-			<p id="send">Envoyer</p>	 -->
+
+<!--			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE-->
+			<p id="send">Envoyer</p>
 		</form>
 
 	</div>
@@ -569,8 +569,8 @@ window.dragMoveListener = dragMoveListener;
 		<!-- Top Navigation -->
 		<div class="component" id="component">
 			<!-- Start Nav Structure -->
-			<button class="cn-button" id="cn-button">+</button>
-			<div class="cn-wrapper" id="cn-wrapper">
+			<button class="cn-button opened" id="cn-button">+</button>
+			<div class="cn-wrapper opened-nav" id="cn-wrapper">
 				<ul>
 					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
 					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
@@ -580,7 +580,7 @@ window.dragMoveListener = dragMoveListener;
 					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
 				</ul>
 			</div>
-			<div id="cn-overlay" class="cn-overlay"></div>
+			<div id="cn-overlay" class="on-overlay cn-overlay"></div>
 			<!-- End Nav Structure -->
 		</div>
 	</div>
