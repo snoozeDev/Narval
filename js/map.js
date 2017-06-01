@@ -40,38 +40,47 @@ var slider;
 
 initialize();
 
+//MARK initialisation de la map
 function initialize() { //fonction qui permet de charger la carte au lancement de la page
-	//initialisation de la map
 
+	//MARK fonds de cartes ---------------
+	//Map jour avec profondeurs
 	var depth = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
 		/*attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',*/
 		maxZoom: 16
 	}),
+	//Map jour stdr
 	day = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 		/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
 		subdomains: 'abcd',
 		maxZoom: 19
 	}),
+	//Map nuit
 	night = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
 		/*attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',*/
 		subdomains: 'abcd',
 		maxZoom: 19
 	});
+	//-----------------------------------
 
 	map = L.map('map', {
 		center: [2, 6],
 		zoom: 7,
-		layers: [night, day, depth]
+		layers: [night, day, depth] // Ajout des dons de carte à la carte principale
 	});
 
+	//MARK définition des noms des fonds de carte
 	var baseMaps = {
 		"Real": depth,
 		"Day": day,
 		"Night": night
 	};
 
+	//MARK LayerController = bouton cahngement fond de carte------
+	//C'est ici que le plugin est ajouté, voir (http://leafletjs.com/examples/layers-control/)
 	var layersControl = L.control.layers(baseMaps).addTo(map);
 	layersControl.setPosition('bottomright');
+	//------------------------------------------------------------
 
 	/* ORIGINAL LAYER */
 /*

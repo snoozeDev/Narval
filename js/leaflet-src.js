@@ -13131,6 +13131,7 @@ var PointToGeoJSON = {
 	 */
 
 	//TODO: [x]Control.Layers
+	//MARK Control.Layers START ##############################################################
 	L.Control.Layers = L.Control.extend({
 		// @section
 		// @aka Control.Layers options
@@ -13491,8 +13492,9 @@ var PointToGeoJSON = {
 		}
 
 	});
+	//MARK Control.Layers STOP ##################################################
 
-
+	//MARK fonctionnement LayerControls
 	// @factory L.control.layers(baselayers?: Object, overlays?: Object, options?: Control.Layers options)
 	// Creates an attribution control with the given layers. Base layers will be switched with radio buttons, while overlays will be switched with checkboxes. Note that all base layers should be passed in the base layers object, but only one should be added to the map during map instantiation.
 	L.control.layers = function (baseLayers, overlays, options) {
