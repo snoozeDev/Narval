@@ -19,12 +19,12 @@
 
 <script type="text/javascript">
   function change_onglet(name) {
-     document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
-     document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
-     document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
-     document.getElementById('contenu_onglet_' + name).style.display = 'block';
-     anc_onglet = name;
- }
+   document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
+   document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
+   document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
+   document.getElementById('contenu_onglet_' + name).style.display = 'block';
+   anc_onglet = name;
+}
 
 </script>
 
@@ -59,44 +59,44 @@
     <div id="ajout_batiment" class="pop_up_inv hide">
 
       <div class="pop_up " id="ajout_batiment_inv">
-         <p class="title">BÂTIMENTS</p>
-         <label>Choisir un bâtiment</label>
+       <p class="title">BÂTIMENTS</p>
+       <label>Choisir un bâtiment</label>
 
-         <div class="container push" style="display:flex; flex-flow: row wrap; justify-content: center ; align-items: center ;margin-top: 2%;">
-            <div class="batibtn" name="port" >
-                <a  href="#"  ><img src="image/port.svg" alt="" height=100px>
-                    <br>Port
-                </a>                            
-            </div>
-
-            <div class="batibtn" name="offshore" >
-                <a href="#"  ><img src="image/offshore.svg" alt="" height=100px> 
-                    <br>Plateforme Offshore
-                </a>                               
-            </div>
-            <div class="batibtn" name="phare">
-                <a href="#"  ><img src="image/phare.svg" alt="" height=100px; width="1000px">
-                    <br>Phare
-                </a>
-            </div>
-            <div class="batibtn" name="ville">
-                <a href="#" ><img src="image/ville.svg" alt="" height=100px; width="1000px">
-                    <br>Ville
-                </a>
-            </div>
-            <div class="batibtn" name="village">
-                <a href="#"  ><img src="image/village.svg" alt="" height=100px; width="1000px">
-                    <br>Village
-                </a>
-            </div>
+       <div class="container push" style="display:flex; flex-flow: row wrap; justify-content: center ; align-items: center ;margin-top: 2%;">
+        <div class="batibtn" name="port" >
+            <a  href="#"  ><img src="image/port.svg" alt="" height=100px>
+                <br>Port
+            </a>                            
         </div>
-        <label>Description (facutatif)</label><br>
-        <br>
 
-        <textarea class="formula" id="bati_describ" name="description"></textarea>
-
-        <a href="#" class="btn" id="drawBatiment">Ajouter le bâtiment</a>
+        <div class="batibtn" name="offshore" >
+            <a href="#"  ><img src="image/offshore.svg" alt="" height=100px> 
+                <br>Plateforme Offshore
+            </a>                               
+        </div>
+        <div class="batibtn" name="phare">
+            <a href="#"  ><img src="image/phare.svg" alt="" height=100px; width="1000px">
+                <br>Phare
+            </a>
+        </div>
+        <div class="batibtn" name="ville">
+            <a href="#" ><img src="image/ville.svg" alt="" height=100px; width="1000px">
+                <br>Ville
+            </a>
+        </div>
+        <div class="batibtn" name="village">
+            <a href="#"  ><img src="image/village.svg" alt="" height=100px; width="1000px">
+                <br>Village
+            </a>
+        </div>
     </div>
+    <label>Description (facutatif)</label><br>
+    <br>
+
+    <textarea class="formula" id="bati_describ" name="description"></textarea>
+
+    <a href="#" class="btn" id="drawBatiment">Ajouter le bâtiment</a>
+</div>
 
 </div>
 
@@ -115,77 +115,77 @@
 
 <div id="ajout_pins" class="pop_up_inv hide">
   <div class="pop_up" id="ajout_pins_inv">
-   <form>
+     <form>
 
-    <p class="title"> FORMES </p>
+        <p class="title"> FORMES </p>
 
-    <div id="selecteur">
-     <a class="btn_text btn" id="btn_text"><img src="image/Ajout_Texte.svg" width="50px" height="50px"></a>
-     <a class="btn_circle btn" id="btn_circle"><img src="image/Ajout_Cercle.svg" width="50px" height="50px"></a>
-     <a class="btn_polygone btn" id="btn_polygone"><img src="image/Ajout_Polygone.svg" width="50px" height="50px"></a>
-     <a class="btn_polyline btn" id="btn_polyline"><img src="image/Ajout_Ligne.svg" width="50px" height="50px"></a>
+        <div id="selecteur">
+           <a class="btn_text btn" id="btn_text"><img src="image/Ajout_Texte.svg" width="50px" height="50px"></a>
+           <a class="btn_circle btn" id="btn_circle"><img src="image/Ajout_Cercle.svg" width="50px" height="50px"></a>
+           <a class="btn_polygone btn" id="btn_polygone"><img src="image/Ajout_Polygone.svg" width="50px" height="50px"></a>
+           <a class="btn_polyline btn" id="btn_polyline"><img src="image/Ajout_Ligne.svg" width="50px" height="50px"></a>
+       </div>
+
+       <div class="ligne">
+
+           <div id="form_text" class="formulaire hide">
+              <p class="title"> Écrire sur la carte </p>
+              <input id="label_text" class="formula" placeholder="Votre texte">
+              <br>
+              <br>
+
+
+              <a href="#" class="btn" id="drawText">Ajouter texte</a>
+          </div>
+
+          <div id="form_circle" class="formulaire hide">
+              <p class="title">Créer un cercle</p>
+
+
+              <p class="align">Couleur du cercle</p><br>
+
+              <div class="row">
+
+                  <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
+                  <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
+                  <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
+                  <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
+              </div>
+              <br>
+
+
+              <a href="#" class="btn" id="drawCircle">Ajouter un cercle</a>
+          </div>
+
+          <div id="form_polygone" class="formulaire hide">
+              <p class="title">Créer un polygone</p>
+              <p class="align">Couleur du polygone</p>
+              <div class="row">
+
+                 <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
+                 <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
+                 <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
+                 <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
+             </div>
+             <br>
+             <a href="#" class="btn" id="drawPolygon">Ajouter Polygone</a>
+         </div>
+
+         <div id="form_polyline" class="formulaire hide">
+          <p class="title">Créer une ligne</p>
+          <p>Couleur de la ligne</p>
+          <div class="row">
+
+             <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
+             <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
+             <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
+             <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
+         </div>
+         <br>
+         <a href="#" class="btn" id="drawPolyline">Ajouter Ligne</a>
+     </div>
+
  </div>
-
- <div class="ligne">
-
-     <div id="form_text" class="formulaire hide">
-      <p class="title"> Écrire sur la carte </p>
-      <input id="label_text" class="formula" placeholder="Votre texte">
-      <br>
-      <br>
-
-
-      <a href="#" class="btn" id="drawText">Ajouter texte</a>
-  </div>
-
-  <div id="form_circle" class="formulaire hide">
-      <p class="title">Créer un cercle</p>
-
-
-      <p class="align">Couleur du cercle</p><br>
-
-      <div class="row">
-
-          <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
-          <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
-          <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
-          <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
-      </div>
-      <br>
-
-
-      <a href="#" class="btn" id="drawCircle">Ajouter un cercle</a>
-  </div>
-
-  <div id="form_polygone" class="formulaire hide">
-      <p class="title">Créer un polygone</p>
-      <p class="align">Couleur du polygone</p>
-      <div class="row">
-
-       <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
-       <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
-       <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
-       <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
-   </div>
-   <br>
-   <a href="#" class="btn" id="drawPolygon">Ajouter Polygone</a>
-</div>
-
-<div id="form_polyline" class="formulaire hide">
-  <p class="title">Créer une ligne</p>
-  <p>Couleur de la ligne</p>
-  <div class="row">
-
-   <div class="circlebtn"  name="red"><a href="#"><img src="image/PastilleRouge.svg" alt=""></a></div>
-   <div class="circlebtn"  name="green"><a href="#"><img src="image/PastilleVerte.svg" alt=""></a></div>
-   <div class="circlebtn"  name="blue"><a href="#"><img src="image/PastilleBleue.svg" alt=""></a></div>
-   <div class="circlebtn"  name="grey"><a href="#"><img src="image/PastilleGrise.svg" alt=""></a></div>
-</div>
-<br>
-<a href="#" class="btn" id="drawPolyline">Ajouter Ligne</a>
-</div>
-
-</div>
 </form>
 </div>
 </div>
@@ -203,10 +203,10 @@
 <!--MARK Formulaire ajout de bateaux-->
 <div id="ajout_bateau" class="pop_up_inv hide">
   <div class="pop_up">
-   <div class="formulaire_bat" id="ajout_bateau_inv">
-    <p class="title">UNITÉS</p>
+     <div class="formulaire_bat" id="ajout_bateau_inv">
+        <p class="title">UNITÉS</p>
 
-    <!--FORMULAIRE POUR DB-->
+        <!--FORMULAIRE POUR DB-->
 
 				<!--<form id="form">
 						<label for="vType">Type de v&eacute;hicule</label>
@@ -287,8 +287,8 @@
                         </div>
                         <br><br>
                         <div class="row" style="display: inline-flex;">
-                            <p>Vitesse du trajet (en noeuds) <input type="text" name="vitesse">
-                                Distance du radar (en km) <input type="text" name="presence">
+                            <p>Vitesse du trajet (en noeuds) <input id="vitesse_bateau" type="number" step="10" name="vitesse">
+                                Distance du radar (en km) <input id="radar" type="number" step="10" name="presence">
                             </p>
                         </div>
                         <br><br>
@@ -304,130 +304,130 @@
                                 <a href="#"><img class="choixclr" src="image/ennemi.svg" alt=""  class=tagbtn></a>
                             </div>
 
-                            Description facultatif : <input type="text" name="description">
+<!--                             Description facultatif : <input type="text" name="description">
+-->
+</div>
+<br><br>
+<a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
 
-                        </div>
-                        <br><br>
-                        <a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
-
-                    </div>
-
-
-
-
-                    <div id="contain_bateau" class="formulaire hide">
-                        <p class="align">Type d'unité</p><br>
-                        <a href="#" onclick="previous('bateau');"><img src="image/fleche.svg" alt="" height=50px; width="50px" style="    top: -80px;    position: absolute;        left: 20px;"></a>
-
-                        <div class="choix" name="BCR" style="display: inline-flex;">
-                            <a href="#"><img src="image/BCR.svg" alt="" class="tagbtn"><br>BCR</a>
-                        </div>
-                        <div class="choix" name="EDA-R" style="display: inline-flex;">
-                            <a href="#"><img src="image/EDA-R.svg" alt="" class="tagbtn"><br>EDA-R</a>
-                        </div>
-                        <div class="choix" name="FDA" style="display: inline-flex;">
-                            <a href="#"><img src="image/FDA.svg" alt="" class="tagbtn"><br>FDA</a>
-                        </div>
-                        <div class="choix" name="FEMM" style="display: inline-flex;">
-                            <a href="#"><img src="image/FEMM.svg" alt="" class="tagbtn"><br>FEMM</a>
-                        </div>
-                        <div class="choix" name="MOYEN_PORTUAIRES" style="display: inline-flex;">
-                            <a href="#"><img src="image/MOYEN_PORTUAIRES.svg" alt="" class="tagbtn"><br>Moyen Portuaires</a>
-                        </div>
-                        <div class="choix" name="P400" style="display: inline-flex;">
-                            <a href="#"><img src="image/P400.svg" alt="" class="tagbtn"><br>P400</a>
-                        </div>
-                        <div class="choix" name="PORTE_AVIONS" style="display: inline-flex;">
-                            <a href="#"><img src="image/PORTE_AVIONS.svg" alt="" class="tagbtn"><br>Porte-Avion</a>
-                        </div>
-                        <div class="choix" name="TCD" style="display: inline-flex;">
-                            <a href="#"><img src="image/TCD.svg" alt="" class="tagbtn"><br>TCD</a>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="row" style="display: inline-flex;">
-                            <p>Vitesse du trajet (en noeuds) <input type="text" name="vitesse">
-                                Distance du radar (en km) <input type="text" name="presence">
-                            </p>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="row" style="display: inline-flex;">
-                            Alignment : 
-                            <div class="choixclr" name="blue">
-                                <a href="#"><img src="image/alliés.svg" alt=""  class=tagbtn></a>
-                            </div>
-                            <div class="choixclr" name="green">
-                                <a href="#"><img class="choixclr reajust" src="image/neutre.svg" alt=""  class=tagbtn></a>
-                            </div>
-                            <div class="choixclr" name="red">
-                                <a href="#"><img class="choixclr" src="image/ennemi.svg" alt=""  class=tagbtn></a>
-                            </div>
-                            
-
-                            Description facultatif : <input type="text" name="description">
-
-                        </div>
-                        <br><br>
-                        <a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
-
-
-                    </div>
+</div>
 
 
 
 
-                    <div id="contain_helicoptere" class="formulaire hide">
-                        <p class="align">Type d'unité</p><br>
-                        <a href="#" onclick="previous('helicoptere');"><img src="image/fleche.svg" alt=""  height=50px; width="50px" style="        left: 20px;    position: absolute;    top: -80px;"></a>
+<div id="contain_bateau" class="formulaire hide">
+    <p class="align">Type d'unité</p><br>
+    <a href="#" onclick="previous('bateau');"><img src="image/fleche.svg" alt="" height=50px; width="50px" style="    top: -80px;    position: absolute;        left: 20px;"></a>
 
-                        <div class="choix" name="ALOUETTEIII" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_ALOUETTEIII.svg" alt="" class="tagbtn"><br>Alouette III</a>
-                        </div>
-                        <div class="choix" name="CAIMAN" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_CAIMAN.svg" alt="" class="tagbtn"><br>Caiman</a>
-                        </div>
-                        <div class="choix" name="DAUPHIN_SP" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_DAUPHIN_SP.svg" alt="" class="tagbtn"><br>Dauphin SP</a>
-                        </div>
-                        <div class="choix" name="EC225" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_EC225.svg" alt="" class="tagbtn"><br>EC225</a>
-                        </div>
-                        <div class="choix" name="LYNX" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_LYNX.svg" alt="" class="tagbtn"><br>Lynx</a>
-                        </div>
-                        <div class="choix" name="PANTHER" style="display: inline-flex;">
-                            <a href="#"><img src="image/BTN_PANTHER.svg" alt="" class="tagbtn"><br>Panther</a>
-                        </div>
-                        <br>
-                        <div class="row" style="display: inline-flex;">
-                            <p>Vitesse du trajet (en noeuds) <input type="text" name="vitesse">
-                                Distance du radar (en km) <input type="text" name="presence">
-                            </p>
-                        </div>
-                        <br>
-                        <br>
+    <div class="choix" name="BCR" style="display: inline-flex;">
+        <a href="#"><img src="image/BCR.svg" alt="" class="tagbtn"><br>BCR</a>
+    </div>
+    <div class="choix" name="EDA-R" style="display: inline-flex;">
+        <a href="#"><img src="image/EDA-R.svg" alt="" class="tagbtn"><br>EDA-R</a>
+    </div>
+    <div class="choix" name="FDA" style="display: inline-flex;">
+        <a href="#"><img src="image/FDA.svg" alt="" class="tagbtn"><br>FDA</a>
+    </div>
+    <div class="choix" name="FEMM" style="display: inline-flex;">
+        <a href="#"><img src="image/FEMM.svg" alt="" class="tagbtn"><br>FEMM</a>
+    </div>
+    <div class="choix" name="MOYEN_PORTUAIRES" style="display: inline-flex;">
+        <a href="#"><img src="image/MOYEN_PORTUAIRES.svg" alt="" class="tagbtn"><br>Moyen Portuaires</a>
+    </div>
+    <div class="choix" name="P400" style="display: inline-flex;">
+        <a href="#"><img src="image/P400.svg" alt="" class="tagbtn"><br>P400</a>
+    </div>
+    <div class="choix" name="PORTE_AVIONS" style="display: inline-flex;">
+        <a href="#"><img src="image/PORTE_AVIONS.svg" alt="" class="tagbtn"><br>Porte-Avion</a>
+    </div>
+    <div class="choix" name="TCD" style="display: inline-flex;">
+        <a href="#"><img src="image/TCD.svg" alt="" class="tagbtn"><br>TCD</a>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="display: inline-flex;">
+        <p>Vitesse du trajet (en noeuds) <input id="vitesse_bateau" type="number" step="10" name="vitesse">
+            Distance du radar (en km) <input id="radar" type="number" step="10" name="presence">
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="display: inline-flex;">
+        Alignment : 
+        <div class="choixclr" name="blue">
+            <a href="#"><img src="image/alliés.svg" alt=""  class=tagbtn></a>
+        </div>
+        <div class="choixclr" name="green">
+            <a href="#"><img class="choixclr reajust" src="image/neutre.svg" alt=""  class=tagbtn></a>
+        </div>
+        <div class="choixclr" name="red">
+            <a href="#"><img class="choixclr" src="image/ennemi.svg" alt=""  class=tagbtn></a>
+        </div>
+        
 
-                        <div class="row" style="display: inline-flex;">
-                            Alignment : 
-                            <div class="choixclr" name="blue">
-                                <a href="#"><img src="image/alliés.svg" alt=""  class=tagbtn></a>
-                            </div>
-                            <div class="choixclr " name="green">
-                                <a href="#"><img class="choixclr reajust" src="image/neutre.svg" alt=""  class=tagbtn></a>
-                            </div>
-                            <div class="choixclr" name="red">
-                                <a href="#"><img class="choixclr" src="image/ennemi.svg" alt=""  class=tagbtn></a>
-                            </div>
+<!--                             Description facultatif : <input type="text" name="description">
+-->
+</div>
+<br><br>
+<a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
 
-                            Description facultatif : <input type="text" name="description">
 
-                        </div>
-                        <br>
-                        <br>
-                        <a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
+</div>
 
-                    </div>
+
+
+
+<div id="contain_helicoptere" class="formulaire hide">
+    <p class="align">Type d'unité</p><br>
+    <a href="#" onclick="previous('helicoptere');"><img src="image/fleche.svg" alt=""  height=50px; width="50px" style="        left: 20px;    position: absolute;    top: -80px;"></a>
+
+    <div class="choix" name="ALOUETTEIII" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_ALOUETTEIII.svg" alt="" class="tagbtn"><br>Alouette III</a>
+    </div>
+    <div class="choix" name="CAIMAN" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_CAIMAN.svg" alt="" class="tagbtn"><br>Caiman</a>
+    </div>
+    <div class="choix" name="DAUPHIN_SP" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_DAUPHIN_SP.svg" alt="" class="tagbtn"><br>Dauphin SP</a>
+    </div>
+    <div class="choix" name="EC225" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_EC225.svg" alt="" class="tagbtn"><br>EC225</a>
+    </div>
+    <div class="choix" name="LYNX" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_LYNX.svg" alt="" class="tagbtn"><br>Lynx</a>
+    </div>
+    <div class="choix" name="PANTHER" style="display: inline-flex;">
+        <a href="#"><img src="image/BTN_PANTHER.svg" alt="" class="tagbtn"><br>Panther</a>
+    </div>
+    <br>
+    <div class="row" style="display: inline-flex;">
+        <p>Vitesse du trajet (en noeuds) <input id="vitesse_bateau" type="number" step="10" name="vitesse">
+            Distance du radar (en km) <input id="radar" type="number" step="10" name="presence">
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <div class="row" style="display: inline-flex;">
+        Alignment : 
+        <div class="choixclr" name="blue">
+            <a href="#"><img src="image/alliés.svg" alt=""  class=tagbtn></a>
+        </div>
+        <div class="choixclr " name="green">
+            <a href="#"><img class="choixclr reajust" src="image/neutre.svg" alt=""  class=tagbtn></a>
+        </div>
+        <div class="choixclr" name="red">
+            <a href="#"><img class="choixclr" src="image/ennemi.svg" alt=""  class=tagbtn></a>
+        </div>
+
+<!--                             Description facultatif : <input type="text" name="description">
+-->
+</div>
+<br>
+<br>
+<a href="#" class="btn drawTrajet" id="">Ajouter l'unité sélectionnée</a>
+
+</div>
 					<!-- <label>Type d'unité'</label>
 					<select class="formula" id="type_bateau" name="type_bateau">
 						<option value="porte-avion">Porte-avion</option>
@@ -474,49 +474,49 @@
 
 
         <div class="big_btn">
-           <div id="cont">
+         <div id="cont">
             <div class="timer">
-             <div id="timerbtn">
-              <img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
-              <img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
-          </div>
+               <div id="timerbtn">
+                  <img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime">
+                  <img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime">
+              </div>
 
-          <div id="timer">
+              <div id="timer">
 
 
-              <span id="days">J-00 / </span>
-              <span id="hours">00 :</span>
-              <span id="mins">00 :</span>
-              <span id="secs">00</span>
+                  <span id="days">J-00 / </span>
+                  <span id="hours">00 :</span>
+                  <span id="mins">00 :</span>
+                  <span id="secs">00</span>
 
-          </div>
+              </div>
 
-          <div id="timeSlider">
-              <!--Slider Speed-->
-              <input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
-              <div id="timeMulti">x 1</div>
+              <div id="timeSlider">
+                  <!--Slider Speed-->
+                  <input class="speed" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+                  <div id="timeMulti">x 1</div>
+              </div>
           </div>
       </div>
   </div>
-</div>
 
-<img id="boussole" src="image/boussole.png">
+  <img id="boussole" src="image/boussole.png">
 
-<!--MARK MAP DIV-->
-<div id="map"></div>
+  <!--MARK MAP DIV-->
+  <div id="map"></div>
 
-<!--MARK CONSOLE PART1-->
-<div id="console">
-   <div class="black">
-    <p class="reperer">Vous ne devez pas vous faire repérer</p>
-    <ul>
-    </ul>
-</div>
-<div id="close_console">
-    <p id="notif"></p>
-    <img id="close" src="image/close2.png">
-    <img id="open" src="image/open.png" style="display: none;">
-</div>
+  <!--MARK CONSOLE PART1-->
+  <div id="console">
+     <div class="black">
+        <p class="reperer">Vous ne devez pas vous faire repérer</p>
+        <ul>
+        </ul>
+    </div>
+    <div id="close_console">
+        <p id="notif"></p>
+        <img id="close" src="image/close2.png">
+        <img id="open" src="image/open.png" style="display: none;">
+    </div>
 </div>
 
 <div id="toolbar">
@@ -543,17 +543,17 @@
 <section id="sidebar" class="sidebar">
   <div class="settings">
 
-     <div class="btn_retourhome">
-        <a href="index.php"> Retour au menu </a>
-    </div>
+   <div class="btn_retourhome">
+    <a href="index.php"> Retour au menu </a>
+</div>
 
-    <h1 class="parametre">Paramètres</h1>
+<h1 class="parametre">Paramètres</h1>
 
-    <div class="onglets">
+<div class="onglets">
 
-        <span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
-        <span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
-    </div>
+    <span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
+    <span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
+</div>
 
 			<!--<button id="onglet-btn" class="onglet1-btn onglet-btn active">
 				<h2>Filtres</h2>
@@ -611,86 +611,86 @@
 						}
 						?>
 
-                     <h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
-                     `
-                     <input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
-                     <textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
-                     <input type="hidden" id="cer" name="cercles">
-                     <input type="hidden" id="polyg" name="polygs">
-                     <input type="hidden" id="text" name="texts">
-                     <input type="hidden" id="polyl" name="polyls">
-                     <input type="hidden" id="bati" name="batis">
-                     <input type="hidden" id="bateau_save" name="bateau_save">
-                     <button class="save" name="save" id='insert'>Sauvegarder</button>
+                       <h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
+                       `
+                       <input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
+                       <textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
+                       <input type="hidden" id="cer" name="cercles">
+                       <input type="hidden" id="polyg" name="polygs">
+                       <input type="hidden" id="text" name="texts">
+                       <input type="hidden" id="polyl" name="polyls">
+                       <input type="hidden" id="bati" name="batis">
+                       <input type="hidden" id="bateau_save" name="bateau_save">
+                       <button class="save" name="save" id='insert'>Sauvegarder</button>
 
-                 </form>
+                   </form>
+               </div>
+
+               <div class="simulation">
+                 <a href="#" class="btn_simulation" id="simulation">Arreter la simulation</a>
+                 <a href="#" class="btn_admin" id="admin">Lancer la simulation</a>
              </div>
-
-             <div class="simulation">
-               <a href="#" class="btn_simulation" id="simulation">Arreter la simulation</a>
-               <a href="#" class="btn_admin" id="admin">Lancer la simulation</a>
-           </div>
-       </div>
+         </div>
 
 
-       <!-- <div class="onglet2 is-closed" style="background-color: #2C3E50;"> -->
-       <div class="contenu_onglet" id="contenu_onglet_suppression">
+         <!-- <div class="onglet2 is-closed" style="background-color: #2C3E50;"> -->
+         <div class="contenu_onglet" id="contenu_onglet_suppression">
 
-        <div class="delete" style="position: relative;">
+            <div class="delete" style="position: relative;">
 
-           <div class="delete_batiment" style="color: white;">
+             <div class="delete_batiment" style="color: white;">
               <div class="share-wrap">
-                 <div class="main-bar5 main-bar" style="color: #2C3E50;">Bâtiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+               <div class="main-bar5 main-bar" style="color: #2C3E50;">Bâtiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
 
-                 <ul class="batiments">
-
-
-                    <p class="delete_batiment_p"></p>
-                </ul>
-            </div>
-        </div>
-
-        <div class="delete_polyline" style="color: white;">
-          <div class="share-wrap">
-             <div class="main-bar1 main-bar" style="color: #2C3E50;">Ligne(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-
-             <ul class="lignes">
+               <ul class="batiments">
 
 
-                <p class="delete_polyline_p"></p>
+                <p class="delete_batiment_p"></p>
             </ul>
         </div>
     </div>
 
-    <div class="delete_cercle">
+    <div class="delete_polyline" style="color: white;">
       <div class="share-wrap">
-         <div class="main-bar2 main-bar" style="color: #2C3E50;">Cercle(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-         <ul class="cercle">
+       <div class="main-bar1 main-bar" style="color: #2C3E50;">Ligne(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
 
-            <p class="delete_cercle_p"></p>
-        </ul>
-    </div>
+       <ul class="lignes">
+
+
+        <p class="delete_polyline_p"></p>
+    </ul>
+</div>
+</div>
+
+<div class="delete_cercle">
+  <div class="share-wrap">
+   <div class="main-bar2 main-bar" style="color: #2C3E50;">Cercle(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+   <ul class="cercle">
+
+    <p class="delete_cercle_p"></p>
+</ul>
+</div>
 </div>
 
 
 <div class="delete_texte">
   <div class="share-wrap">
-     <div class="main-bar3 main-bar" style="color: #2C3E50;">Texte(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-     <ul class="texte">
+   <div class="main-bar3 main-bar" style="color: #2C3E50;">Texte(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+   <ul class="texte">
 
-        <p class="delete_texte_p"></p>
-    </ul>
+    <p class="delete_texte_p"></p>
+</ul>
 </div>
 </div>
 
 
 <div class="delete_polygone">
   <div class="share-wrap">
-     <div class="main-bar4 main-bar" style="color: #2C3E50;">Polygone(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-     <ul class="polygone">
+   <div class="main-bar4 main-bar" style="color: #2C3E50;">Polygone(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+   <ul class="polygone">
 
-        <p class="delete_polygone_p"></p>
-    </ul>
+    <p class="delete_polygone_p"></p>
+</ul>
 </div>
 </div>
 </div>
@@ -734,16 +734,16 @@
     var angle = 0;
 
     interact('#control-container').gesturable({
-       onmove: function (event) {
-           var menu = document.getElementById('control-container');
+     onmove: function (event) {
+         var menu = document.getElementById('control-container');
 
-           angle += event.da;
+         angle += event.da;
 
-           menu.style.webkitTransform =
-           menu.style.transform =
-           'rotate(' + angle + 'deg)';
-       }
-   });
+         menu.style.webkitTransform =
+         menu.style.transform =
+         'rotate(' + angle + 'deg)';
+     }
+ });
 </script>
 
 <!-- Script drag menu -->
@@ -760,9 +760,9 @@ inertia: {
 	// keep the element within the area of it's parent
 	restrict: {
 
-       restriction: "parent",
-       endOnly: true,
-       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
+     restriction: "parent",
+     endOnly: true,
+     elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
 
 // enable autoScroll
 autoScroll: true,
@@ -797,21 +797,21 @@ window.dragMoveListener = dragMoveListener;
 <div id="control-container" class="container control-container hideadmin">
   <!-- Top Navigation -->
   <div class="component" id="component">
-     <!-- Start Nav Structure -->
-     <button class="cn-button" id="cn-button">+</button>
-     <div class="cn-wrapper" id="cn-wrapper">
-        <ul>
-           <li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-           <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-           <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-           <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-           <li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-           <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
-       </ul>
-   </div>
+   <!-- Start Nav Structure -->
+   <button class="cn-button" id="cn-button">+</button>
+   <div class="cn-wrapper" id="cn-wrapper">
+    <ul>
+     <li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+     <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+     <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+     <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+     <li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+     <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+ </ul>
+</div>
 
-   <div id="cn-overlay" class="cn-overlay"></div>
-   <!-- End Nav Structure -->
+<div id="cn-overlay" class="cn-overlay"></div>
+<!-- End Nav Structure -->
 </div>
 </div>
 
