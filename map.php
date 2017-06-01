@@ -50,7 +50,7 @@
            <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
            <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
            <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-           <li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+           <li><a href="index.php" onclick="return confirm('Êtes-vous sûr de vouloir quitter le simulateur ?')"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
            <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
        </ul>
    </div>
