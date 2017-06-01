@@ -9,7 +9,7 @@
 	//open and close menu when the button is clicked
 	var open = false;
 	map.addEventListener("mousedown", handler, false);
-	wrapper.addEventListener("mouseup", cnhandle, false);
+	wrapper.addEventListener("mousedown", cnhandle, false);
 
 	function cnhandle(e) {
 		e.stopPropagation();
@@ -40,11 +40,11 @@
 	}
 
 	function closeNav() {
-		open = false;
-		button.innerHTML = "+";
-		classie.remove(overlay, 'on-overlay');
-		classie.remove(wrapper, 'opened-nav');
-		classie.remove(button, 'opened');
+//		open = false;
+//		button.innerHTML = "+";
+//		classie.remove(overlay, 'on-overlay');
+//		classie.remove(wrapper, 'opened-nav');
+//		classie.remove(button, 'opened');
 	}
 	document.addEventListener('mousedown', closeNav);
 
