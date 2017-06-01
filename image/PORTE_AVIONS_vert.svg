@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 190.3 48" style="enable-background:new 0 0 190.3 48;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#009933;stroke:#231F20;stroke-width:0.5;stroke-miterlimit:10;}
-</style>
-<title>PORTE_AVIONS</title>
-<g id="PORTE_AVIONS">
-	<path class="st0" d="M0.3,37.4h104.6l-0.8-2l8.6-2.7v-4.6l-3.5-2l4.2,0.7v-3.7c0,0-0.6-3.3,1.4-3.1c0.4-0.1,2-0.1,1.7,3
-		c0,0.2,0,3.6,0,3.6h2.7v-3.5l2.1-0.1v-7.8l-10.5-1.8v-1h3.2l0.1-2.6h1.1v2.6l3.8-0.1L119,0.3h0.7l0.1,3.9v8.5h2.3v-1.6h1.7v1.5h2.8
-		c0,0-1.7-2.4,0.4-2.4c0.4,0,2.5,0.1,1,2.1c0.3,0.3,0,2.9,0,2.9h-2.5v8.2h2.1v-5.9h2.4v7.1h2.6v7.7h8.9v5H190v1.8
-		c0,0-8.5,2.4-9.1,8.2c0.6,0.8-176.4,0-176.4,0V45h-2v-3l0.5-2.2H0.3V37.4z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.78 44.19"><defs><style>.cls-1{fill:#093;stroke:#231f20;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><title>PORTE_AVIONS_vert</title><g id="Calque_2" data-name="Calque 2"><g id="PORTE_AVIONS" data-name="PORTE AVIONS"><g id="PORTE_AVIONS-2" data-name="PORTE AVIONS"><path class="cls-1" d="M.38,34.41h96l-.73-1.83,7.89-2.48V25.88L100.28,24l3.85.64V21.29s-.55-3,1.28-2.84c.37-.09,1.83-.09,1.56,2.75v3.3h2.48V21.29l1.93-.09V14l-9.63-1.65v-.92h2.94l.09-2.39h1v2.39l3.49-.09V.38h.64L110,4v7.8h2.11V10.28h1.56v1.38h2.57s-1.56-2.2.37-2.2c.37,0,2.29.09.92,1.93.28.28,0,2.66,0,2.66h-2.29v7.52h1.93V16.15h2.2v6.51h2.39v7.06h8.17v4.59h44.49V36s-7.8,2.2-8.35,7.52c.55.73-161.83,0-161.83,0V41.38H2.39V38.63l.46-2H.38Z"/></g></g></g></svg>

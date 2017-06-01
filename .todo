@@ -4,13 +4,13 @@
 		"suffix": "):? *(.*?) ?(?=-->|\\*/|\\n|$)"
 	},
 	"tags": [
-		"TODO:#FF9800",
-		"NOTE:#4CAF50",
-		"FIX ?ME:#673AB7",
-		"CHANGES:#009688",
-		"FUTURE:#795548",
-		"IMPORTANT:#F44336",
-		"MARK:#03A9F4"
+		{"name"=TODO", "color"="#FF9800"},
+		{"name="NOTE, "color"="#4CAF50"},
+		{"name"="FIX ?ME", "color"="#673AB7"},
+		{"name"="CHANGES", "color"="#009688"},
+		{"name"="FUTURE", "color"="#795548"},
+		{"name"="IMPORTANT",."color"="#F44336"},
+		{"name"="MARK", "color"="#03A9F4"}
 	],
 	"case": false,
 	"search": {
