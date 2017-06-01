@@ -29,16 +29,14 @@
 		open = true;
 		button.innerHTML = "-";
 
-		container.style.left = event.clientX - 40 + "px";
-		container.style.top = event.clientY - 40 + "px";
+//		container.style.left = event.clientX - 40 + "px";
+//		container.style.top = event.clientY - 40 + "px";
 
 		console.log("new pos : x = " + event.clientX + "& y = " + event.clientY);
 
 		classie.add(overlay, 'on-overlay');
 		classie.add(wrapper, 'opened-nav');
 		classie.add(button, 'opened');
-
-
 	}
 
 	function closeNav() {

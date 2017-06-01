@@ -48,9 +48,9 @@
 		</div>
 		<form id="send-message-area">
 			<textarea id="sendie" maxlength='100'></textarea>
-			<!--  
-			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE
-			<p id="send">Envoyer</p>	 -->
+
+<!--			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE-->
+			<p id="send">Envoyer</p>
 		</form>
 
 	</div>
@@ -533,9 +533,15 @@ inertia: {
 },
 	// keep the element within the area of it's parent
 	restrict: {
+<<<<<<< HEAD
        restriction: "parent",
        endOnly: true,
        elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
+=======
+	restriction: "parent",
+	endOnly: true,
+	elementRect: { top: 0, left: 0, bottom: 4, right: 0 }},
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 // enable autoScroll
 autoScroll: true,
 
@@ -565,6 +571,7 @@ window.dragMoveListener = dragMoveListener;
 </script>
 
 <!-- MENU RADIAL -->
+<<<<<<< HEAD
 <div id="control-container" class="container control-container hideadmin">
   <!-- Top Navigation -->
   <div class="component" id="component">
@@ -593,6 +600,36 @@ window.dragMoveListener = dragMoveListener;
 <!-- CHAT -->
 <script src="js/chat.js"></script>
 <script>
+=======
+	<div id="control-container" class="container control-container hideadmin" data-x="1500" data-y="795" style="transform: translate(1500px, 900px);">
+		<!-- Top Navigation -->
+		<div class="component" id="component">
+			<!-- Start Nav Structure -->
+			<button class="cn-button opened" id="cn-button">+</button>
+			<div class="cn-wrapper" id="cn-wrapper">
+				<ul>
+					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+				</ul>
+			</div>
+			<div id="cn-overlay" class="on-overlay cn-overlay"></div>
+			<!-- End Nav Structure -->
+		</div>
+	</div>
+
+	<!-- /container -->
+	<script src="js/polyfills.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/demo1.js"></script>
+
+	<!-- CHAT -->
+	<script src="js/chat.js"></script>
+	<script>
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 		// ask user for name with popup prompt
 		var name = prompt("Veuillez entrer un pseudonyme :", "Formateur");
 		if(name != "Formateur"){
