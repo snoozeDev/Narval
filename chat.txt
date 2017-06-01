@@ -40,3 +40,5 @@
 <span>g&eacute;n&eacute;ral</span>hey ! 
 <span>Soldat</span>bou 
 <span>Soldat</span>n 
+<span>Soldat</span>cc 
+<span>j&eacute;j&eacute;</span>yo 
