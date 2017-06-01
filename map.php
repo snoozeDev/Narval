@@ -37,6 +37,28 @@
 
 
 
+<!-- MENU RADIAL -->
+
+<div id="control-container" class="container control-container hideadmin" data-x="1275" data-y="911" style="transform: translate(1275px, 911px);">
+  <!-- Top Navigation -->
+  <div class="component" id="component">
+     <!-- Start Nav Structure -->
+     <button class="cn-button opened"  id="cn-button">+</button>
+     <div class="cn-wrapper opened-nav" id="cn-wrapper">
+        <ul>
+           <li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+           <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+           <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+           <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+           <li><a href="index.php" onclick="return confirm('Êtes-vous sûr de vouloir quitter le simulateur ?')"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+           <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+       </ul>
+   </div>
+
+   <div id="cn-overlay" class="cn-overlay on-overlay"></div>
+   <!-- End Nav Structure -->
+</div>
+</div>
 
 	<!-- CE FICHIER CONTIENT LES FONCTIONS DU CHAT -->
 	<?php include('chat.php') ?>
@@ -794,26 +816,7 @@ window.dragMoveListener = dragMoveListener;
 
 <!-- MENU RADIAL -->
 
-<div id="control-container" class="container control-container hideadmin">
-  <!-- Top Navigation -->
-  <div class="component" id="component">
-   <!-- Start Nav Structure -->
-   <button class="cn-button" id="cn-button">+</button>
-   <div class="cn-wrapper" id="cn-wrapper">
-    <ul>
-     <li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-     <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-     <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-     <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-     <li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-     <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
- </ul>
-</div>
 
-<div id="cn-overlay" class="cn-overlay"></div>
-<!-- End Nav Structure -->
-</div>
-</div>
 
 <!-- /container -->
 <script src="js/polyfills.js"></script>
@@ -822,27 +825,8 @@ window.dragMoveListener = dragMoveListener;
 
 <!-- CHAT -->
 <script src="js/chat.js"></script>
-<script>
 
-	<div id="control-container" class="container control-container hideadmin" data-x="1500" data-y="795" style="transform: translate(1500px, 900px);">
-		<!-- Top Navigation -->
-		<div class="component" id="component">
-			<!-- Start Nav Structure -->
-			<button class="cn-button opened" id="cn-button">+</button>
-			<div class="cn-wrapper" id="cn-wrapper">
-				<ul>
-					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
-				</ul>
-			</div>
-			<div id="cn-overlay" class="on-overlay cn-overlay"></div>
-			<!-- End Nav Structure -->
-		</div>
-	</div>
+
 
 	<!-- /container -->
 	<script src="js/polyfills.js"></script>
