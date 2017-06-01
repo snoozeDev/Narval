@@ -32,7 +32,7 @@ var sidebar = (function () {
 
 	var $contnet = $('#content'),
 		$sidebar = $('#sidebar'),
-		$sidebarBtn = $('#sidebar-btn'),
+		$sidebarBtn = $('#parambtn'),
 		$toggleCol = $('body').add($contnet).add($sidebarBtn),
 		sidebarIsVisible = false;
 
