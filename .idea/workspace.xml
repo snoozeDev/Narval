@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad9344e9-02b4-4a50-a9a6-374017174706" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Engins_de_debarquement_amphibie_rapide_EDA-R_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fregate_Multimissions_FEMM_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fregate_de_defense_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Moyen_portuaires_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PORTE_AVIONS_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patrouilleurs_de_haute_mer_A69_vert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Transport_de_chalands_de_debarquement_TCD_vert.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/demo1.js" afterPath="$PROJECT_DIR$/js/demo1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/function.js" afterPath="$PROJECT_DIR$/js/function.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map.php" afterPath="$PROJECT_DIR$/map.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +22,8 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="984" column="9" lean-forward="false" selection-start-line="984" selection-start-column="9" selection-end-line="984" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -48,8 +42,8 @@
       <file leaf-file-name="map.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="223">
+              <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,10 +93,10 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1496318357000" expanded="true" signature="950:955" ph="{...}" />
-                <marker date="1496318357000" expanded="true" signature="25504:25609" ph="SELECT id, m... save_marine_table" />
-                <marker date="1496318357000" expanded="true" signature="25786:25797" ph="..." />
-                <marker date="1496318357000" expanded="true" signature="25840:25869" ph="..." />
+                <marker date="1496319319000" expanded="true" signature="950:955" ph="{...}" />
+                <marker date="1496319319000" expanded="true" signature="25517:25622" ph="SELECT id, m... save_marine_table" />
+                <marker date="1496319319000" expanded="true" signature="25799:25810" ph="..." />
+                <marker date="1496319319000" expanded="true" signature="25853:25882" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,10 +105,20 @@
       <file leaf-file-name="demo1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/demo1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            <state relative-caret-position="156">
+              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/function.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <marker date="1496318296000" expanded="true" signature="1214:1252" ph="{...}" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,6 +132,10 @@
       <find>HEAD</find>
       <find>Head</find>
       <find>head</find>
+      <find>sidebar</find>
+      <find>icon</find>
+      <find>side</find>
+      <find>sidebarBtn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,6 +148,7 @@
         <option value="$PROJECT_DIR$/chat.txt" />
         <option value="$PROJECT_DIR$/js/demo1.js" />
         <option value="$PROJECT_DIR$/map.php" />
+        <option value="$PROJECT_DIR$/js/function.js" />
       </list>
     </option>
   </component>
@@ -197,20 +206,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bapmarine2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bapmarine2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -232,16 +227,16 @@
       <updated>1496250393534</updated>
       <workItem from="1496250395129" duration="384000" />
       <workItem from="1496304771284" duration="3907000" />
-      <workItem from="1496318278880" duration="81000" />
+      <workItem from="1496318278880" duration="930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4372000" />
+    <option name="totallyTimeSpent" value="5221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -249,7 +244,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -342,10 +337,10 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1496318357000" expanded="true" signature="950:955" ph="{...}" />
-            <marker date="1496318357000" expanded="true" signature="25504:25609" ph="SELECT id, m... save_marine_table" />
-            <marker date="1496318357000" expanded="true" signature="25786:25797" ph="..." />
-            <marker date="1496318357000" expanded="true" signature="25840:25869" ph="..." />
+            <marker date="1496319319000" expanded="true" signature="950:955" ph="{...}" />
+            <marker date="1496319319000" expanded="true" signature="25517:25622" ph="SELECT id, m... save_marine_table" />
+            <marker date="1496319319000" expanded="true" signature="25799:25810" ph="..." />
+            <marker date="1496319319000" expanded="true" signature="25853:25882" ph="..." />
           </folding>
         </state>
       </provider>
@@ -354,9 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <marker date="1496318296000" expanded="true" signature="1214:1252" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -370,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="984" column="9" lean-forward="false" selection-start-line="984" selection-start-column="9" selection-end-line="984" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -386,18 +379,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/demo1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="156">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
-            <marker date="1496318296000" expanded="true" signature="1214:1252" ph="{...}" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="223">
+          <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -447,10 +448,10 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1496318357000" expanded="true" signature="950:955" ph="{...}" />
-            <marker date="1496318357000" expanded="true" signature="25504:25609" ph="SELECT id, m... save_marine_table" />
-            <marker date="1496318357000" expanded="true" signature="25786:25797" ph="..." />
-            <marker date="1496318357000" expanded="true" signature="25840:25869" ph="..." />
+            <marker date="1496319319000" expanded="true" signature="950:955" ph="{...}" />
+            <marker date="1496319319000" expanded="true" signature="25517:25622" ph="SELECT id, m... save_marine_table" />
+            <marker date="1496319319000" expanded="true" signature="25799:25810" ph="..." />
+            <marker date="1496319319000" expanded="true" signature="25853:25882" ph="..." />
           </folding>
         </state>
       </provider>
