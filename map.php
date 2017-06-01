@@ -11,23 +11,23 @@
 	<!--
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
-	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-	  <script src='http://code.interactjs.io/v1.2.6/interact.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<script src='http://code.interactjs.io/v1.2.6/interact.js'></script>
 
-	<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
+<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
 
-	<script type="text/javascript">
-		function change_onglet(name) {
-			document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
-			document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
-			document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
-			document.getElementById('contenu_onglet_' + name).style.display = 'block';
-			anc_onglet = name;
-		}
+<script type="text/javascript">
+  function change_onglet(name) {
+     document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
+     document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
+     document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
+     document.getElementById('contenu_onglet_' + name).style.display = 'block';
+     anc_onglet = name;
+ }
 
-	</script>
+</script>
 
-	<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <!-- ON RAFFRAICHIT LE CHAT TOUTES LES SECONDES -->
@@ -207,90 +207,90 @@
 					</form>-->
 
 
-				<label>Type d'unité'</label>
-				<select class="formula" id="type_bateau" name="type_bateau">
-						<option value="porte-avion">Porte-avion</option>
-						<option value="asm">FASM</option>
-						<option value="bpc">BPC</option>
-						<option value="fs">FS</option>
-						<option value="phm">PHM</option>
-						<option value="fda">FDA</option>
-						<option value="bcr">BCR</option>
-						<option value="puma">Helico Puma</option>
-						<option value="tigre">Hélico Tigre</option>
-						<option value="fennec">Hélico Fennec</option>
-						<option value="avion">Mirage F1</option>
-						<option value="paquebot">Paquebot Civil</option>
-						<option value="cargo">Cargo Civil</option>
-						<option value="peche">Bateau de pêche Civil</option>
+                    <label>Type d'unité'</label>
+                    <select class="formula" id="type_bateau" name="type_bateau">
+                      <option value="porte-avion">Porte-avion</option>
+                      <option value="asm">FASM</option>
+                      <option value="bpc">BPC</option>
+                      <option value="fs">FS</option>
+                      <option value="phm">PHM</option>
+                      <option value="fda">FDA</option>
+                      <option value="bcr">BCR</option>
+                      <option value="puma">Helico Puma</option>
+                      <option value="tigre">Hélico Tigre</option>
+                      <option value="fennec">Hélico Fennec</option>
+                      <option value="avion">Mirage F1</option>
+                      <option value="paquebot">Paquebot Civil</option>
+                      <option value="cargo">Cargo Civil</option>
+                      <option value="peche">Bateau de pêche Civil</option>
 
-					</select>
-				<label>Vitesse du trajet (en noeud)</label>
-				<input class="formula" type="text" id="vitesse_bateau" value="15">
+                  </select>
+                  <label>Vitesse du trajet (en noeud)</label>
+                  <input class="formula" type="text" id="vitesse_bateau" value="15">
 
-				<label>Distance du radar (en km)</label>
-				<input class="formula" type="text" id="radar" value="800">
+                  <label>Distance du radar (en km)</label>
+                  <input class="formula" type="text" id="radar" value="800">
 
-				<label>Alignement</label>
-				<select class="formula" id="color_bateau" name="color_bateau">
-						<option value="blue">Allié</option>
-						<option value="green">Neutre</option>
-						<option value="red">Ennemi</option>
-					</select>
+                  <label>Alignement</label>
+                  <select class="formula" id="color_bateau" name="color_bateau">
+                      <option value="blue">Allié</option>
+                      <option value="green">Neutre</option>
+                      <option value="red">Ennemi</option>
+                  </select>
 
-				<label>Description (facutatif)</label>
-				<textarea class="formula" id="description" name="description"></textarea>
-				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
+                  <label>Description (facutatif)</label>
+                  <textarea class="formula" id="description" name="description"></textarea>
+                  <a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
 
-			</div>
-		</div>
-	</div>
+              </div>
+          </div>
+      </div>
 
-	<div class="big_btn">
-		<div id="cont">
-			<div class="timer">
-				<div id="timerbtn">
-					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime hideadmin">
-					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime hideadmin">
-				</div>
+      <div class="big_btn">
+          <div id="cont">
+             <div class="timer">
+                <div id="timerbtn">
+                   <img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime hideadmin">
+                   <img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime hideadmin">
+               </div>
 
-				<div id="timer">
+               <div id="timer">
 
 
-					<span id="days">J-00 / </span>
-					<span id="hours">00 :</span>
-					<span id="mins">00 :</span>
-					<span id="secs">00</span>
+                   <span id="days">J-00 / </span>
+                   <span id="hours">00 :</span>
+                   <span id="mins">00 :</span>
+                   <span id="secs">00</span>
 
-				</div>
+               </div>
 
-				<div id="timeSlider">
-					<!--Slider Speed-->
-					<input class="speed hideadmin" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
-					<div class="timeMulti hideadmin">x 1</div>
-				</div>
-			</div>
-		</div>
-	</div>
+               <div id="timeSlider">
+                   <!--Slider Speed-->
+                   <input class="speed hideadmin" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+                   <div class="timeMulti hideadmin">x 1</div>
+               </div>
+           </div>
+       </div>
+   </div>
 
-	<img id="boussole" src="image/boussole.png">
+   <img id="boussole" src="image/boussole.png">
 
-	<!--MARK MAP DIV-->
-	<div id="map"></div>
+   <!--MARK MAP DIV-->
+   <div id="map"></div>
 
-	<!--MARK CONSOLE PART1-->
-	<div id="console">
-		<div class="black">
-			<p class="reperer">Vous ne devez pas vous faire repérer</p>
-			<ul>
-			</ul>
-		</div>
-		<div id="close_console">
-			<p id="notif"></p>
-			<img id="close" src="image/close2.png">
-			<img id="open" src="image/open.png" style="display: none;">
-		</div>
-	</div>
+   <!--MARK CONSOLE PART1-->
+   <div id="console">
+      <div class="black">
+         <p class="reperer">Vous ne devez pas vous faire repérer</p>
+         <ul>
+         </ul>
+     </div>
+     <div id="close_console">
+         <p id="notif"></p>
+         <img id="close" src="image/close2.png">
+         <img id="open" src="image/open.png" style="display: none;">
+     </div>
+ </div>
 	<!--
 	<div id="toolbar">
 		<div class="forme"> <img src="image/bateau.png"></div>
@@ -298,36 +298,36 @@
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
 	</div>
 -->
-	<div class="stop">
-		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
-		<br>
-		<!--Remplacement des icônes de fin d'action-->
-		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
-		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
-		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
-		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
-		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
-	</div>
+<div class="stop">
+  <input class="hide" id="editVitesse" placeholder="Votre Vitesse">
+  <br>
+  <!--Remplacement des icônes de fin d'action-->
+  <div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
+  <div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
+  <div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
+  <div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
+  <div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
+</div>
 
-	<!--MARK: SIDEBAR BTN-->
-	<button id="sidebar-btn" class="sidebar-btn">
+<!--MARK: SIDEBAR BTN-->
+<button id="sidebar-btn" class="sidebar-btn">
 	<img id="menu-stripes1" src="image/menu.svg">
 </button>
 
-	<section id="sidebar" class="sidebar">
-		<div class="settings">
+<section id="sidebar" class="sidebar">
+  <div class="settings">
 
-			<div class="btn_retourhome">
-				<a href="index.php"> Retour au menu </a>
-			</div>
+     <div class="btn_retourhome">
+        <a href="index.php"> Retour au menu </a>
+    </div>
 
-			<h1 class="parametre">Paramètres</h1>
+    <h1 class="parametre">Paramètres</h1>
 
-			<div class="onglets">
+    <div class="onglets">
 
-				<span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
-				<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
-			</div>
+        <span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
+        <span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
+    </div>
 
 			<!--<button id="onglet-btn" class="onglet1-btn onglet-btn active">
 				<h2>Filtres</h2>
@@ -385,179 +385,179 @@
 						}
 						?>
 
-							<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
-							`
-							<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
-							<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
-							<input type="hidden" id="cer" name="cercles">
-							<input type="hidden" id="polyg" name="polygs">
-							<input type="hidden" id="text" name="texts">
-							<input type="hidden" id="polyl" name="polyls">
-							<input type="hidden" id="bati" name="batis">
-							<input type="hidden" id="bateau_save" name="bateau_save">
-							<button class="save" name="save" id='insert'>Sauvegarder</button>
+                     <h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
+                     `
+                     <input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
+                     <textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
+                     <input type="hidden" id="cer" name="cercles">
+                     <input type="hidden" id="polyg" name="polygs">
+                     <input type="hidden" id="text" name="texts">
+                     <input type="hidden" id="polyl" name="polyls">
+                     <input type="hidden" id="bati" name="batis">
+                     <input type="hidden" id="bateau_save" name="bateau_save">
+                     <button class="save" name="save" id='insert'>Sauvegarder</button>
 
-					</form>
-				</div>
+                 </form>
+             </div>
 
-				<div class="simulation">
-					<a href="#" class="btn_simulation" id="simulation">Arreter la simulation</a>
-					<a href="#" class="btn_admin" id="admin">Lancer la simulation</a>
-				</div>
-			</div>
-
-
-			<!-- <div class="onglet2 is-closed" style="background-color: #2C3E50;"> -->
-			<div class="contenu_onglet" id="contenu_onglet_suppression">
-
-				<div class="delete" style="position: relative;">
-
-					<div class="delete_batiment" style="color: white;">
-						<div class="share-wrap">
-							<div class="main-bar5 main-bar" style="color: #2C3E50;">Bâtiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-
-							<ul class="batiments">
+             <div class="simulation">
+               <a href="#" class="btn_simulation" id="simulation">Arreter la simulation</a>
+               <a href="#" class="btn_admin" id="admin">Lancer la simulation</a>
+           </div>
+       </div>
 
 
-								<p class="delete_batiment_p"></p>
-							</ul>
-						</div>
-					</div>
+       <!-- <div class="onglet2 is-closed" style="background-color: #2C3E50;"> -->
+       <div class="contenu_onglet" id="contenu_onglet_suppression">
 
-					<div class="delete_polyline" style="color: white;">
-						<div class="share-wrap">
-							<div class="main-bar1 main-bar" style="color: #2C3E50;">Ligne(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+        <div class="delete" style="position: relative;">
 
-							<ul class="lignes">
+           <div class="delete_batiment" style="color: white;">
+              <div class="share-wrap">
+                 <div class="main-bar5 main-bar" style="color: #2C3E50;">Bâtiment(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
 
-
-								<p class="delete_polyline_p"></p>
-							</ul>
-						</div>
-					</div>
-
-					<div class="delete_cercle">
-						<div class="share-wrap">
-							<div class="main-bar2 main-bar" style="color: #2C3E50;">Cercle(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-							<ul class="cercle">
-
-								<p class="delete_cercle_p"></p>
-							</ul>
-						</div>
-					</div>
+                 <ul class="batiments">
 
 
-					<div class="delete_texte">
-						<div class="share-wrap">
-							<div class="main-bar3 main-bar" style="color: #2C3E50;">Texte(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-							<ul class="texte">
+                    <p class="delete_batiment_p"></p>
+                </ul>
+            </div>
+        </div>
 
-								<p class="delete_texte_p"></p>
-							</ul>
-						</div>
-					</div>
+        <div class="delete_polyline" style="color: white;">
+          <div class="share-wrap">
+             <div class="main-bar1 main-bar" style="color: #2C3E50;">Ligne(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
 
-
-					<div class="delete_polygone">
-						<div class="share-wrap">
-							<div class="main-bar4 main-bar" style="color: #2C3E50;">Polygone(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
-							<ul class="polygone">
-
-								<p class="delete_polygone_p"></p>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<script type="text/javascript">
-				var anc_onglet = 'options';
-				change_onglet(anc_onglet);
-
-			</script>
-
-		</div>
+             <ul class="lignes">
 
 
+                <p class="delete_polyline_p"></p>
+            </ul>
+        </div>
+    </div>
 
-	</section>
+    <div class="delete_cercle">
+      <div class="share-wrap">
+         <div class="main-bar2 main-bar" style="color: #2C3E50;">Cercle(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+         <ul class="cercle">
 
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/leaflet-src.js"></script>
-	<script type="text/javascript" src="js/icone.js"></script>
-	<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
-	<script src='js/coord.js'></script>
-	<script type="text/javascript" src="js/function.js"></script>
+            <p class="delete_cercle_p"></p>
+        </ul>
+    </div>
+</div>
 
-	<script type="text/javascript" src="js/onglet.js"></script>
+
+<div class="delete_texte">
+  <div class="share-wrap">
+     <div class="main-bar3 main-bar" style="color: #2C3E50;">Texte(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+     <ul class="texte">
+
+        <p class="delete_texte_p"></p>
+    </ul>
+</div>
+</div>
+
+
+<div class="delete_polygone">
+  <div class="share-wrap">
+     <div class="main-bar4 main-bar" style="color: #2C3E50;">Polygone(s)<span><img src="image/dropdown-bas%20suppression.png"/></span></div>
+     <ul class="polygone">
+
+        <p class="delete_polygone_p"></p>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    var anc_onglet = 'options';
+    change_onglet(anc_onglet);
+
+</script>
+
+</div>
+
+
+
+</section>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/leaflet-src.js"></script>
+<script type="text/javascript" src="js/icone.js"></script>
+<script type="text/javascript" src="js/map.js" charset="UTF-8"></script>
+<script src='js/coord.js'></script>
+<script type="text/javascript" src="js/function.js"></script>
+
+<script type="text/javascript" src="js/onglet.js"></script>
 
 	<!--
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 -->
 
-	<script src="js/slider.js"></script>
+<script src="js/slider.js"></script>
 
-	<script src='js/sauveguarde.js'></script>
-	<!--	<script src="js/sendData.js"></script>-->
+<script src='js/sauveguarde.js'></script>
+<!--	<script src="js/sendData.js"></script>-->
 
-	<?php include 'load.php' ?>
+<?php include 'load.php' ?>
 
 <!-- Script rotation menu -->
 <script>
-var angle = 0;
+    var angle = 0;
 
-interact('#control-container').gesturable({
-	onmove: function (event) {
-	var menu = document.getElementById('control-container');
+    interact('#control-container').gesturable({
+       onmove: function (event) {
+           var menu = document.getElementById('control-container');
 
-	angle += event.da;
+           angle += event.da;
 
-	menu.style.webkitTransform =
-	menu.style.transform =
-	'rotate(' + angle + 'deg)';
-}
-});
+           menu.style.webkitTransform =
+           menu.style.transform =
+           'rotate(' + angle + 'deg)';
+       }
+   });
 </script>
 
 <!-- Script drag menu -->
 <script>
 // target elements with the "draggable" class
 interact('.control-container')
-	.draggable({
+.draggable({
 // enable inertial throwing
-	inertia: {
+inertia: {
 	resistance: 4,
 	minSpeed: 500,
 	endSpeed: 200,
 },
 	// keep the element within the area of it's parent
 	restrict: {
-	restriction: "parent",
-	endOnly: true,
-	elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
+       restriction: "parent",
+       endOnly: true,
+       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }},
 // enable autoScroll
-	autoScroll: true,
+autoScroll: true,
 
 // call this function on every dragmove event
-	onmove: dragMoveListener,
+onmove: dragMoveListener,
 // call this function on every dragend event
 });
 
-	function dragMoveListener (event) {
-var target = event.target,
+function dragMoveListener (event) {
+    var target = event.target,
 // keep the dragged position in the data-x/data-y attributes
-	x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-	y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
 // translate the element
-	target.style.webkitTransform =
-	target.style.transform =
-	'translate(' + x + 'px, ' + y + 'px)';
+target.style.webkitTransform =
+target.style.transform =
+'translate(' + x + 'px, ' + y + 'px)';
 
 // update the posiion attributes
-	target.setAttribute('data-x', x);
-	target.setAttribute('data-y', y);
+target.setAttribute('data-x', x);
+target.setAttribute('data-y', y);
 }
 
 // this is used later in the resizing and gesture demos
@@ -565,34 +565,34 @@ window.dragMoveListener = dragMoveListener;
 </script>
 
 <!-- MENU RADIAL -->
-	<div id="control-container" class="container control-container hideadmin">
-		<!-- Top Navigation -->
-		<div class="component" id="component">
-			<!-- Start Nav Structure -->
-			<button class="cn-button" id="cn-button">+</button>
-			<div class="cn-wrapper" id="cn-wrapper">
-				<ul>
-					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
-				</ul>
-			</div>
-			<div id="cn-overlay" class="cn-overlay"></div>
-			<!-- End Nav Structure -->
-		</div>
-	</div>
+<div id="control-container" class="container control-container hideadmin">
+  <!-- Top Navigation -->
+  <div class="component" id="component">
+     <!-- Start Nav Structure -->
+     <button class="cn-button" id="cn-button">+</button>
+     <div class="cn-wrapper" id="cn-wrapper">
+        <ul>
+           <li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+           <li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+           <li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+           <li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+           <li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+           <li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+       </ul>
+   </div>
+   <div id="cn-overlay" class="cn-overlay"></div>
+   <!-- End Nav Structure -->
+</div>
+</div>
 
-	<!-- /container -->
-	<script src="js/polyfills.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/demo1.js"></script>
+<!-- /container -->
+<script src="js/polyfills.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/demo1.js"></script>
 
-	<!-- CHAT -->
-	<script src="js/chat.js"></script>
-	<script>
+<!-- CHAT -->
+<script src="js/chat.js"></script>
+<script>
 		// ask user for name with popup prompt
 		var name = prompt("Veuillez entrer un pseudonyme :", "Formateur");
 		if(name != "Formateur"){
