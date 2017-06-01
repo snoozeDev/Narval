@@ -16,17 +16,16 @@
 
         <div id="conteneur">
 
-        <div class="photo"><img id="julien" src="image/Ju_Langlais.png"><h2>Julien Langlais</h2><h3>Scrum Master</h3></div>
-        <div class="photo"><img id="jb" src="image/JB_Lafon.png"><h2>Jean-Baptiste Lafon</h2><h3>Product Owner</h3></div>
-        <div class="photo"><img id="nicolas" src="image/Nicolas_Dumontier.png"><h2>Nicolas Dumontier</h2><h3>Scrum Master</h3></div>
-        <div class="photo"><img id="antoine" src="image/Antoine_Delacommune.png"><h2>Antoine Delacommune</h2><h3>Product Owner</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/julien-langlais-2a9a53a4/" target="_blank"><img id="julien" src="image/Ju_Langlais.png"></a><h2>Julien Langlais</h2><h3>Scrum Master</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/jean-baptiste-lafon-34ab1ab6/" target="_blank"><img id="jb" src="image/JB_Lafon.png"></a><h2>Jean-Baptiste Lafon</h2><h3>Product Owner</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/nicolas-dumontier-223640112/" target="_blank"><img id="nicolas" src="image/Nicolas_Dumontier.png"></a><h2>Nicolas Dumontier</h2><h3>Scrum Master</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/antoine-delacommune-85163112b/" target="_blank"><img id="antoine" src="image/Antoine_Delacommune.png"></a><h2>Antoine Delacommune</h2><h3>Product Owner</h3></div>
         </div>
 
         <div id="conteneur2">
-        <div class="photo"><img id="louis" src="image/Louis_Gaudet.png"><h2>Louis Gaudet</h2><h3>Responsable Hardware</h3></div>
-        <div class="photo"><img id="baloo" src="image/Alexis_Durieu.png"><h2>Alexis Durieu</h2><h3>UX Designer</h3></div>
-        <div class="photo"><img id="matthieu" src="image/Matthieu_Mignon.png"><h2>Matthieu Mignon</h2><h3>Game Designer</h3></div>
-        <div class="photo"><img id="alexis" src="image/Alexis_Lamarche.png"><h2>Alexis Lamarche</h2><h3>Scénariste</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/louis-gaudet-3a3507137/" target="_blank"><img id="louis" src="image/Louis_Gaudet.png"></a><h2>Louis Gaudet</h2><h3>Responsable Hardware</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/alexis-durieu-67ba11111/" target="_blank"><img id="baloo" src="image/Alexis_Durieu.png"></a><h2>Alexis Durieu</h2><h3>UX Designer</h3></div>
+        <div class="photo"><a href="https://www.linkedin.com/in/adam-alet/" target="_blank"><img id="adam" src="image/adam.png"></a><h2>Adam Alet</h2><h3>Développeur Web</h3></div>
 
         </div>
 </body>

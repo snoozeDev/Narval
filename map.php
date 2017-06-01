@@ -11,25 +11,28 @@
 	<!--
 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 -->
-<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+	  <script src='http://code.interactjs.io/v1.2.6/interact.js'></script>
 
-<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
+	<!--    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />-->
 
-<script type="text/javascript">
-	function change_onglet(name) {
-		document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
-		document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
-		document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
-		document.getElementById('contenu_onglet_' + name).style.display = 'block';
-		anc_onglet = name;
-	}
-</script>
+	<script type="text/javascript">
+		function change_onglet(name) {
+			document.getElementById('onglet_' + anc_onglet).className = 'onglet_0 onglet';
+			document.getElementById('onglet_' + name).className = 'onglet_1 onglet';
+			document.getElementById('contenu_onglet_' + anc_onglet).style.display = 'none';
+			document.getElementById('contenu_onglet_' + name).style.display = 'block';
+			anc_onglet = name;
+		}
 
-<script src="js/modernizr-2.6.2.min.js"></script>
+	</script>
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <!-- ON RAFFRAICHIT LE CHAT TOUTES LES SECONDES -->
-<body  onload="setInterval('chat.update()', 1000)">
+
+<body onload="setInterval('chat.update()', 1000)">
 
 
 
@@ -38,14 +41,16 @@
 	<?php include('chat.php') ?>
 	<p id="name-area"></p>
 
-	<div id="ajout_chatbox" >
+	<div id="ajout_chatbox">
 		<p id="closechat" onclick="closePopUp('chatbox')">Fermer le chat</p>
-		<div id="chat-wrap"><div id="chat-area"></div></div>
+		<div id="chat-wrap">
+			<div id="chat-area"></div>
+		</div>
 		<form id="send-message-area">
-			<textarea id="sendie" maxlength = '100'></textarea>
-			<!--  
-			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE
-			<p id="send">Envoyer</p>	 -->
+			<textarea id="sendie" maxlength='100'></textarea>
+
+<!--			AU CAS OU ON PEUT PAS ENVOYER AVEC UN BOUTOPN SUR LA TABLETTE-->
+			<p id="send">Envoyer</p>
 		</form>
 
 	</div>
@@ -232,6 +237,7 @@
 						<a type="submit" class="btn" id="drawTrajet">LOL</a>
 					</form>-->
 
+<<<<<<< HEAD
                     <div id="contain" style="display:flex; flex-flow: row wrap; justify-content: center ; align-items: center ;margin-top: 10.5%;">
                         <div class="" style="text-align:center; width:33%; position:relative;">
                             <a href="#" onclick="openItem('helicoptere');"><img src="image/helico.svg" alt="" height=250px;>
@@ -424,6 +430,11 @@
                     </div>
 					<!-- <label>Type d'unité'</label>
 					<select class="formula" id="type_bateau" name="type_bateau">
+=======
+
+				<label>Type d'unité'</label>
+				<select class="formula" id="type_bateau" name="type_bateau">
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 						<option value="porte-avion">Porte-avion</option>
 						<option value="asm">FASM</option>
 						<option value="bpc">BPC</option>
@@ -440,27 +451,34 @@
 						<option value="peche">Bateau de pêche Civil</option>
 
 					</select>
-					<label>Vitesse du trajet (en noeud)</label>
-					<input class="formula" type="text" id="vitesse_bateau" value="15">
+				<label>Vitesse du trajet (en noeud)</label>
+				<input class="formula" type="text" id="vitesse_bateau" value="15">
 
-					<label>Distance du radar (en km)</label>
-					<input class="formula" type="text" id="radar" value="800">
+				<label>Distance du radar (en km)</label>
+				<input class="formula" type="text" id="radar" value="800">
 
-					<label>Alignement</label>
-					<select class="formula" id="color_bateau" name="color_bateau">
+				<label>Alignement</label>
+				<select class="formula" id="color_bateau" name="color_bateau">
 						<option value="blue">Allié</option>
 						<option value="green">Neutre</option>
 						<option value="red">Ennemi</option>
 					</select>
 
+<<<<<<< HEAD
 					<label>Description (facutatif)</label>
 					<textarea class="formula" id="description" name="description"></textarea>
 					<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a> -->
+=======
+				<label>Description (facutatif)</label>
+				<textarea class="formula" id="description" name="description"></textarea>
+				<a href="#" class="btn" id="drawTrajet">Ajouter Trajet</a>
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 
-				</div>
 			</div>
 		</div>
+	</div>
 
+<<<<<<< HEAD
         <!-- FIN UNITÉS -->
 
 
@@ -513,42 +531,90 @@
     </div>
 </div>
 <!--
+=======
+	<div class="big_btn">
+		<div id="cont">
+			<div class="timer">
+				<div id="timerbtn">
+					<img src="image/play.png" style="position: relative;top: 0px;" id="play" class="btntime hideadmin">
+					<img src="image/pause.png" style="display:none;position: relative;top: 0px;" id="pause" class="btntime hideadmin">
+				</div>
+
+				<div id="timer">
+
+
+					<span id="days">J-00 / </span>
+					<span id="hours">00 :</span>
+					<span id="mins">00 :</span>
+					<span id="secs">00</span>
+
+				</div>
+
+				<div id="timeSlider">
+					<!--Slider Speed-->
+					<input class="speed hideadmin" name="speedSlider" id="slider" type="range" min="1" max="6" step="1" value="1" />
+					<div class="timeMulti hideadmin">x 1</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img id="boussole" src="image/boussole.png">
+
+	<!--MARK MAP DIV-->
+	<div id="map"></div>
+
+	<!--MARK CONSOLE PART1-->
+	<div id="console">
+		<div class="black">
+			<p class="reperer">Vous ne devez pas vous faire repérer</p>
+			<ul>
+			</ul>
+		</div>
+		<div id="close_console">
+			<p id="notif"></p>
+			<img id="close" src="image/close2.png">
+			<img id="open" src="image/open.png" style="display: none;">
+		</div>
+	</div>
+	<!--
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 	<div id="toolbar">
 		<div class="forme"> <img src="image/bateau.png"></div>
 		<div class="forme"> <img src="image/forme.png"></div>
 		<div class="batiment" id="batiment"> <img src="image/anchor_btn.png"></div>
 	</div>
 -->
-<div class="stop">
-	<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
-	<br>
-	<!--Remplacement des icônes de fin d'action-->
-	<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
-	<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
-</div>
+	<div class="stop">
+		<input class="hide" id="editVitesse" placeholder="Votre Vitesse">
+		<br>
+		<!--Remplacement des icônes de fin d'action-->
+		<div class="hide btn_finish forme" id="stopDraw"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawPolyline"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawCircle"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopEditPolyline"> <img src="image/check.svg"></div>
+		<div class="hide btn_finish forme" id="stopDrawTrajet"> <img src="image/check.svg"></div>
+	</div>
 
-<!--MARK: SIDEBAR BTN-->
-<button id="sidebar-btn" class="sidebar-btn">
+	<!--MARK: SIDEBAR BTN-->
+	<button id="sidebar-btn" class="sidebar-btn">
 	<img id="menu-stripes1" src="image/menu.svg">
 </button>
 
-<section id="sidebar" class="sidebar">
-	<div class="settings">
+	<section id="sidebar" class="sidebar">
+		<div class="settings">
 
-		<div class="btn_retourhome">
-			<a href="index.php"> Retour au menu </a>
-		</div>
+			<div class="btn_retourhome">
+				<a href="index.php"> Retour au menu </a>
+			</div>
 
-		<h1 class="parametre">Paramètres</h1>
+			<h1 class="parametre">Paramètres</h1>
 
-		<div class="onglets">
+			<div class="onglets">
 
-			<span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
-			<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
-		</div>
+				<span class="onglet_0 onglet" id="onglet_options" onclick="javascript:change_onglet('options');">Options</span>
+				<span class="onglet_0 onglet" id="onglet_suppression" onclick="javascript:change_onglet('suppression');">Suppression</span>
+			</div>
 
 			<!--<button id="onglet-btn" class="onglet1-btn onglet-btn active">
 				<h2>Filtres</h2>
@@ -606,17 +672,17 @@
 						}
 						?>
 
-						<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
-						`
-						<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
-						<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
-						<input type="hidden" id="cer" name="cercles">
-						<input type="hidden" id="polyg" name="polygs">
-						<input type="hidden" id="text" name="texts">
-						<input type="hidden" id="polyl" name="polyls">
-						<input type="hidden" id="bati" name="batis">
-						<input type="hidden" id="bateau_save" name="bateau_save">
-						<button class="save" name="save" id='insert'>Sauvegarder</button>
+							<h3 class="sauvegarde_title">Sauvegardez une nouvelle carte</h3>
+							`
+							<input class="formula" type="text" name="mapName" placeholder="Nom de la carte">
+							<textarea class="formula" name="mapDescription" placeholder="Description de la carte"></textarea>
+							<input type="hidden" id="cer" name="cercles">
+							<input type="hidden" id="polyg" name="polygs">
+							<input type="hidden" id="text" name="texts">
+							<input type="hidden" id="polyl" name="polyls">
+							<input type="hidden" id="bati" name="batis">
+							<input type="hidden" id="bateau_save" name="bateau_save">
+							<button class="save" name="save" id='insert'>Sauvegarder</button>
 
 					</form>
 				</div>
@@ -694,11 +760,12 @@
 			<script type="text/javascript">
 				var anc_onglet = 'options';
 				change_onglet(anc_onglet);
+
 			</script>
 
 		</div>
 
-		
+
 
 	</section>
 
@@ -716,123 +783,187 @@
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 -->
 
-<script src="js/slider.js"></script>
+	<script src="js/slider.js"></script>
 
-<script src='js/sauveguarde.js'></script>
-<!--	<script src="js/sendData.js"></script>-->
+	<script src='js/sauveguarde.js'></script>
+	<!--	<script src="js/sendData.js"></script>-->
 
-<?php include 'load.php' ?>
+	<?php include 'load.php' ?>
 
-
-<div id="control-container" class="container control-container">
-	<!-- Top Navigation -->
-	<div class="component">
-		<!-- Start Nav Structure -->
-		<button class="cn-button" id="cn-button">+</button>
-		<div class="cn-wrapper" id="cn-wrapper">
-			<ul>
-				<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
-				<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
-				<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
-				<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
-				<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
-				<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
-
-			</ul>
-		</div>
-		<div id="cn-overlay" class="cn-overlay"></div>
-		<!-- End Nav Structure -->
-	</div>
-</div>
-<!-- /container -->
-<script src="js/polyfills.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/demo1.js"></script>
-
-<!-- CHAT -->
-<script src="js/chat.js"></script>
+<!-- Script rotation menu -->
 <script>
+var angle = 0;
 
-  // ask user for name with popup prompt    
-  var name = prompt("Veuillez entrer un pseudonyme :", "Soldat");
+interact('#control-container').gesturable({
+	onmove: function (event) {
+	var menu = document.getElementById('control-container');
 
-  // default name is 'Guest'
-  if (!name || name === ' ') {
-  	name = "Soldat";  
-  }
-  
-  // strip tags
-  name = name.replace(/(<([^>]+)>)/ig,"");
-  
-  // display name on page
-  $("#name-area").html("Vous êtes : <span>" + name + "</span>");
-  
-  // kick off chat
-  var chat =  new Chat();
+	angle += event.da;
 
-  $(function() {
+	menu.style.webkitTransform =
+	menu.style.transform =
+	'rotate(' + angle + 'deg)';
+}
+});
+</script>
 
-  	chat.getState(); 
+<!-- Script drag menu -->
+<script>
+// target elements with the "draggable" class
+interact('.control-container')
+	.draggable({
+// enable inertial throwing
+	inertia: {
+	resistance: 4,
+	minSpeed: 500,
+	endSpeed: 200,
+},
+	// keep the element within the area of it's parent
+	restrict: {
+	restriction: "parent",
+	endOnly: true,
+	elementRect: { top: 0, left: 0, bottom: 4, right: 0 }},
+// enable autoScroll
+	autoScroll: true,
 
-     // watch textarea for key presses
-     $("#sendie").keydown(function(event) {  
+// call this function on every dragmove event
+	onmove: dragMoveListener,
+// call this function on every dragend event
+});
 
-     	var key = event.which;  
+	function dragMoveListener (event) {
+var target = event.target,
+// keep the dragged position in the data-x/data-y attributes
+	x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+	y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-         //all keys including return.  
-         if (key >= 33) {
+// translate the element
+	target.style.webkitTransform =
+	target.style.transform =
+	'translate(' + x + 'px, ' + y + 'px)';
 
-         	var maxLength = $(this).attr("maxlength");  
-         	var length = this.value.length;  
+// update the posiion attributes
+	target.setAttribute('data-x', x);
+	target.setAttribute('data-y', y);
+}
 
-             // don't allow new content if length is maxed out
-             if (length >= maxLength) {  
-             	event.preventDefault();  
-             }  
-         }  
-     });
+// this is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener;
+</script>
 
-     $("#send").click(function(e) {
-     	var text = $("#sendie").val();
-     	var maxLength = $("#sendie").attr("maxlength");  
-     	var length = text.length; 
+<!-- MENU RADIAL -->
+	<div id="control-container" class="container control-container hideadmin" data-x="1500" data-y="795" style="transform: translate(1500px, 900px);">
+		<!-- Top Navigation -->
+		<div class="component" id="component">
+			<!-- Start Nav Structure -->
+			<button class="cn-button opened" id="cn-button">+</button>
+			<div class="cn-wrapper" id="cn-wrapper">
+				<ul>
+					<li><a href="#" onclick="openPopUp('bateau');"><span class="icon-beateaux"> <img src="image/Aj_bateaux.png"></span></a></li>
+					<li id="forme"><a href="#" onclick="openPopUp('pins');"><span class="icon-formes"><img src="image/Aj_formes.png"></span></a></li>
+					<li><a href="#" onclick="openPopUp('batiment');"><span class="icon-batiments"></span><img src="image/Aj_batiments.png" id="imgbat"></a></li>
+					<li><a href="#" onclick="openPopUp('chatbox')"><span ><img src="image/chatbox.png"></span></a></li>
+					<li><a href="index.php"><span class="icon-exit"><img src="image/exit.png"></span></a></li>
+					<li><a href="#"><span class="icon-parametres"><img src="image/parametres.png"></span></a></li>
+				</ul>
+			</div>
+			<div id="cn-overlay" class="on-overlay cn-overlay"></div>
+			<!-- End Nav Structure -->
+		</div>
+	</div>
 
-              // send 
-              if (length <= maxLength + 1) { 
-              	chat.send(text, name);  
-              	$("#sendie").val("");
-              } else {
-              	$("#sendie").val(text.substring(0, maxLength));
-              }  
-          });
+	<!-- /container -->
+	<script src="js/polyfills.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/demo1.js"></script>
 
-         		 // watch textarea for release of key press
-         		 $('#sendie').keyup(function(e) {	
+	<!-- CHAT -->
+	<script src="js/chat.js"></script>
+	<script>
+		// ask user for name with popup prompt
+		var name = prompt("Veuillez entrer un pseudonyme :", "Formateur");
+		if(name != "Formateur"){
+            $(".hideadmin").css("display","none");
+            $(".leaflet-control-zoom").css("left","910px");
+        }
+		// default name is 'Guest'
+		if (!name || name === ' ') {
+			name = "Soldat";
+		}
 
-         		 	if (e.keyCode == 13) { 
+		// strip tags
+		name = name.replace(/(<([^>]+)>)/ig, "");
 
-         		 		var text = $(this).val();
-         		 		var maxLength = $(this).attr("maxlength");  
-         		 		var length = text.length; 
+		// display name on page
+		$("#name-area").html("Vous êtes : <span>" + name + "</span>");
 
-                    // send 
-                    if (length <= maxLength + 1) { 
+		// kick off chat
+		var chat = new Chat();
 
-                    	chat.send(text, name);	
-                    	$(this).val("");
+		$(function() {
 
-                    } else {
+			chat.getState();
 
-                    	$(this).val(text.substring(0, maxLength));
+			// watch textarea for key presses
+			$("#sendie").keydown(function(event) {
 
-                    }	
+				var key = event.which;
+
+				//all keys including return.
+				if (key >= 33) {
+
+					var maxLength = $(this).attr("maxlength");
+					var length = this.value.length;
+
+					// don't allow new content if length is maxed out
+					if (length >= maxLength) {
+						event.preventDefault();
+					}
+				}
+			});
+
+			$("#send").click(function(e) {
+				var text = $("#sendie").val();
+				var maxLength = $("#sendie").attr("maxlength");
+				var length = text.length;
+
+				// send
+				if (length <= maxLength + 1) {
+					chat.send(text, name);
+					$("#sendie").val("");
+				} else {
+					$("#sendie").val(text.substring(0, maxLength));
+				}
+			});
+
+			// watch textarea for release of key press
+			$('#sendie').keyup(function(e) {
+
+				if (e.keyCode == 13) {
+
+					var text = $(this).val();
+					var maxLength = $(this).attr("maxlength");
+					var length = text.length;
+
+					// send
+					if (length <= maxLength + 1) {
+
+						chat.send(text, name);
+						$(this).val("");
+
+					} else {
+
+						$(this).val(text.substring(0, maxLength));
+
+					}
 
 
-                }
-            });
+				}
+			});
 
-         		});
+		});
 
+<<<<<<< HEAD
 
   $('.batibtn').on('click',function(){
     $('.batibtn').removeClass('selected2');
@@ -852,6 +983,10 @@
 });
 </script>
 
+=======
+	</script>
+
+>>>>>>> 7e159684f79d281138ef284d11dbaf00ed2a614a
 </body>
 
 </html>
