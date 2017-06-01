@@ -9,7 +9,7 @@
 	//open and close menu when the button is clicked
 	var open = false;
 	map.addEventListener("mousedown", handler, false);
-	wrapper.addEventListener("mousedown", cnhandle, false);
+	wrapper.addEventListener("mouseup", cnhandle, false);
 
 	function cnhandle(e) {
 		e.stopPropagation();
